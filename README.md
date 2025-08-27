@@ -5,3 +5,4 @@ A collection of java challenges from Coddy
 2. candlelitCountdownPrayer - conditionals
 3. swapFirstandLastCharacters - String
 4. isJailNumber - loops and arithmetic
+5. simulateSkiPath - arrays
