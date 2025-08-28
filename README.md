@@ -6,3 +6,4 @@ A collection of java challenges from Coddy
 3. swapFirstandLastCharacters - String
 4. isJailNumber - loops and arithmetic
 5. simulateSkiPath - arrays
+6. craftGlimmeringStone - arrays and arithmetic
