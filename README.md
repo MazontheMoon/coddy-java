@@ -15,3 +15,4 @@ A collection of java challenges from Coddy
 12. drawCharacterHead - arrays
 13. countStars - string manipulation
 14. debateScorer - arrays
+15. generateRehearsalSchedule - arrays and loops and conditionals
