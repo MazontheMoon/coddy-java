@@ -18,6 +18,7 @@ Parameters:
 
 The function returns a String that contains the category and the reversed name, separated by a space.
 */
+
 import java.util.Collections;
 import java.util.stream.Collectors;
 
