@@ -6,7 +6,8 @@ Iterate through the depths array and check each element. If the element is a mul
 Parameters:
 - depths (int[]): An array of integers representing the depths explored in the ocean. The array can have up to 10 elements.
 
-The function returns a new int[] where all elements are reversed except for the elements that are multiples of five.*/
+The function returns a new int[] where all elements are reversed except for the elements that are multiples of five.
+*/
 
 class ReverseArrayExceptMultiplesOfFive {
     public static int[] reverseArrayExceptMultiplesOfFive(int[] depths) {
