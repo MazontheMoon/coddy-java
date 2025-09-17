@@ -101,3 +101,4 @@ A collection of java challenges from Coddy
 98. decodeHeistMessage - stringbuilder
 99. generateBowlingMessage - conditionals
 100. realignEquipment - 2d arrays
+101. feedDucks - primitive variables
