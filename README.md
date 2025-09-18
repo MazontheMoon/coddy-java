@@ -102,3 +102,4 @@ A collection of java challenges from Coddy
 99. generateBowlingMessage - conditionals
 100. realignEquipment - 2d arrays
 101. feedDucks - primitive variables
+102. decipherAncientMessage - string manipulation
