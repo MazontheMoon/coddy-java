@@ -103,3 +103,8 @@ A collection of java challenges from Coddy
 100. realignEquipment - 2d arrays
 101. feedDucks - primitive variables
 102. decipherAncientMessage - string manipulation
+103. analyzeInsectCode - stringbuilder
+104. decodeArtifactLabels - sets
+105. decodeThiefMessage - stringbuilder
+106. courtDebateIntensity - loops
+107. createTrailMessage - stringbuilder
