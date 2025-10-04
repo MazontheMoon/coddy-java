@@ -108,3 +108,13 @@ A collection of java challenges from Coddy
 105. decodeThiefMessage - stringbuilder
 106. courtDebateIntensity - loops
 107. createTrailMessage - stringbuilder
+108. maxFillingsPerPerson - loops
+109. harvestCotton - array matrix
+110. isLuckyYear - exception handling
+111. countCircularObjects - conditionals
+112. reversePathSections - stringbuilder
+113. calculateMineralEssence - binary conversion
+114. mistForestRunners - loops and arrays
+115. countSeashells - loops
+116. countCraters - loops
+117. ancientNumeralConverter - arrays and collections
