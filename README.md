@@ -118,3 +118,12 @@ A collection of java challenges from Coddy
 115. countSeashells - loops
 116. countCraters - loops
 117. ancientNumeralConverter - arrays and collections
+118. countSheep - loops
+119. calculatePicnicSupplies - strings
+120. duckPondVisit - loops and arraylist
+121. ancientGatewayCode - loops and arrays
+122. findShortestQueue - arrays
+123. createSetlist - Arraylist and hashmap
+124. calculateDebateScore - strings
+125. protectSandcastles - loops
+126. convertToBinaryCountOnes - Stringbuilder
