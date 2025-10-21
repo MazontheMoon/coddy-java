@@ -127,3 +127,12 @@ A collection of java challenges from Coddy
 124. calculateDebateScore - strings
 125. protectSandcastles - loops
 126. convertToBinaryCountOnes - Stringbuilder
+127. findTreeInPark - loops
+128. colcannonCalculator - arrays and loops and Stringbuilder
+129. reverseScaleAndCheckPalindrome - arrays and loops
+130. haveEnoughSandwiches - loops
+131. navigateTerrain - loops
+132. reverseSelectedTents - arraylist
+133. findHiddenTreasure - arrays
+134. countSteps - arrays and loops
+135. findCommonWords - hashset
