@@ -136,3 +136,4 @@ A collection of java challenges from Coddy
 133. findHiddenTreasure - arrays
 134. countSteps - arrays and loops
 135. findCommonWords - hashset
+136. prepareSupplyPackages - arrays
