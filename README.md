@@ -137,3 +137,4 @@ A collection of java challenges from Coddy
 134. countSteps - arrays and loops
 135. findCommonWords - hashset
 136. prepareSupplyPackages - arrays
+137. isPackedSafely - arrays and conditionals
