@@ -138,3 +138,4 @@ A collection of java challenges from Coddy
 135. findCommonWords - hashset
 136. prepareSupplyPackages - arrays
 137. isPackedSafely - arrays and conditionals
+138. tuneInstruments - arrays and conditionals
