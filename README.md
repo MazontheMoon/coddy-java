@@ -139,3 +139,6 @@ A collection of java challenges from Coddy
 136. prepareSupplyPackages - arrays
 137. isPackedSafely - arrays and conditionals
 138. tuneInstruments - arrays and conditionals
+139. findInsect - arraylist
+140. upgradeCartWheel - arrays
+141. decipherText - string manipulation
