@@ -142,3 +142,4 @@ A collection of java challenges from Coddy
 139. findInsect - arraylist
 140. upgradeCartWheel - arrays
 141. decipherText - string manipulation
+142. vampireBatCode - hashmaps
