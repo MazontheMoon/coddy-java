@@ -145,3 +145,7 @@ A collection of java challenges from Coddy
 142. vampireBatCode - hashmaps
 143. selectChalcedonyGemstones - lists and arraylists
 144. organizeFlowerCollection - sets
+145. analyzeDefoliation - arraylist and lists
+146. findTool - arrays
+147. prepareCheckroll - classes and hashmaps
+148. bazaarInventory - matrix and hashtable
