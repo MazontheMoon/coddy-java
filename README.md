@@ -149,3 +149,4 @@ A collection of java challenges from Coddy
 146. findTool - arrays
 147. prepareCheckroll - classes and hashmaps
 148. bazaarInventory - matrix and hashtable
+149. createFieldNotes - arrays and stringbuilder
