@@ -150,3 +150,5 @@ A collection of java challenges from Coddy
 147. prepareCheckroll - classes and hashmaps
 148. bazaarInventory - matrix and hashtable
 149. createFieldNotes - arrays and stringbuilder
+150. findMisplacedItems - arrays and arraylists
+151. analyzePlantSpecimens - arrays
