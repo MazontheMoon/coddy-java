@@ -152,3 +152,4 @@ A collection of java challenges from Coddy
 149. createFieldNotes - arrays and stringbuilder
 150. findMisplacedItems - arrays and arraylists
 151. analyzePlantSpecimens - arrays
+152. vampireNightOut - map and hashmap
