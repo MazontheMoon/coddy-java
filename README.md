@@ -153,3 +153,5 @@ A collection of java challenges from Coddy
 150. findMisplacedItems - arrays and arraylists
 151. analyzePlantSpecimens - arrays
 152. vampireNightOut - map and hashmap
+153. extractJournalInfo - list and arraylist
+154. assignWorkshopStorage - arrays
