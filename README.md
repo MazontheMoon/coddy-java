@@ -155,3 +155,4 @@ A collection of java challenges from Coddy
 152. vampireNightOut - map and hashmap
 153. extractJournalInfo - list and arraylist
 154. assignWorkshopStorage - arrays
+155. conductSolubilityExperiment - arrays
