@@ -156,3 +156,4 @@ A collection of java challenges from Coddy
 153. extractJournalInfo - list and arraylist
 154. assignWorkshopStorage - arrays
 155. conductSolubilityExperiment - arrays
+156. exploreApothecaryShop  - arraylist
