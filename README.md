@@ -157,3 +157,4 @@ A collection of java challenges from Coddy
 154. assignWorkshopStorage - arrays
 155. conductSolubilityExperiment - arrays
 156. exploreApothecaryShop  - arraylist
+157. calculateCabinRenovation - array
