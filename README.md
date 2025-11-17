@@ -160,3 +160,6 @@ A collection of java challenges from Coddy
 157. calculateCabinRenovation - array
 158. analyzeBirdWatchingExperience - map and hashmap
 159. formatHarvestDistribution - Stringbuilder
+160. natureWalkRecorder - linkedlist
+161. organizeHealthPosts - arrays and lists
+162. organizeOfficeSupplies - arrays and loops
