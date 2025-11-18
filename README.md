@@ -163,3 +163,4 @@ A collection of java challenges from Coddy
 160. natureWalkRecorder - linkedlist
 161. organizeHealthPosts - arrays and lists
 162. organizeOfficeSupplies - arrays and loops
+163. analyzeColumnistStyle - sets
