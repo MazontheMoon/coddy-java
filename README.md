@@ -165,3 +165,4 @@ A collection of java challenges from Coddy
 162. organizeOfficeSupplies - arrays and loops
 163. analyzeColumnistStyle - sets
 164. rearrangeDisplay - arrays
+165. manageAntiques - maps and lists
