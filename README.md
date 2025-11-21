@@ -166,3 +166,4 @@ A collection of java challenges from Coddy
 163. analyzeColumnistStyle - sets
 164. rearrangeDisplay - arrays
 165. manageAntiques - maps and lists
+166. mirrorNeurons - 2D arrays
