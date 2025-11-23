@@ -167,3 +167,5 @@ A collection of java challenges from Coddy
 164. rearrangeDisplay - arrays
 165. manageAntiques - maps and lists
 166. mirrorNeurons - 2D arrays
+167. analyzeVetClinicArgument - hashmap
+168. formatAnimalDescriptions - arrays
