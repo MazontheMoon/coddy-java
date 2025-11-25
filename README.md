@@ -170,3 +170,4 @@ A collection of java challenges from Coddy
 167. analyzeVetClinicArgument - hashmap
 168. formatAnimalDescriptions - arrays
 169. analyzeWildflowerHeights - arrays
+170. plumpCushions - arrays
