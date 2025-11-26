@@ -171,3 +171,4 @@ A collection of java challenges from Coddy
 168. formatAnimalDescriptions - arrays
 169. analyzeWildflowerHeights - arrays
 170. plumpCushions - arrays
+171. simulateGrowth - arrays
