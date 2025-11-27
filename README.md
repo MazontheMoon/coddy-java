@@ -172,3 +172,4 @@ A collection of java challenges from Coddy
 169. analyzeWildflowerHeights - arrays
 170. plumpCushions - arrays
 171. simulateGrowth - arrays
+172. organizeWorkshopInventory - nodes
