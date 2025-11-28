@@ -173,3 +173,4 @@ A collection of java challenges from Coddy
 170. plumpCushions - arrays
 171. simulateGrowth - arrays
 172. organizeWorkshopInventory - nodes
+173. classifyHandBones - hashmaps
