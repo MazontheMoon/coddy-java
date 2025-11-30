@@ -174,3 +174,5 @@ A collection of java challenges from Coddy
 171. simulateGrowth - arrays
 172. organizeWorkshopInventory - nodes
 173. classifyHandBones - hashmaps
+174. analyzeCranberrySap - arrays
+175. categorizeSpecimens - arraylist 
