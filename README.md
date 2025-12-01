@@ -175,4 +175,5 @@ A collection of java challenges from Coddy
 172. organizeWorkshopInventory - nodes
 173. classifyHandBones - hashmaps
 174. analyzeCranberrySap - arrays
-175. categorizeSpecimens - arraylist 
+175. categorizeSpecimens - arraylist
+176. summarizeFuelTransactions - lists and collections
