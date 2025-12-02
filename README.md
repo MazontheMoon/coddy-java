@@ -177,3 +177,4 @@ A collection of java challenges from Coddy
 174. analyzeCranberrySap - arrays
 175. categorizeSpecimens - arraylist
 176. summarizeFuelTransactions - lists and collections
+177. generateFestivalSeating - 2d arrays
