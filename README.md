@@ -178,3 +178,5 @@ A collection of java challenges from Coddy
 175. categorizeSpecimens - arraylist
 176. summarizeFuelTransactions - lists and collections
 177. generateFestivalSeating - 2d arrays
+178. manageReservations - lists
+179. processRenovationTasks - stringbuilder
