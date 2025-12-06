@@ -180,3 +180,4 @@ A collection of java challenges from Coddy
 177. generateFestivalSeating - 2d arrays
 178. manageReservations - lists
 179. processRenovationTasks - stringbuilder
+180. countRarePlants - arrays
