@@ -181,3 +181,4 @@ A collection of java challenges from Coddy
 178. manageReservations - lists
 179. processRenovationTasks - stringbuilder
 180. countRarePlants - arrays
+181. mergeInventories - array lists
