@@ -184,3 +184,4 @@ A collection of java challenges from Coddy
 181. mergeInventories - array lists
 182. geothermalDescent - arrays
 183. picnicBlanketPattern - 2d arrays
+184. generateExhibitLabels - 2d arrays
