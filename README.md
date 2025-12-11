@@ -1,4 +1,4 @@
-80# coddy-java
+980# coddy-java
 A collection of java challenges from Coddy
 
 01. countWildFlowers - loops
@@ -185,3 +185,4 @@ A collection of java challenges from Coddy
 182. geothermalDescent - arrays
 183. picnicBlanketPattern - 2d arrays
 184. generateExhibitLabels - 2d arrays
+185. mergeInventories - arraylist
