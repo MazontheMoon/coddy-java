@@ -189,3 +189,4 @@ A collection of java challenges from Coddy
 186. manageCoffeeShopOrders - arraylist
 187. simulateFibonacciInNature - arrays
 188. modifySpeech - arrays
+189. yogaSessionAnalyzer - stringbuilder
