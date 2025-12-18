@@ -192,3 +192,4 @@ A collection of java challenges from Coddy
 189. yogaSessionAnalyzer - stringbuilder
 190. organizeFairLayout - lists and 2d arrays
 191. generateComplianceReport - lists and sets
+192. documentMedicalProcedure - arrays
