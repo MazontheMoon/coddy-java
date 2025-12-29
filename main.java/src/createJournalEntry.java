@@ -1,0 +1,47 @@
+/*Create a function named createJournalEntry that receives int marineSpecies, int birdSpecies, and int currentDay as its parameters.
+
+The function should generate a field journal entry for a naturalist exploring a coastal village. It will format the information into a concise journal entry, using string formatting and basic increment/decrement operators.
+
+The journal entry should include the following information:
+
+The next day of the expedition (current day + 1)
+The total number of species observed (sum of marine and bird species)
+A breakdown of marine and bird species
+A status message based on the total number of species observed:
+If total species is less than 5: "Quiet day"
+If total species is between 5 and 10: "Productive day"
+If total species is more than 10: "Extraordinary day"
+Parameters:
+
+marineSpecies (int): The number of marine species observed that day
+birdSpecies (int): The number of bird species spotted that day
+currentDay (int): The current day of the expedition
+The function returns a formatted string representing the journal entry.
+
+Example of the expected format:
+
+Day 4: 
+Total species observed: 8
+Marine species: 3
+Bird species: 5
+Status: Productive day
+Use string formatting to create the journal entry and increment/decrement operators to adjust the day count and calculate totals. Your solution should be between 10 and 19 lines of code.*/
+
+class CreateJournalEntry {
+    public static String createJournalEntry(int marineSpecies, int birdSpecies, int currentDay) {
+        int nextDay = ++currentDay;
+        int totalSpecies = marineSpecies + birdSpecies;
+        String status;
+        
+        if (totalSpecies < 5) {
+            status = "Quiet day";
+        } else if (totalSpecies <= 10) {
+            status = "Productive day";
+        } else {
+            status = "Extraordinary day";
+        }
+        
+        return String.format("Day %d: \nTotal species observed: %d\nMarine species: %d\nBird species: %d\nStatus: %s",
+                             nextDay, totalSpecies, marineSpecies, birdSpecies, status);
+    }
+}
