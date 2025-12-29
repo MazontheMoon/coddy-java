@@ -194,3 +194,13 @@ A collection of java challenges from Coddy
 191. generateComplianceReport - lists and sets
 192. documentMedicalProcedure - arrays
 193. geometricOdyssey - Arrays
+194. hillsidePicnic - arraylist
+195. exploreHabitat - stringbuilder
+196. createJournalEntry - conditionals
+197. analyzeEventImpact - streams
+198. processWeatherData - stringbuilder ascii
+199. organizeFiles - lists
+200. culturalFestivalAnalyzer - arrays
+201. analyzeJungleEcology - arrays
+202. organizeFestivalProduce - arraylist
+203. analyzePeatBogLayers - sets and maps
