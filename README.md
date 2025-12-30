@@ -204,3 +204,4 @@ A collection of java challenges from Coddy
 201. analyzeJungleEcology - arrays
 202. organizeFestivalProduce - arraylist
 203. analyzePeatBogLayers - sets and maps
+204. organizeEquipment - maps
