@@ -1,6 +1,30 @@
-# coddy-java
-A collection of java challenges from Coddy
+# coddy - java daily challenge
 
+# 2026
+
+## January
+
+### 1 - catalogMedicalBooks
+**Write a function catalogMedicalBooks that takes catalogEntries and returns a formatted status report for the medical research library.
+
+The function processes catalog entries to determine book availability and categorizes medical literature types based on title keywords.
+
+Logic:
+- Parse each entry to extract title, author, and checkout status
+- Categorize books: 
+	"Surgery" (contains "surgical" or "surgery"), 
+	"Research" (contains "research" or "methodology"), "General" (all others)
+- Determine availability: "Available" if checkout status is "IN", "Checked Out" if "OUT"
+
+Format each book as: "[Category] - [Title] by [Author]: [Status]"
+
+Parameters:
+- catalogEntries (String[]): Array of catalog entries in format "Title|Author|Status"
+
+Returns: String with formatted catalog report, each book on a new line. 
+Format: Surgery - Advanced Surgical Techniques by Dr. Smith: Available Research - Clinical Research Methods by Dr. Johnson: Checked Out General - Medical Ethics by Dr. Brown: Available**
+
+# 2025
 01. countWildFlowers - loops
 02. candlelitCountdownPrayer - conditionals
 03. swapFirstandLastCharacters - string manipulation
