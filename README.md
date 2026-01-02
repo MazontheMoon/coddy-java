@@ -4,6 +4,25 @@
 
 ## January
 
+### 2 - Create a function named examineAntiques that receives objects and rotations as its parameters.
+
+The function simulates a curious collector examining antique pewter objects on a rotating display in a museum. The collector will examine the objects over several rotation cycles, reversing the display each time and potentially removing objects for closer inspection.
+
+Parameters:
+- objects (String[]): An array of strings representing the names of pewter objects on the display.
+- rotations (int): The number of rotation cycles to perform.
+The function should perform the following operations:
+
+For each rotation cycle (up to rotations or until objects is empty):
+- Reverse the entire objects array.
+- Examine each object in the current order:
+	- If the object name length is greater than 5, add it to a result array.
+	- If the object name contains the word "rare", immediately end the current rotation cycle (use break).
+	- If the object name starts with a vowel (a, e, i, o, u), skip it and move to the next object (use continue).
+- After each full rotation, remove the last object from the objects array.
+
+The function returns a String[] containing the names of the objects that the collector decided to examine more closely (added to the result array during the process).
+
 ### 1 - catalogMedicalBooks
 **Write a function catalogMedicalBooks that takes catalogEntries and returns a formatted status report for the medical research library.
 
