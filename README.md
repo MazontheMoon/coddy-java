@@ -4,6 +4,40 @@
 
 ## January
 
+### 5 - planRoadTrip
+Create a function named planRoadTrip that receives towns, attractions, familyPreferences, maxDays, and maxTowns as its parameters.
+
+The Smith family is embarking on an adventure-filled road trip across the countryside in their old wagon. Your task is to help them plan the optimal itinerary using advanced set theory and complex looping structures.
+
+The function should plan and analyze the family's journey through various towns and attractions, using sets to represent different aspects of the trip and loops to process and manipulate this data. The goal is to create an itinerary that maximizes the family's preferences while adhering to the given constraints.
+
+Follow these steps to solve the challenge:
+- Generate the power set of towns to consider all possible combinations of towns to visit.
+- Use set operations to find the intersection between available attractions and family preferences.
+- Implement nested loops to iterate through the power set of towns and calculate the optimal route based on maximizing matched preferences and minimizing travel time.
+- Use recursion to generate all possible permutations of the selected towns to find the most efficient route.
+- Implement a scoring system using set cardinality and custom weighting to rank different itineraries.
+- Use loop control statements to optimize the search process and prune unnecessary iterations.
+
+Parameters:
+- towns (String[]): An array of town names the family might visit.
+- attractions (String[]): An array of attractions available across all towns.
+- familyPreferences (String[]): An array of the family's preferred activities or attractions.
+- maxDays (int): The maximum number of days for the trip.
+- maxTowns (int): The maximum number of towns to visit.
+
+The function returns a String[] representing the optimal road trip itinerary. 
+Each element in the array should be a String in the format "Day X: Town - Attraction", where X is the day number, Town is the name of the town visited, and Attraction is the attraction visited in that town.
+
+Constraints:
+1 ≤ towns.length ≤ 10
+1 ≤ attractions.length ≤ 20
+1 ≤ familyPreferences.length ≤ attractions.length
+1 ≤ maxDays ≤ 14
+1 ≤ maxTowns ≤ towns.length
+
+Note: Ensure your solution is efficient and can handle the maximum constraints. The use of advanced set theory concepts and complex looping structures will be essential to creating an efficient and effective solution.
+
 ### 4 - optimizeSeating
 Create a function named optimizeSeating that receives int[][] roomLayout and String[] familyMembers as its parameters.
 
