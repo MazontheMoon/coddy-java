@@ -4,6 +4,40 @@
 
 ## January
 
+### 4 - optimizeSeating
+Create a function named optimizeSeating that receives int[][] roomLayout and String[] familyMembers as its parameters.
+
+Your task is to create an optimal seating arrangement for a family holiday gathering. The challenge is to maximize seating efficiency, promote conversation, and consider family dynamics, all while working with a complex room layout.
+
+The function should analyze the room layout, determine the best seating arrangement, and place family members accordingly. Your solution should utilize advanced array operations and geometric concepts to solve this real-world problem.
+
+Parameters:
+- roomLayout (int[][]): A 2D array representing the dining room. In this array:
+	 - 0 represents empty space
+	 - 1 represents a table section
+	 - -1 represents obstacles or walls
+- familyMembers (String[]): An array of strings containing the names of the relatives attending the gathering. The array will contain between 10 and 20 names.
+
+The function should return a 2D string array representing the optimized seating arrangement, with family members' names placed in their assigned seats. Empty seats should be represented by empty strings.
+
+Your solution should consider the following factors:
+- Maximize the number of people seated at the table.
+- Ensure that no two people are seated directly across from each other to promote conversation.
+- Try to seat immediate family members (parents, siblings) closer together. You can assume that family members with the same last name are closely related.
+- Distribute "conversation starters" (assume the first 3 names in the familyMembers array are extroverts) evenly around the table.
+- Account for any special seating requirements (e.g., place the last 2 names in the familyMembers array in comfortable spots, assuming they are elderly).
+
+Implement your solution using the following techniques:
+- Use advanced array operations such as map, filter, and reduce to process family member data and seating preferences.
+- Apply slice and splice to modify the seating arrangement as needed.
+- Utilize concat to combine different sections of the table if necessary.
+- Apply geometric concepts to:
+	- Calculate distances between seats to optimize conversation potential.
+	- Determine the shape of the table from the 2D array input.
+- Apply transformations to the seating arrangement to improve overall satisfaction.
+
+Note: Ensure your solution is efficient and well-structured, ideally between 50 and 99 lines of code.
+
 ### 3 - organizeBookSale
 Write a function organizeBookSale that takes genres, maxBooksPerTable and returns a string array of table assignments.
 
