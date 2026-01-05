@@ -4,7 +4,27 @@
 
 ## January
 
-### 2 - Create a function named examineAntiques that receives objects and rotations as its parameters.
+### 3 - organizeBookSale
+Write a function organizeBookSale that takes genres, maxBooksPerTable and returns a string array of table assignments.
+
+The function processes book genres to organize tables at a neighborhood book sale, assigning detective novels to the "Mystery" table and other genres to "General" tables.
+
+Logic:
+- Loop through the genres array
+- Use logical operators to check if genre contains "Detective" or "Mystery" - assign to "Mystery" table
+- Use continue to skip processing when a table reaches maximum capacity
+- Use break to stop processing once all books are assigned or maximum tables are filled
+- Other genres go to numbered "General" tables
+
+Parameters:
+- genres (String[]): Array of book genres to organize
+- maxBooksPerTable (int): Maximum books allowed per table
+
+Returns: String array of table assignments for each book. 
+Format: ["Mystery", "General-1", "Mystery", "General-2"]
+
+### 2 - examineAntiques
+Create a function named examineAntiques that receives objects and rotations as its parameters.
 
 The function simulates a curious collector examining antique pewter objects on a rotating display in a museum. The collector will examine the objects over several rotation cycles, reversing the display each time and potentially removing objects for closer inspection.
 
