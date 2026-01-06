@@ -4,6 +4,35 @@
 
 ## January
 
+### 6 - processUnsignedCheck
+Create a function named processUnsignedCheck that receives checkAmount, checkDimensions, checkAge, geometricShapes, and foldCount as its parameters.
+
+The function simulates a complex financial calculation system for an old-fashioned bank, processing unsigned checks and performing various geometric and arithmetic operations to determine the final value and validity of each check.
+
+Implement the following calculations and validations:
+- Convert the check amount to a fraction and multiply it by (checkAge + 1) / checkAge.
+- Calculate the surface area and volume of the check using the given dimensions.
+- Apply a 2% increase to the check value for each fold.
+- Calculate the areas of the geometric shapes drawn on the check and use them to adjust the check value. For simplicity, assume:
+	Triangle area = 0.5 * base * height (use 10 for base and height)
+	Circle area = π * r^2 (use 5 for radius)
+	Square area = side^2 (use 10 for side length)
+- Add the total area of shapes to the check value.
+- Raise the check value to the power of the number of shapes, then take the nth root where n is the number of folds.
+- Implement a validation algorithm: the check is valid if the product of its dimensions is greater than 1,000,000 and the number of shapes is less than 5.
+- Format the final adjusted value as a percentage of the original value.
+
+Parameters:
+- checkAmount (String): The original amount on the check (e.g., "1234.56").
+- checkDimensions (int[]): An array containing the length, width, and height of the check in millimeters.
+- checkAge (float): The age of the check in years.
+- geometricShapes (String[]): An array of strings representing geometric shapes drawn on the check (e.g., ["triangle", "circle", "square"]).
+- foldCount (int): The number of folds in the check.
+
+The function returns a string containing the adjusted check value, validity status, and geometric properties in the following format:
+- "Adjusted Value: X%, Valid: true/false, Surface Area: Y mm², Volume: Z mm³"
+- Where X is the adjusted value as a percentage of the original (rounded to 2 decimal places), Y is the surface area (rounded to 2 decimal places), and Z is the volume (rounded to 2 decimal places).
+
 ### 5 - planRoadTrip
 Create a function named planRoadTrip that receives towns, attractions, familyPreferences, maxDays, and maxTowns as its parameters.
 
