@@ -4,6 +4,32 @@
 
 ## January
 
+### 7 - analyzeTerrainMap
+Create a function named analyzeTerrainMap that receives elevationMap and heightDifference as its parameters.
+
+You are a geologist studying rock formations in a mountainous region. Your task is to analyze the terrain using advanced mapping techniques.
+
+The function should perform the following analysis on the elevation map:
+- Identify peaks and valleys based on the given height difference
+- Calculate the average elevation of the entire region
+- Find the highest peak and lowest valley
+- Determine the number of peaks and valleys
+
+A point is considered a peak if it's higher than all its adjacent points (up, down, left, right) by at least the heightDifference. Similarly, a point is a valley if it's lower than all adjacent points by at least the heightDifference.
+
+Parameters:
+- elevationMap (int[][]): A 2D array representing the elevation of each point in the region.
+- heightDifference (int): The minimum height difference to consider a point as a peak or valley.
+
+The function returns a formatted string containing the analysis report with the following information:
+- Number of peaks and valleys
+- Average elevation (rounded to 2 decimal places)
+- Coordinates and elevation of the highest peak
+- Coordinates and elevation of the lowest valley
+
+Use the following format for the report:
+"Peaks: %d, Valleys: %d\nAvg Elevation: %.2f\nHighest Peak: (%d,%d) at %d\nLowest Valley: (%d,%d) at %d"
+
 ### 6 - processUnsignedCheck
 Create a function named processUnsignedCheck that receives checkAmount, checkDimensions, checkAge, geometricShapes, and foldCount as its parameters.
 
