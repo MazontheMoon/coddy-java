@@ -1,0 +1,65 @@
+import java.util.ArrayList;
+import java.util.List;
+
+class AnalyzeTerrainMap {
+    public static String analyzeTerrainMap(int[][] elevationMap, int heightDifference) {
+        int rows = elevationMap.length;
+        int cols = elevationMap[0].length;
+        List<int[]> peaks = new ArrayList<>();
+        List<int[]> valleys = new ArrayList<>();
+        int sum = 0;
+        int highestPeak = Integer.MIN_VALUE;
+        int lowestValley = Integer.MAX_VALUE;
+        int[] highestPeakCoords = new int[2];
+        int[] lowestValleyCoords = new int[2];
+
+        int[][] directions = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
+
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                int current = elevationMap[i][j];
+                sum += current;
+
+                boolean isPeak = true;
+                boolean isValley = true;
+
+                for (int[] dir : directions) {
+                    int newRow = i + dir[0];
+                    int newCol = j + dir[1];
+
+                    if (newRow >= 0 && newRow < rows && newCol >= 0 && newCol < cols) {
+                        int neighbor = elevationMap[newRow][newCol];
+                        if (current <= neighbor + heightDifference) {
+                            isPeak = false;
+                        }
+                        if (current >= neighbor - heightDifference) {
+                            isValley = false;
+                        }
+                    }
+                }
+
+                if (isPeak) {
+                    peaks.add(new int[]{i, j});
+                    if (current > highestPeak) {
+                        highestPeak = current;
+                        highestPeakCoords = new int[]{i, j};
+                    }
+                }
+                if (isValley) {
+                    valleys.add(new int[]{i, j});
+                    if (current < lowestValley) {
+                        lowestValley = current;
+                        lowestValleyCoords = new int[]{i, j};
+                    }
+                }
+            }
+        }
+
+        double avgElevation = (double) sum / (rows * cols);
+
+        return String.format("Peaks: %d, Valleys: %d\nAvg Elevation: %.2f\nHighest Peak: (%d,%d) at %d\nLowest Valley: (%d,%d) at %d",
+                peaks.size(), valleys.size(), avgElevation,
+                highestPeakCoords[0], highestPeakCoords[1], highestPeak,
+                lowestValleyCoords[0], lowestValleyCoords[1], lowestValley);
+    }
+}
