@@ -4,6 +4,17 @@
 
 ## January
 
+### 8 - updateFruitStand
+Write a function updateFruitStand that takes inventory (a 2D array of fruit data) and soldFruits (array of sold fruit names) and returns the updated inventory with new stock levels and total revenue.
+
+The function processes sales by reducing stock for each sold fruit and calculating the total revenue from all sales.
+
+Parameters:
+- inventory (String[][]): 2D array where each row contains [fruitName, stock, price]
+- soldFruits (String[]): Array of fruit names that were sold
+Returns: String array with updated inventory and total revenue. 
+Format: ["Apple,4,2.50", "Banana,8,1.20", "Orange,5,3.00", "Total Revenue: 15.40"]
+
 ### 7 - analyzeTerrainMap
 Create a function named analyzeTerrainMap that receives elevationMap and heightDifference as its parameters.
 
