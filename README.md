@@ -4,6 +4,39 @@
 
 ## January
 
+### 9 - drillArtesianWell
+Create a function named drillArtesianWell that receives earthLayers, initialSkill, and targetDepth as its parameters.
+
+Jason, a novice in Artesian well-drilling, is on a journey to master this art. Your task is to simulate his drilling experience, taking into account his improving skills and occasional moments of self-doubt.
+
+The function should simulate Jason's drilling process through various earth layers, each with its own hardness level. As Jason drills deeper, his skill improves, but he may encounter challenges that make him waver in his confidence. The simulation continues until Jason reaches the target depth, gives up due to low confidence, or drills through all available layers.
+
+Parameters:
+- earthLayers (int[]): An array of integers representing the hardness of each earth layer (values range from 1 to 10, where 10 is the hardest).
+- initialSkill (int): An integer representing Jason's initial skill level (values range from 1 to 10).
+- targetDepth (int): An integer representing the depth Jason needs to reach.
+
+The function should implement the following logic:
+- Start drilling from the surface (index 0 of the earthLayers array).
+- For each layer, compare Jason's current skill level to the layer's hardness:
+- If his skill is higher, he drills through successfully and his skill increases by 1 (maximum 10).
+- If his skill is equal, he drills through but his skill doesn't change.
+- If his skill is lower, he struggles and has a chance to waver in his confidence.
+- When Jason wavers, generate a "perseverance" value:
+	- If perseverance is high enough, he continues drilling but his skill doesn't increase.
+	- If perseverance is too low, he stops drilling at that depth.
+- The drilling stops when Jason reaches the target depth, gives up, or reaches the end of the array.
+
+To calculate the perseverance value when Jason wavers, use the following formula:
+int perseverance = (currentDepth * currentSkill) % 10 + 1;
+
+Jason continues drilling if the perseverance value is greater than the difference between the layer's hardness and Jason's current skill.
+
+The function returns an integer array with three elements:
+- The depth Jason managed to drill
+- Jason's final skill level
+- The number of times Jason wavered in his confidence
+
 ### 8 - updateFruitStand
 Write a function updateFruitStand that takes inventory (a 2D array of fruit data) and soldFruits (array of sold fruit names) and returns the updated inventory with new stock levels and total revenue.
 
