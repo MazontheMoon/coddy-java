@@ -4,6 +4,25 @@
 
 ## January
 
+### 10 - scheduleSalon
+Write a function scheduleSalon that takes clientIds, treatments, durations, and availabilityGrid and returns a 2D string array representing the salon's appointment schedule.
+
+The function creates an optimized appointment schedule by mapping clients to available time slots based on their treatment requirements and salon availability.
+
+Logic:
+- Use hashing techniques to create quick lookups between client IDs and their treatment information
+- Apply arithmetic operations to calculate which time slots each treatment will occupy based on duration
+- Process the 2D availability grid to find suitable slots and assign appointments
+- Generate a schedule where each occupied slot shows "clientID:treatment" format
+
+Parameters:
+- clientIds (int[]): Array of unique client identification numbers
+- treatments (String[]): Array of treatment types corresponding to each client
+- durations (int[]): Array of treatment durations in time slots for each client
+- availabilityGrid (int[][]): 2D grid where 1 indicates available slot, 0 indicates unavailable
+
+Returns: 2D string array representing the appointment schedule. Format: [["101:Haircut", "", "102:Color"], ["", "102:Color", "103:Perm"]]
+
 ### 9 - drillArtesianWell
 Create a function named drillArtesianWell that receives earthLayers, initialSkill, and targetDepth as its parameters.
 
