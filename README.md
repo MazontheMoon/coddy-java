@@ -4,6 +4,25 @@
 
 ## January
 
+### 11  - planHealthFairSchedule
+Write a function planHealthFairSchedule that takes boothNames, volunteerCodes, visitorGroups, and targetWord and returns a formatted schedule matrix.
+
+The function manages Plymouth Rock Park's health fair by calculating booth schedules, identifying priority groups, and verifying volunteer assignments.
+
+Logic:
+- Calculate evenly spaced start times: multiply booth index by 30 minutes
+- Check if visitor group names are palindromes (ignore case/spaces) for priority tokens
+- Verify volunteer codes are anagrams of the target word
+- Build schedule entries by concatenating booth names with group names
+
+Parameters:
+- boothNames (String[]): Array of health booth names
+- volunteerCodes (String[]): Array of volunteer identification codes
+- visitorGroups (String[]): Array of visitor group names
+- targetWord (String): Word to verify volunteer codes against
+
+Returns: 2D string array with schedule information. Format: [["StartTime: 0", "Priority: true/false", "Volunteer: valid/invalid", "Schedule: BoothName-GroupName"], ...]
+
 ### 10 - scheduleSalon
 Write a function scheduleSalon that takes clientIds, treatments, durations, and availabilityGrid and returns a 2D string array representing the salon's appointment schedule.
 
