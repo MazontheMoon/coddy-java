@@ -4,6 +4,29 @@
 
 ## January
 
+### 12 - simulatePolyprismaticDisplay
+Create a function named simulatePolyprismaticDisplay that receives String[][] lightBeams and int iterations as its parameters.
+
+The function simulates a polyprismatic display at a science museum, manipulating light beams based on specific rules. Each element in the lightBeams array represents a colored light beam, and the function will simulate their behavior as they pass through various prisms.
+
+The simulation follows these rules:
+- In each iteration, light beams move one step diagonally down-right.
+- If a light beam reaches the edge of the array, it wraps around to the opposite side.
+- When two or more light beams intersect, they combine to create a new color based on this mixing rule:
+	- "R" + "G" = "Y" (Red + Green = Yellow)
+	- "R" + "B" = "P" (Red + Blue = Purple)
+	- "G" + "B" = "C" (Green + Blue = Cyan)
+- Any other combination results in "W" (White)
+- Every even-numbered iteration (0, 2, 4, ...), the entire display is reversed horizontally to simulate reflection.
+
+Parameters:
+- lightBeams (String[][]): A 2D array representing the initial light beam configuration. Each element is a string representing a color ("R", "G", "B", "Y", "P", "C", or "W").
+- iterations (int): The number of iterations to simulate. It will always be a positive integer.
+
+The function returns a String[][] representing the final state of the light beams after the specified number of iterations.
+
+Note: Ensure your implementation handles all edge cases, including wrapping around both horizontally and vertically. The size of the input array can vary, but it will always be a rectangle (all rows have the same length).
+
 ### 11  - planHealthFairSchedule
 Write a function planHealthFairSchedule that takes boothNames, volunteerCodes, visitorGroups, and targetWord and returns a formatted schedule matrix.
 
