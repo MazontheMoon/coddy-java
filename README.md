@@ -4,6 +4,38 @@
 
 ## January
 
+### 13 - parkWalkSimulator
+Create a function named parkWalkSimulator that receives int numTrees, int walkDuration, boolean isWeekend, String[] observations, and int energyLevel as its parameters.
+
+The function simulates a peaceful walk through a lush park on a quiet afternoon, generating a description based on the input parameters. Your task is to implement this function using advanced control flow, string formatting, and logical operators.
+
+The function should return a formatted string that describes the walk, incorporating all the input parameters. The description should include:
+- A greeting that varies based on whether it's a weekend or not.
+- A summary of the trees encountered, using string formatting to describe their characteristics.
+- A description of the observations made during the walk, using control flow to handle different numbers of observations.
+- A conclusion that varies based on the walk duration and energy level.
+
+Parameters:
+- numTrees (int): The number of trees encountered during the walk (1 to 10).
+- walkDuration (int): The duration of the walk in minutes (15 to 120).
+isWeekend (boolean): Whether the walk takes place on a weekend or not.
+- observations (String[]): An array of strings representing things observed during the walk (e.g., "squirrel", "bench", "fountain").
+- energyLevel (int): The walker's energy level (1 to 10).
+
+The function returns a string containing the formatted description of the park walk.
+
+Requirements:
+- Use advanced control flow (break, continue) when iterating through observations.
+- Implement advanced string formatting to create detailed descriptions of trees and observations.
+- Use advanced logical operators to combine conditions for different outcomes.
+- Ensure that the description is coherent and flows naturally, incorporating all input parameters.
+- The greeting should change based on whether it's a weekend or not.
+- The tree description should vary based on the number of trees.
+- Handle cases where there are no observations or many observations differently.
+- The conclusion should reflect both the walk duration and the energy level of the walker.
+
+Note: Your implementation should be efficient and concise, fitting within the 20-49 lines of code range for the solution.
+
 ### 12 - simulatePolyprismaticDisplay
 Create a function named simulatePolyprismaticDisplay that receives String[][] lightBeams and int iterations as its parameters.
 
