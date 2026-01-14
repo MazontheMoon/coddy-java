@@ -4,6 +4,37 @@
 
 ## January
 
+### 14 - decodeTimelineMessage
+Create a function named decodeTimelineMessage that receives String input as its parameter.
+
+Your task is to decode a complex geometric shape description into a meaningful message about different decades of youth. The input string contains encoded information about various geometric shapes, their properties, and transformations. Each shape and its attributes represent a specific decade and events from that time period.
+
+To decode the message, follow these steps:
+- Parse the input string using regular expressions to extract information about different geometric shapes (triangles, circles, polygons) and their properties (coordinates, angles, radii).
+- Apply geometric transformations (rotations, translations, scaling) described in the input to modify the shapes and extract hidden information.
+- Perform mathematical operations on the geometric properties to decode letters, words, or phrases associated with each decade.
+- Use string manipulation techniques to assemble the decoded information into a coherent message about youth experiences in different decades.
+
+The decoding process should follow these rules:
+- Triangles represent the 1980s. The area of the triangle determines the first word of the decade's message.
+- Circles represent the 1990s. The circumference of the circle determines the second word of the decade's message.
+- Rectangles represent the 2000s. The perimeter of the rectangle determines the third word of the decade's message.
+- Polygons with more than 4 sides represent the 2010s. The number of sides determines the fourth word of the decade's message.
+
+To decode words from numeric values:
+- Round the calculated value (area, circumference, perimeter) to the nearest integer.
+- Take the last two digits of this integer.
+- Map these two digits to letters (00 = 'A', 01 = 'B', ..., 25 = 'Z').
+- If the number is greater than 25, subtract 26 repeatedly until it falls in the range 0-25.
+
+Parameters:
+- input (String): A string containing encoded geometric information. It will be in the format: "shape1:prop1,prop2;shape2:prop1,prop2;...". 
+For example: "triangle:0,0,3,0,0,4;circle:2,2,5;rectangle:0,0,4,3;polygon:1,1,2,2,3,3,4,4,5,5".
+
+The function returns a string containing the decoded timeline message, which should be a whimsical journey through several decades of youth, highlighting key events or experiences from each period.
+
+Example of the return string: "WILD NEON DIGITAL SOCIAL" (representing a word for each decade from the 1980s to the 2010s).
+
 ### 13 - parkWalkSimulator
 Create a function named parkWalkSimulator that receives int numTrees, int walkDuration, boolean isWeekend, String[] observations, and int energyLevel as its parameters.
 
