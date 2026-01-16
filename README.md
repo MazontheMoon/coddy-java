@@ -4,6 +4,41 @@
 
 ## January
 
+### 16 - formatLabInventory
+Write a function formatLabInventory that takes equipment and returns a formatted inventory string with equipment listed in reverse order.
+
+Each item should be numbered starting from 1 and formatted as "Item #: [equipment name]", with each item on a new line.
+
+Parameters:
+- equipment (String[]): Array of lab equipment names
+
+Returns: Formatted inventory string. 
+Format: Item 1: [last equipment] Item 2: [second to last equipment] Item 3: [third to last equipment]
+
+### 15 - analyzeBirdwatchingProtest
+Create a function named analyzeBirdwatchingProtest that receives String[] birdSpecies, int[] birdCounts, and String[] protestMessages as its parameters.
+
+The function simulates a birdwatching event disrupted by social unrest. It processes bird sightings and protest messages, updating bird counts and analyzing messages for hidden meanings.
+
+Implement the following operations:
+- Update the bird counts using advanced increment/decrement operators.
+- Check if any protest message is a palindrome (ignoring spaces and case).
+- Check if any pair of protest messages are anagrams (ignoring spaces and case).
+- Find the most frequently sighted bird species.
+
+Parameters:
+- birdSpecies (String[]): An array of bird species names.
+- birdCounts (int[]): An array representing the initial count of each bird species. The count at index i corresponds to the species at index i in birdSpecies.
+- protestMessages (String[]): An array of protest messages to analyze.
+
+The function returns a String array containing four elements:
+- A string representation of the updated bird counts, formatted as "species1:count1,species2:count2,..."
+- "Palindrome found" if any protest message is a palindrome, otherwise "No palindrome"
+- "Anagrams found" if any pair of protest messages are anagrams, otherwise "No anagrams"
+- The name of the most frequently sighted bird species
+
+Note: When checking for palindromes and anagrams, ignore spaces and treat uppercase and lowercase letters as the same.
+
 ### 14 - decodeTimelineMessage
 Create a function named decodeTimelineMessage that receives String input as its parameter.
 
