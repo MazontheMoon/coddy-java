@@ -4,6 +4,66 @@
 
 ## January
 
+### 18 - snowyShootingRange
+Create a function named snowyShootingRange that receives shooterName, targetDistance, windSpeed, windDirection, temperature, isSnowing, and shotCoordinates as its parameters.
+
+The function simulates a target shooting game at a snowy shooting range and returns a detailed analysis of the shooting session.
+
+To solve this challenge, you need to use advanced string concatenation, string manipulation, and logical operators. Here's a breakdown of what you need to do:
+
+Create a greeting using the shooter's name.
+- Describe the weather conditions based on the input parameters.
+- Calculate the accuracy of each shot. The target is a circle with a radius of 5 units, and the center is at (0, 0). The accuracy is determined by the distance of the shot from the center.
+- Determine an overall performance rating based on the average accuracy of the shots.
+- Generate suggestions for improvement based on the weather conditions and performance.
+- Combine all this information into a single, well-formatted string.
+
+Parameters:
+- shooterName (String): The name of the shooter.
+- targetDistance (int): The distance to the target in meters (1 to 1000).
+- windSpeed (int): The wind speed in km/h (0 to 100).
+- windDirection (String): The wind direction, either "left" or "right".
+- temperature (int): The temperature in Celsius (-30 to 40).
+- isSnowing (boolean): Indicates whether it's snowing (true) or not (false).
+- shotCoordinates (int[]): An array of 6 integers representing the x and y coordinates of 3 shots on the target (x1, y1, x2, y2, x3, y3). Each coordinate ranges from -5 to 5.
+
+The function returns a String containing a detailed analysis of the shooting session, including a greeting, weather description, shot accuracies, overall performance rating, and suggestions for improvement.
+
+Use the following guidelines for the performance rating:
+- Excellent: Average distance from center ≤ 1
+- Good: Average distance from center ≤ 2
+- Fair: Average distance from center ≤ 3
+- Poor: Average distance from center > 3
+
+Remember to format your output string nicely and use appropriate line breaks for readability.
+
+### 17 - twillFabricAndManageContracts
+Create a function named twillFabricAndManageContracts that receives fabricPattern, twillPattern, and contractLengths as its parameters.
+
+The function simulates a tailor shop's fabric twilling process and contract management system. It applies a twill pattern to a fabric and manages ongoing contracts.
+
+The function should perform the following tasks:
+- Apply the twill pattern to the fabric, modifying the 2D array.
+- Manage contracts by decrementing their lengths for each day of work.
+- Identify terminable contracts (those with 0 or fewer days left).
+- Generate a report of the modified fabric pattern and contract statuses.
+- Use advanced break and continue statements to handle special cases in the twilling process, such as skipping certain rows or columns based on specific conditions. Employ increment and decrement operators to navigate through array indices efficiently.
+
+Parameters:
+- fabricPattern (int[][]): A 2D array representing the initial fabric pattern, where each number represents a different color or thread type.
+- twillPattern (int[]): An array representing the twill pattern to be applied to the fabric.
+- contractLengths (int[]): An array representing the lengths of different contracts in days.
+
+The function returns a String array where each element represents a row of the modified fabric pattern, followed by the contract statuses.
+
+Example usage:
+int[][] fabricPattern = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+int[] twillPattern = {1, 2};
+int[] contractLengths = {5, 3, 0};
+String[] result = twillFabricAndManageContracts(fabricPattern, twillPattern, contractLengths);
+// Expected output:
+// ["2 3 4", "6 7 8", "8 9 1", "Contract 1: 4 days left", "Contract 2: 2 days left", "Contract 3: Terminable"]
+
 ### 16 - formatLabInventory
 Write a function formatLabInventory that takes equipment and returns a formatted inventory string with equipment listed in reverse order.
 
