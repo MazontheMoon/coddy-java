@@ -4,6 +4,26 @@
 
 ## January
 
+### 19 - sortSeashells
+Create a function named sortSeashells that receives seashells and sortingCriteria as its parameters.
+
+This function sorts a collection of seashells based on the specified criteria and organizes them into piles.
+
+Each seashell is represented by a string in the format "[size]-[color]", where size can be "small", "medium", or "large", and color can be any valid color name like "red", "blue", "green", etc.
+
+Implement the sortSeashells function to sort the seashells based on the provided sortingCriteria:
+- "size": Sort by size (small, medium, large).
+- "color": Sort by color.
+- "size-and-color": Sort by both size and color.
+
+After sorting, organize the seashells into piles. Each pile should contain seashells that match the sorting criteria. The function should return a 2D string array, where each sub-array represents a pile of sorted seashells.
+
+Parameters:
+- seashells (String[]): An array of strings representing the collected seashells in the format "[size]-[color]".
+- sortingCriteria (String): A string indicating the sorting criteria ("size", "color", or "size-and-color").
+
+The function returns a 2D String array (String[][]) representing the sorted piles of seashells. Each sub-array within the 2D array represents a pile, and the strings within each sub-array represent the seashells in that pile, maintaining the "[size]-[color]" format.
+
 ### 18 - snowyShootingRange
 Create a function named snowyShootingRange that receives shooterName, targetDistance, windSpeed, windDirection, temperature, isSnowing, and shotCoordinates as its parameters.
 
