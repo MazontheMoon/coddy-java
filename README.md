@@ -4,6 +4,32 @@
 
 ## January
 
+### 20 - findKaprekarNumbers
+Create a function named findKaprekarNumbers that receives start and end as its parameters.
+
+The function should find all Kaprekar numbers within the given range (inclusive) and return them along with their binary representations. A Kaprekar number is a positive integer with a special property: when squared and split into two parts, the sum of the parts equals the original number.
+
+For example, 45 is a Kaprekar number because 45² = 2025, and 20 + 25 = 45.
+
+Follow these steps to solve the challenge:
+- Iterate through the numbers from start to end (inclusive).
+- For each number, check if it's a Kaprekar number:
+	- Square the number.
+	- Convert the squared result to a string.
+	- Split the string into two parts. If the length is odd, the right part should have one more digit than the left part.
+	- Convert both parts back to integers and sum them.
+	- If the sum equals the original number, it's a Kaprekar number.
+- For each Kaprekar number found, convert it to its binary representation.
+- Store each Kaprekar number and its binary representation as a pair in the result array.
+
+Parameters:
+- start (int): The lower bound of the range to search for Kaprekar numbers (inclusive).
+- end (int): The upper bound of the range to search for Kaprekar numbers (inclusive).
+
+The function returns a 2D String array where each inner array contains two elements: the Kaprekar number in decimal format (as a String) and its binary representation (as a String).
+
+Imagine you are in a dimly lit Victorian parlor, where an ornate overdoor frame casts shadows on delicate lace doilies. Each Kaprekar number you find is like discovering a new intricate pattern in the lace, with the decimal representation forming the outer edge and the binary representation creating the inner design.
+
 ### 19 - sortSeashells
 Create a function named sortSeashells that receives seashells and sortingCriteria as its parameters.
 
