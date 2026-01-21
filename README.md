@@ -4,6 +4,24 @@
 
 ## January
 
+### 21 - Write a function organizeGarageSale that takes conditions, basePrices, and categories and returns a float array of total sales per category.
+
+The function processes garage sale items by applying pricing rules and calculating category totals.
+
+Logic:
+- Skip items with condition < 3 using continue
+- Apply pricing: +20% markup for "antique" category, 
+-10% discount for "shambles" category
+- Use nested loops to group items by category and calculate total sales per distinct category
+- Return totals in order of first appearance of each category
+
+Parameters:
+- conditions (int[]): Item condition scores (1-10 scale)
+- basePrices (float[]): Base prices for each item
+- categories (String[]): Category names for each item
+
+Returns: Float array of total sales per distinct category in order of first appearance. Format: [category1Total, category2Total, ...]
+
 ### 20 - findKaprekarNumbers
 Create a function named findKaprekarNumbers that receives start and end as its parameters.
 
