@@ -4,6 +4,32 @@
 
 ## January
 
+### 22 - reportMeteorActivity
+Create a function named reportMeteorActivity that receives initialCount and adjustments as its parameters.
+
+You are a pirate captain using an old handset phone to report strange meteoritic activity at sea. Your task is to create a function that simulates the reporting process, keeping track of meteor sightings and identifying special numbers during the count.
+
+Parameters:
+- initialCount (int): The initial number of meteors sighted (1 ≤ initialCount ≤ 100).
+- adjustments (int): The number of times you adjust the meteor count (0 ≤ adjustments ≤ 50).
+
+The function should perform the following steps:
+- Start with the initialCount of meteors.
+- For each adjustment:
+	- If the current count is even, increment the count by 1.
+	- If the current count is odd, decrement the count by 1.
+- After each adjustment, check if the current count is a special number:
+	7: Lucky number	
+	13: Unlucky number
+	21: Pirate's favorite number
+- Keep track of any special numbers encountered during the adjustments.
+
+The function returns a string in the following format:
+"Final count: [finalCount], Special numbers encountered: [specialNumbers]"
+Where [finalCount] is the final number of meteors after all adjustments, and [specialNumbers] is a comma-separated list of special numbers encountered (in the order they were encountered) or "None" if no special numbers were encountered.
+
+Note: Use the increment (++) and decrement (--) operators for adjusting the count.
+
 ### 21 - Write a function organizeGarageSale that takes conditions, basePrices, and categories and returns a float array of total sales per category.
 
 The function processes garage sale items by applying pricing rules and calculating category totals.
