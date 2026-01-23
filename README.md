@@ -4,6 +4,36 @@
 
 ## January
 
+### 23 - analyzePharyngoscopyData
+Create a function named analyzePharyngoscopyData that receives rawData, bitMask, and regionLabels as its parameters.
+
+You are a curious scientist working in a frontotemporal research lab, analyzing data from a pharyngoscopy procedure. Your task is to process the raw sensor data, extract relevant information, and provide analysis for different regions of the pharynx.
+
+The function should perform the following operations:
+- Use bit manipulation to extract relevant information from the raw sensor data using the provided bit mask.
+- Slice the processed data into segments corresponding to different regions of interest in the pharynx.
+- Calculate the average intensity and peak value for each region.
+- Count the number of anomalies (defined as values that are 50% higher than the average) in each region.
+- Return the analysis results for each region.
+
+Parameters:
+- rawData (int[]): An array of integers representing raw sensor data from the pharyngoscopy device. Each integer contains packed information that needs to be extracted using the bit mask.
+- bitMask (int): An integer representing the bit mask for extracting relevant information from the sensor data. The mask will have exactly 8 bits set to 1, and the rest set to 0.
+- regionLabels (String[]): An array of strings containing labels for different regions of interest in the pharynx. The number of labels will always match the number of regions to be analyzed.
+
+The function should return a 2D string array where each inner array contains the following information for a region:
+
+Region label
+Average intensity (rounded to 2 decimal places)
+Peak value
+Number of anomalies
+
+Note:
+The number of data points for each region is always equal to rawData.length / regionLabels.length.
+Use integer division when calculating the number of data points per region.
+When extracting data using the bit mask, right-shift the result by the number of trailing zeros in the bit mask to normalize the values.
+Ensure proper use of bit manipulation techniques, array slicing, and data structures to optimize your solution.
+
 ### 22 - reportMeteorActivity
 Create a function named reportMeteorActivity that receives initialCount and adjustments as its parameters.
 
