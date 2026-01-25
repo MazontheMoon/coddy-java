@@ -4,6 +4,73 @@
 
 ## January
 
+### 25 - marinadeMatrix
+Create a function named marinadeMatrix that receives int[][] ingredients and String[] specialIngredients as its parameters.
+
+As a cooking enthusiast experimenting with marinades, you've developed a unique system to process and encode your recipes. Your task is to implement this system using advanced 2D array manipulation, array reversal, and hashing techniques.
+
+The function should perform the following operations:
+- Reverse the order of each row in the ingredients matrix.
+- Apply a custom hashing function to each integer in the reversed rows.
+- Enhance the hash values of ingredients that match the specialIngredients.
+
+The custom hashing function is defined as: hashValue = (ingredientValue * 31 + 17) % 100
+
+For special ingredients, after applying the initial hash function, further modify the hash value: hashValue = (hashValue * 2) % 100
+
+Parameters:
+- ingredients (int[][]): A 2D array where each row represents a marinade recipe, and each column represents the quantity of a specific ingredient.
+- specialIngredients (String[]): An array of ingredient names that should receive special treatment in the hashing process. The index of each name in this array corresponds to its column index in the ingredients matrix.
+
+The function returns a 2D integer array where each row is the reversed and hashed version of the input row, with special ingredients receiving enhanced hash values.
+
+Constraints:
+1 ≤ ingredients.length ≤ 10
+1 ≤ ingredients[i].length ≤ 10
+0 ≤ ingredients[i][j] ≤ 100
+1 ≤ specialIngredients.length ≤ ingredients[0].length
+
+
+### 24 - compareAncientTexts
+Create a function named compareAncientTexts that receives fragment1, fragment2, and method as its parameters.
+
+As a linguistic researcher studying ancient texts in a cluttered library, you've developed an advanced system to compare text fragments. Your task is to implement this system using bit manipulation and advanced string comparison techniques.
+
+The function should determine if two given text fragments are similar enough to be considered part of the same ancient text, using one of three comparison methods:
+- Bit pattern similarity
+- Substring frequency analysis
+- Character set comparison
+
+Implement the following comparison methods:
+
+1. Bit pattern similarity (method 1):
+Convert each character in both fragments to its ASCII value.
+Use bitwise operations to compare the bit patterns of corresponding characters.
+Calculate a similarity score based on matching bits.
+
+2. Substring frequency analysis (method 2):
+Generate all substrings of length 3 from both fragments.
+Compare the frequency of these substrings in both fragments.
+Calculate a similarity score based on matching substring frequencies.
+
+3. Character set comparison (method 3):
+Create a bit vector for each fragment representing the presence or absence of each possible character.
+Use bitwise operations to compare these bit vectors.
+Calculate a similarity score based on the similarity of the character sets.
+For each method, if the calculated similarity score exceeds a predefined threshold of 0.7 (70% similarity), return true; otherwise, return false.
+
+Parameters:
+- fragment1 (String): The first text fragment to compare.
+- fragment2 (String): The second text fragment to compare.
+- method (int): An integer (1, 2, or 3) representing the comparison method to use.
+
+The function returns a boolean value: true if the fragments are considered similar enough, false otherwise.
+
+Constraints:
+- The input fragments will be non-empty strings consisting of lowercase letters and spaces only.
+- The length of each fragment will not exceed 1000 characters.
+- The method parameter will always be 1, 2, or 3.
+
 ### 23 - analyzePharyngoscopyData
 Create a function named analyzePharyngoscopyData that receives rawData, bitMask, and regionLabels as its parameters.
 
