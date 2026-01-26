@@ -4,6 +4,28 @@
 
 ## January
 
+### 26 - landDivisionOptimizer
+Create a function named landDivisionOptimizer that receives propertyMap, minArea, and aspectRatioRange as its parameters.
+
+This function aims to optimize land usage and taxation by dividing existing properties into smaller rectangular plots while adhering to specific geometric and ownership constraints.
+
+The government of Byteland has a 2D integer array called propertyMap representing the current land ownership, where each cell contains a unique owner ID. To optimize land usage and taxation, they need to divide the properties into smaller rectangular plots. However, there are certain constraints:
+
+Each plot should have an area greater than or equal to minArea.
+The aspect ratio (width/height) of each plot should fall within the range specified by aspectRatioRange.
+The plots should respect the original ownership boundaries, meaning that a plot cannot contain land owned by different owners.
+Implement the landDivisionOptimizer function that takes the propertyMap, minArea, and aspectRatioRange as input and returns a 2D integer array representing the new land division. Each cell in the output array should still contain the original owner ID, but the land should be divided into smaller rectangular plots satisfying the given constraints. If no valid division is possible, the function should return an empty array.
+
+Parameters:
+- propertyMap (int[][]): A 2D integer array representing the current land ownership. Each cell contains a unique owner ID.
+- minArea (int): An integer representing the minimum area allowed for a plot.
+- aspectRatioRange (float[]): An array of two floats, [minRatio, maxRatio], defining the acceptable range for the aspect ratio (width/height) of the plots.
+
+The function returns a 2D integer array representing the new land division. Each cell should still contain the original owner ID, but the land should be divided into smaller rectangular plots satisfying the given constraints. If no valid division is possible, an empty array should be returned.
+
+
+
+
 ### 25 - marinadeMatrix
 Create a function named marinadeMatrix that receives int[][] ingredients and String[] specialIngredients as its parameters.
 
