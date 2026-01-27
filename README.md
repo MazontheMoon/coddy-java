@@ -4,6 +4,23 @@
 
 ## January
 
+### 27 - diplomaticMission
+Create a function named diplomaticMission that receives tensions and resources as its parameters.
+
+The function simulates a diplomatic mission's resource management to reduce international tensions. Your task is to use the available resources efficiently to reduce tensions in as many countries as possible.
+
+The function should prioritize reducing tensions in countries with odd-numbered tension levels first, as these are considered more unstable. After addressing odd-numbered tensions, if there are still resources available, the function should reduce tensions in countries with even-numbered tension levels.
+
+Parameters:
+- tensions (int[]): An array representing tension levels in different countries.
+- resources (int): An integer representing available diplomatic resources.
+
+The function returns an integer array representing the modified tension levels after the diplomatic mission.
+
+Note:
+Each diplomatic resource can reduce the tension in a country by 1 point.
+Do not modify the original tensions array. Create and return a new array with the updated tensions.
+
 ### 26 - landDivisionOptimizer
 Create a function named landDivisionOptimizer that receives propertyMap, minArea, and aspectRatioRange as its parameters.
 
