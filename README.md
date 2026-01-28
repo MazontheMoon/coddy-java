@@ -4,6 +4,20 @@
 
 ## January
 
+### 28 - formatCleanupReport
+Write a function formatCleanupReport that takes zones and returns a formatted cleanup report string.
+
+The function processes cleanup zones by reversing the order of zones and calculating total debris for each zone.
+
+Parameters:
+- zones (int[][]): 2D array where each row represents a cleanup zone with debris counts
+
+Returns: Formatted string with zones in reverse order. 
+Format: 
+Zone 1: 15 items
+Zone 2: 8 items
+Zone 3: 12 items
+
 ### 27 - diplomaticMission
 Create a function named diplomaticMission that receives tensions and resources as its parameters.
 
