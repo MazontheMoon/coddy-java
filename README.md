@@ -4,6 +4,28 @@
 
 ## January
 
+### 29 - simulateParadeFormation
+Create a function named simulateParadeFormation that receives gridSize, initialPositions, transformationCount, and transformations as its parameters.
+
+The function simulates a complex parade formation using bitwise operations and geometric transformations on a 2D grid representing city streets.
+
+Each cell in the grid is represented by a 32-bit integer, where each bit represents a different type of marcher (e.g., bit 0 for flag bearer, bit 1 for musician, bit 2 for dancer, etc.). The function applies a series of transformations to create intricate parade patterns.
+
+Parameters:
+- gridSize (int): The size of the square grid (N x N) representing the city streets.
+- initialPositions (int[][]): A 2D array where each inner array contains three - - integers: [row, column, marchers]. The 'marchers' integer represents the types of marchers in that cell using bitwise encoding.
+- transformationCount (int): The number of transformations to apply.
+- transformations (String[]): An array of transformation commands to be applied sequentially.
+The function returns a 2D integer array representing the final positions of marchers on the grid after applying all transformations.
+
+Implement the following transformations:
+- "R90": Rotate the entire formation 90 degrees clockwise.
+- "FLIP_H": Flip the formation horizontally.
+- "FLIP_V": Flip the formation vertically.
+- "SHIFT_R n": Shift the entire formation n cells to the right (wrapping around).
+- "SHIFT_D n": Shift the entire formation n cells downward (wrapping around).
+Use bitwise operations for efficient manipulation of marcher types and implement geometric transformations using coordinate manipulations. Ensure that marchers don't overlap or move into invalid positions during transformations.
+
 ### 28 - formatCleanupReport
 Write a function formatCleanupReport that takes zones and returns a formatted cleanup report string.
 
