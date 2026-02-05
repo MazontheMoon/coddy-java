@@ -2,8 +2,148 @@
 
 # 2026
 
+## February
+
+### 5 - generateSunnyAfternoonSchedules
+Create a function named generateSunnyAfternoonSchedules that receives numActivities, timeSlots, activityNames, activityDurations, and maxActivities as its parameters.
+
+Your task is to generate all possible unique schedules for a sunny afternoon, combining various activities while respecting certain constraints. This challenge will test your skills in expert-level loops and combinatorics.
+
+The function should generate and return all possible unique schedules based on the given parameters. Each schedule is represented as an array of strings, where each string represents a time slot and contains either an activity name or "Free Time" if no activity is scheduled for that slot.
+
+Parameters:
+- numActivities (int): The number of available activities (1 ≤ numActivities ≤ 10).
+- timeSlots (int): The number of time slots in the afternoon (1 ≤ timeSlots ≤ 8).
+- activityNames (String[]): An array containing the names of the activities (length == numActivities).
+- activityDurations (int[]): An array representing the duration of each activity in time slots (length == numActivities).
+- maxActivities (int): The maximum number of activities that can be scheduled (1 ≤ maxActivities ≤ timeSlots).
+
+The function returns a 2D String array representing all possible unique schedules.
+
+Constraints and considerations:
+- Activities can have different durations, and longer activities may span multiple time slots.
+- The same activity cannot be scheduled more than once in a single schedule.
+- There may be free time slots between activities or at the beginning/end of the schedule.
+- The total duration of scheduled activities should not exceed the total number of time slots.
+- The number of activities in a schedule should not exceed the maxActivities parameter.
+- Handle edge cases, such as when it's impossible to create a valid schedule with the given parameters.
+
+Implementation requirements:
+- Use recursive techniques and expert-level loop constructs (e.g., nested loops, loop control statements) to generate all possible combinations of activities.
+- Apply combinatorial concepts to ensure that all valid schedules are generated without duplicates.
+- Optimize your solution to handle the maximum input sizes efficiently.
+
+This challenge will test your ability to work with complex data structures, implement advanced looping and recursive techniques, and apply combinatorial concepts to solve a real-world-inspired problem. The theme of "exploring elsewheres on a sunny afternoon" is incorporated through the scheduling of various activities during an afternoon timeframe.
+
+### 4 - organizeWinterActivities
+Write a function organizeWinterActivities that takes familyMembers, activities and returns a formatted seating chart string.
+
+The function organizes snowbird relatives into winter activity groups, applying strategic sorting and name reversing for optimal family reunion coordination.
+
+Logic:
+- Group family members by their preferred activities
+- Sort activities by popularity (most participants first)
+- Within each activity group, reverse the order of member names
+- Format each line as "Activity: [Member3, Member2, Member1] (X guests)"
+
+Parameters:
+- familyMembers (String[]): Array of family member names
+- activities (String[]): Array of preferred activities (same length as familyMembers)
+
+Returns: Formatted seating chart string. Format: Ice Skating: [Bob, Alice] (2 guests) Sledding: [Charlie] (1 guest)
+
+
+### 3 - countSpecialPatterns
+Create a function named countSpecialPatterns that receives int[][] garden, int hour, and int targetSum as its parameters.
+
+You are a curious traveler exploring a unique botanical garden from the top of an old clock tower. The garden is represented by a 2D array, where each element represents a special type of flower. Your task is to count specific patterns of flowers visible from different angles of the clock face.
+
+A special pattern is defined as a sequence of adjacent numbers in the garden layout that meets the following criteria:
+- The sequence can be horizontal, vertical, or diagonal.
+- The sum of the numbers in the sequence must equal the target sum.
+- The sequence must start with a prime number and end with a Fibonacci number.
+- The viewing angle is determined by the hour on the clock face:
+	12 o'clock: top to bottom
+	3 o'clock: left to right
+	6 o'clock: bottom to top
+	9 o'clock: right to left
+	Other hours: diagonal views (e.g., 1 o'clock is top-left to bottom-right)
+
+Implement the following helper functions to assist in solving the challenge:
+- boolean isPrime(int n): Returns true if the number is prime, false otherwise.
+- boolean isFibonacci(int n): Returns true if the number is a Fibonacci number, false otherwise.
+
+Parameters:
+- garden (int[][]): A 2D array representing the botanical garden layout.
+- hour (int): An integer representing the hour on the clock face (1-12) from which you are viewing the garden.
+- targetSum (int): An integer representing the target sum for the special number pattern.
+
+The function returns an integer representing the count of special number patterns visible from the given viewpoint.
+
+Use advanced array manipulation techniques to traverse the garden layout based on the viewing angle. Implement efficient control flow using break and continue statements for pattern searching.
+
+Note: You may assume that the garden is square (NxN) and that N is at least 2.
+
+### 2 - simulateDasylirionGrowth
+Create a function named simulateDasylirionGrowth that receives initialHeight, days, dailyGrowth, and waterSupply as its parameters.
+
+The function simulates the growth of a Dasylirion plant observed by a night owl near a spring. It should use a loop to simulate the plant's growth over a specified number of days, considering the daily growth rate and water consumption.
+
+Follow these steps to implement the function:
+- Use a loop to iterate through each day of the simulation.
+- Increment the plant's height by the daily growth rate (converting millimeters to centimeters).
+- Decrease the water supply by 50 milliliters per day (the plant's water consumption).
+- If the water supply reaches 0, stop the plant's growth for the remaining days.
+- Use basic increment and decrement operators to update the plant's height and water supply.
+
+Parameters:
+- initialHeight (int): The initial height of the Dasylirion plant in centimeters.
+- days (int): The number of days to simulate the growth.
+- dailyGrowth (int): The daily growth of the plant in millimeters.
+- waterSupply (int): The initial water supply from the spring in milliliters.
+
+The function returns a string message with the following information:
+- The final height of the plant in centimeters (rounded to 2 decimal places)
+- The remaining water supply in milliliters
+- A message from the owl's perspective about the plant's growth
+Note: Ensure to use proper type casting when necessary, especially when converting millimeters to centimeters.
+
+### 1 - organizeItems
+Write a function organizeItems that takes rooms and returns a 2D integer array showing how many items in each room should be kept, donated, or discarded.
+
+Felicia needs to categorize items in each room of her apartment based on specific rules to decide their fate during her cleanup.
+
+Logic:
+- For each room, count items in three categories: keep (palindromes), donate (anagrams of earlier items in same room), discard (everything else)
+- Check each item name - if it reads the same forwards and backwards, it goes to "keep"
+- If an item is an anagram of any previous item in the same room, it goes to "donate"
+- All remaining items go to "discard"
+- Process items in the order they appear in each room
+
+Parameters:
+- rooms (String[][]): 2D array where each row represents a room and contains item names
+
+Returns: 2D integer array where each row contains [keep_count, donate_count, discard_count] for the corresponding room. Format: [[2, 1, 3], [0, 2, 1]]
+
 ## January
 
+### 31 - greetComicFans
+Create a function named greetComicFans that receives visitorNames and isSpecialEvent as its parameters.
+
+Rodney, the friendly greeter at the local comic book store, needs your help to welcome visitors. Your task is to create a function that generates personalized greetings for each visitor based on their name and whether it's a special event day.
+
+Parameters:
+- visitorNames (String[]): An array of visitor names.
+isSpecialEvent (boolean): A flag indicating whether it's a special event day.
+The function should return a single String containing all the greetings, with each greeting on a new line. 
+
+Follow these rules to create the greetings:
+- If it's a special event day, add "Welcome to our special event!" at the beginning of each greeting.
+- If the visitor's name starts with a vowel (a, e, i, o, u, case insensitive), use the format: "Oh, hi there, [name]!"
+- If the visitor's name ends with 'y' or 'Y', use the format: "Hey, [name], my name-twin!"
+- For all other names, use the format: "Welcome, [name], to the comic book paradise!"
+
+Remember to handle each case correctly and combine all greetings into a single String, separated by newline characters.
 ### 30 - updateSketchProgress
 Create a function named updateSketchProgress that receives currentSketch, artistEnergy, and isDarkening as its parameters.
 
