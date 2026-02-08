@@ -4,7 +4,14 @@
 
 ## February
 
-### 5 - generateSunnyAfternoonSchedules
+### 7 - Weather Station
+Create a program that helps weather station volunteers analyze their park's flood risk map. You'll receive a grid where some cells represent flood-prone areas (marked with '1'), and you need to identify all connected flood regions using a flood fill algorithm - cells are connected horizontally or vertically, not diagonally.
+
+Additionally, the program should format volunteer names to title case for the station's display board, and calculate the Nth ugly number (numbers whose only prime factors are 2, 3, or 5) which the volunteers use to schedule recurring maintenance tasks.
+
+Read the grid dimensions, the flood map, a list of volunteer names, and the value N. Print the number of separate flood regions found, each volunteer's name in title case (one per line), and finally the Nth ugly number.
+
+### 5/6 - generateSunnyAfternoonSchedules
 Create a function named generateSunnyAfternoonSchedules that receives numActivities, timeSlots, activityNames, activityDurations, and maxActivities as its parameters.
 
 Your task is to generate all possible unique schedules for a sunny afternoon, combining various activities while respecting certain constraints. This challenge will test your skills in expert-level loops and combinatorics.
