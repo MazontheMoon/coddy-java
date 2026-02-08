@@ -4,6 +4,27 @@
 
 ## February
 
+### 8 - analyzeDonatianPatterns
+Create a function named analyzeDonatianPatterns that receives donations as its parameter.
+
+Imagine you are a rabbi contemplating economic policies during a warm summer day at the synagogue. You decide to analyze the donation patterns of your congregation to gain insights into economic trends. Your task is to process the donation data and provide a summary of your findings.
+
+Parameters:
+- donations (int[][]): A 2D array representing donation amounts from different members over several weeks. Each row represents a member, and each column represents a week.
+
+The function should perform the following operations:
+- Reverse the order of donations for each member (reverse each row of the 2D array).
+- Calculate the average donation for each week (average of each column).
+- Find the week with the highest total donations.
+
+The function returns a string that summarizes the findings in the following format:
+"Highest donation week: [week number], Average donations: [comma-separated list of averages]"
+
+Constraints:
+- The number of members (rows) and weeks (columns) will be between 1 and 10.
+- All donation amounts will be non-negative integers less than or equal to 1000.
+Note: Week numbers start from 1, not 0.
+
 ### 7 - Weather Station
 Create a program that helps weather station volunteers analyze their park's flood risk map. You'll receive a grid where some cells represent flood-prone areas (marked with '1'), and you need to identify all connected flood regions using a flood fill algorithm - cells are connected horizontally or vertically, not diagonally.
 
