@@ -4,6 +4,33 @@
 
 ## February
 
+### 9 - optimizeHarvest
+Create a function named optimizeHarvest that receives farmLayout, growthStages, weatherForecasts, marketPrices, and workers as its parameters.
+
+Your task is to develop an optimal harvesting strategy for a farm during the harvest season, maximizing profit while considering various factors such as crop types, growth stages, weather conditions, market prices, and available workers.
+
+To solve this challenge, you need to:
+- Parse the farm layout string to create a 2D array representation of the farm.
+- Analyze growth stages and weather forecasts to predict crop readiness.
+- Use game theory concepts to determine the best time to harvest each crop based on market prices and potential competition.
+- Optimize worker allocation for maximum efficiency.
+- Generate a day-by-day strategy for harvesting, considering all factors.
+
+Parameters:
+- farmLayout (String): A string representing the farm layout, where each character represents a different crop type (e.g., "WWCCTT" for a 2x3 farm with Wheat, Corn, and Tomatoes).
+- growthStages (int[]): An integer array representing the growth stages of each crop (0-100), in the same order as the farmLayout.
+- weatherForecasts (String[]): A string array representing weather forecasts for the next few days (e.g., ["Sunny", "Rainy", "Cloudy"]).
+- marketPrices (int[]): An integer array representing market prices for each crop type, in the order they appear in the farmLayout.
+- workers (int): An integer representing the number of workers available for harvesting.
+
+The function returns a String array representing the optimal harvesting strategy for each day of the harvest season. Each element in the array should be a string describing the actions for that day (e.g., "Harvest Wheat at (0,0), (0,1); Assign 2 workers to Corn at (1,0)").
+
+Constraints:
+- The farm layout will always be a rectangle, with dimensions derived from the length of the farmLayout string.
+- The number of elements in growthStages will match the length of farmLayout.
+- The number of unique crop types in farmLayout will match the length of marketPrices.
+- The length of weatherForecasts will be between 1 and 7, inclusive.
+- The number of workers will be between 1 and 10, inclusive.
 ### 8 - analyzeDonatianPatterns
 Create a function named analyzeDonatianPatterns that receives donations as its parameter.
 
