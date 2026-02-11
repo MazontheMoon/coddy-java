@@ -4,6 +4,16 @@
 
 ## February
 
+### 11 - tourGuideRatingValidator
+Create a program that helps filter and organize tour guide ratings. Read a list of attraction ratings, check if their sum is divisible by 5 (meaning they're verified), then reorganize the list by moving all zero ratings to the beginning while keeping other ratings in order. Finally, extract a preview snippet from an attraction name using two character positions.
+
+Your program should output whether the ratings are verified, the reorganized rating list, and the extracted preview text.
+
+### 10 - valentinesEventRegistrationAnalysis
+Create a program that analyzes guest registration priority scores for your Valentine's Day event. You'll receive a list of priority scores and need to check three things: whether they're sorted in descending order, find the position of a specific score (or -1 if not found), and determine if the scores form a geometric sequence where each number is the previous one multiplied by a constant ratio.
+
+Print three results on separate lines: true/false for descending order, the index (or -1), and true/false for geometric sequence.
+
 ### 9 - optimizeHarvest
 Create a function named optimizeHarvest that receives farmLayout, growthStages, weatherForecasts, marketPrices, and workers as its parameters.
 
