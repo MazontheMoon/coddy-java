@@ -4,6 +4,47 @@
 
 ## February
 
+### 12 - classifySnake
+Create a function named classifySnake that receives length, pattern, colorRGB, venomPotency, heatSignature, behaviorTraits, scaleCount, and habitatPreference as its parameters.
+
+The function simulates a complex snake species classification system based on various physical and behavioral attributes observed in a dry forest environment. It determines the snake's species, rarity, danger level, and conservation status.
+
+To classify the snake, you need to implement the following steps:
+- Calculate a unique identifier for the snake using its physical attributes.
+- Determine the species based on the unique identifier using nested conditional statements.
+- Calculate a rarity score using exponential functions and logarithms.
+- Assess the danger level based on venom potency and other factors.
+
+Determine the conservation status based on rarity and habitat preference.
+Use the following formulas and rules for your calculations:
+- Unique Identifier: (length * scaleCount) + (colorRGB[0] * 0.3 + colorRGB[1] * 0.59 + colorRGB[2] * 0.11)
+- Rarity Score: 100 * (1 - Math.exp(-uniqueIdentifier / 1000))
+- Danger Level: Math.round(venomPotency * 10 + heatSignature / 10)
+- Conservation Status:
+	- If rarity score > 90: "Critically Endangered"
+	- If rarity score > 70: "Endangered"
+	- If rarity score > 50: "Vulnerable"
+	- If rarity score > 30: "Near Threatened"
+	- Otherwise: "Least Concern"
+
+For species determination, use the following rules based on the unique identifier:
+	- If uniqueIdentifier < 500: "Common Garter Snake"
+	- If uniqueIdentifier < 1000: "Eastern Ratsnake"
+	- If uniqueIdentifier < 1500: "Timber Rattlesnake"
+	- If uniqueIdentifier < 2000: "Copperhead"
+	- If uniqueIdentifier >= 2000: "Eastern Coral Snake"
+
+Parameters:
+- length (float): The length of the snake in meters.
+- pattern (String): A description of the snake's skin pattern (e.g., "striped", "spotted", "solid").
+- colorRGB (int[]): An array of 3 integers representing the primary color of the snake in RGB format.
+- venomPotency (float): A value between 0 and 1 representing the potency of the snake's venom.
+- heatSignature (float): The snake's body temperature in Celsius.
+- behaviorTraits (String[]): An array of observed behavioral traits.
+- scaleCount (int): The number of scales on the snake's body.
+- habitatPreference (String): The preferred microhabitat within the dry forest.
+
+The function returns a String array containing the following information in order: species name, rarity score (as a percentage), danger level (on a scale of 1 to 10), and conservation status.
 ### 11 - tourGuideRatingValidator
 Create a program that helps filter and organize tour guide ratings. Read a list of attraction ratings, check if their sum is divisible by 5 (meaning they're verified), then reorganize the list by moving all zero ratings to the beginning while keeping other ratings in order. Finally, extract a preview snippet from an attraction name using two character positions.
 
