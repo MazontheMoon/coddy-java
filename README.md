@@ -4,6 +4,80 @@
 
 ## February
 
+### 15 - shopHelper
+Write a function shopHelper that takes a task type and corresponding inputs to help manage your botanical garden gift shop.
+
+The function handles three different tasks:
+- "unique_labels" - Given a string of space-separated product labels (like "Millettia carnauba Millettia prunifera"), return a string of words that appear exactly once, in order of first appearance.
+- "popularity_digits" - Given three integers (base, exponent, k), calculate base^exponent and return the first k digits as an integer. For example, if 2^10 = 1024 and k=2, return 10.
+- "calorie_needs" - Given weight in kg (integer) and activity level ("low", "medium", or "high"), return daily calorie needs as an integer. Use: weight × 24 for low, weight × 30 for medium, weight × 35 for high.
+Your function receives the task type as the first parameter, followed by the specific inputs for that task.
+
+### 14 - arcticExpedition
+Create a function named arcticExpedition that receives teamMembers, temperatures, and days as its parameters.
+
+Your task is to simulate a treacherous journey across the Arctic, incorporating advanced string formatting, array slicing, and conditional statements. The function should return a formatted string that tells the story of the expedition, including who survived, who didn't make it, and the challenges faced due to temperature changes.
+
+Here's how the expedition simulation works:
+- Each day, the temperature affects the team's survival.
+- If the temperature drops by more than 10 degrees from one day to the next, a team member doesn't survive.
+- If the temperature stays below -25 for two consecutive days, another team member doesn't survive.
+
+Your function should generate a narrative of the expedition, including:
+- The starting team members
+- Daily temperature reports
+- Who survived each day's challenges
+- A final report of survivors and those who didn't make it
+
+Parameters:
+- teamMembers (String): A string of names separated by commas (e.g., "John,Sarah,Mike,Emily").
+- temperatures (int[]): An integer array representing daily temperatures (e.g., [-20, -15, -25, -10, -30]).
+- days (int): An integer representing the number of days for the expedition (1 to 10).
+
+The function returns a String representing the narrative of the Arctic expedition.
+Note: To maintain consistency in the challenge, instead of using random selection for team member elimination, always remove the first team member in the current list when conditions for elimination are met.
+
+Here's a step-by-step approach to solve this challenge:
+- Split the teamMembers string into an array of names.
+- Use array slicing to get the temperatures for the specified number of days.
+- Initialize a StringBuilder to build your narrative.
+- Add the starting team members to your narrative.
+- Iterate through each day of the expedition:
+- Add the day's temperature to your narrative.
+- Check if the temperature dropped by more than 10 degrees from the previous day.
+- Check if the temperature has been below -25 for two consecutive days.
+- If either condition is met, remove the first team member from the list and add this to your narrative.
+- Add the surviving team members for the day to your narrative.
+- After the loop, add a final report of survivors and those who didn't make it.
+- Return the complete narrative as a string.
+Remember to use appropriate string formatting methods to create a compelling and readable narrative. Your solution should demonstrate advanced use of string manipulation, careful array handling, and complex conditional logic.
+
+### 13 - reverseDebateArguments
+Create a function named reverseDebateArguments that receives debateTopics as its parameter.
+
+The function simulates a debate team's practice session by reversing arguments for each topic. This exercise helps debaters see arguments from different perspectives.
+
+Your task is to implement the function that takes a 2D array of strings representing debate topics and their arguments, and returns a new 2D array with the arguments reversed for each topic (excluding the topic itself).
+
+Parameters:
+- debateTopics (String[][]): A 2D array where each inner array represents a debate topic. The first element of each inner array is the topic itself, followed by its arguments.
+The function should return a new 2D string array with the same structure as the input, but with the arguments for each topic reversed (excluding the topic itself).
+
+Follow these steps to implement the function:
+- Create a new 2D array with the same dimensions as the input array.
+- Iterate through each topic (outer array) in the input.
+- For each topic:
+	- Copy the topic (first element) to the new array.
+	- Reverse the order of arguments (elements after the first) and place them in the new array.
+	- Return the new 2D array with reversed arguments.
+
+Constraints:
+- The input array will always have at least one topic with at least one argument.
+ - Each topic will have at least one argument.
+- The maximum number of topics is 10.
+- The maximum number of arguments per topic is 10.
+Remember to use nested loops to iterate through the 2D array and implement a basic reversing algorithm for the arguments of each topic.
+
 ### 12 - classifySnake
 Create a function named classifySnake that receives length, pattern, colorRGB, venomPotency, heatSignature, behaviorTraits, scaleCount, and habitatPreference as its parameters.
 
