@@ -4,6 +4,15 @@
 
 ## February
 
+### 17 - botanicalGarden
+Create a program that manages three aspects of a community botanical garden. Your program will receive a command type followed by relevant data, then perform the requested operation.
+
+For LEADERBOARD: Track volunteer scores by processing a series of actions that add points to volunteers. Display the top scorers sorted by points (highest first), with ties broken alphabetically by name.
+
+For PLANT_SEQUENCE: Given a row of plants with different heights, find the length of the longest subsequence where heights are in increasing order. The plants don't need to be consecutive—you're finding the longest possible chain.
+
+For ROTATE_SCHEDULE: Shift a plant care schedule by moving each plant one position to the right, with the last plant wrapping to the front.
+
 ### 16 - distributeAid
 Create a function named distributeAid that receives needs, inventory, and maxDistance as its parameters.
 
