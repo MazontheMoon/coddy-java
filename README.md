@@ -4,6 +4,18 @@
 
 ## February
 
+### 18 - birthdayParty
+Create a program that helps plan a 97th birthday party by solving three tasks: calculate how many ways to paint a fence where no three adjacent posts can be the same color, check if guest table numbers form a consecutive sequence, and generate a magic square arrangement for the birthday candles.
+
+For the fence painting, you'll receive the number of posts and available colors. Remember that two consecutive posts can be the same color, but three in a row cannot.
+
+For the table check, determine if the numbers form a consecutive sequence when sorted (like 5, 6, 7, 8).
+
+For the magic square (always odd-sized), arrange numbers so all rows, columns, and diagonals sum to the same value.
+
+Print the fence painting count, whether tables are "Consecutive" or "Not consecutive", and then the magic square grid.
+
+
 ### 17 - botanicalGarden
 Create a program that manages three aspects of a community botanical garden. Your program will receive a command type followed by relevant data, then perform the requested operation.
 
