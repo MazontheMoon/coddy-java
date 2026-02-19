@@ -4,6 +4,24 @@
 
 ## February
 
+### 19 - allocateGardenPlots
+Write a function allocateGardenPlots that takes plantNames, growthHeights and returns an integer array of plot sizes.
+
+The function processes plant data to calculate proportional plot sizes, skipping invalid entries and applying special bonuses for palindromic names and perfect number heights.
+
+Logic:
+- Skip entries where plant name is empty or null (use continue)
+- Stop processing if growth height is negative (use break)
+- Calculate base plot size as growth height × 2
+- Add 10 bonus if plant name is a palindrome (case-insensitive)
+- Add 20 bonus if growth height is a perfect number
+
+Parameters:
+- plantNames (String[]): Array of plant names to process
+- growthHeights (int[]): Array of expected - growth heights in inches
+
+Returns: Integer array of calculated plot sizes. Format: [plotSize1, plotSize2, ...]
+
 ### 18 - birthdayParty
 Create a program that helps plan a 97th birthday party by solving three tasks: calculate how many ways to paint a fence where no three adjacent posts can be the same color, check if guest table numbers form a consecutive sequence, and generate a magic square arrangement for the birthday candles.
 
