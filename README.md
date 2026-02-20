@@ -4,6 +4,11 @@
 
 ## February
 
+### 20 - Festival Potluck Station Manager
+Create a program that assigns serving stations to potluck dishes at the community festival. Read a comma-separated list of dish names, then calculate a simple hash for each dish by summing all its character ASCII values.
+
+Print each dish with its hash value, then calculate the festival capacity by adding the hash values of the first and last dishes.
+
 ### 19 - allocateGardenPlots
 Write a function allocateGardenPlots that takes plantNames, growthHeights and returns an integer array of plot sizes.
 
