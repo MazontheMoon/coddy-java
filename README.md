@@ -4,6 +4,32 @@
 
 ## February
 
+### 22 - Fossil Exhibit Formatter
+Create a function named formatFossilExhibit that receives name, age, discoveredBy, and isComplete as its parameters.
+
+The function should format the information about a fossil exhibit in a natural history museum, incorporating details about its completeness, name, age, and discoverer.
+
+Use string formatting to compile the fossil information into a user-friendly string. Apply logical operators to determine if the fossil should be noted as a complete specimen and if it's considered ancient.
+
+Parameters:
+- name (String): The name of the fossil.
+- age (int): The age of the fossil in millions of years.
+- discoveredBy (String): The name of the paleontologist who discovered the fossil.
+- isComplete (boolean): A boolean indicating whether the fossil is a complete specimen.
+The function returns a formatted string providing the fossil details.
+
+Format the string as follows:
+- Start with either "Complete specimen:" or "Partial specimen:" based on the isComplete parameter.
+- Include the fossil's name.
+- If the fossil is older than 100 million years, add "Ancient" before the age; otherwise, just state the age.
+- Add "million years old" after the age.
+- Include the discoverer's name at the end.
+
+### 21 - Community Bulletin Board
+Create a program that manages a community bulletin board where you can search for announcements and post urgent messages that overwrite existing content.
+
+Your program reads an initial board (a string), then processes commands: FIND keyword should output all starting positions where the keyword appears on the board (including overlapping matches), and POST position message should overwrite the board starting at that position with the new message. After all commands, print the final board stat
+
 ### 20 - Festival Potluck Station Manager
 Create a program that assigns serving stations to potluck dishes at the community festival. Read a comma-separated list of dish names, then calculate a simple hash for each dish by summing all its character ASCII values.
 
