@@ -4,6 +4,10 @@
 
 ## February
 
+### 23 - Museum Catalog Correction
+
+Create a program that helps update museum records after a dating equipment calibration error was discovered. You'll receive artifact ages and a calibration factor - multiply each age by the factor and print the corrected ages (rounded to nearest integers). Then, read an old catalog code, a new catalog code, and a description text. Replace the first occurrence of the old code with the new code in the description and print the updated text.
+
 ### 22 - Fossil Exhibit Formatter
 Create a function named formatFossilExhibit that receives name, age, discoveredBy, and isComplete as its parameters.
 
