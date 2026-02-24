@@ -4,6 +4,35 @@
 
 ## February
 
+### 24 Organize Guardstone Gathering
+
+Create a function named organizeGuardstoneGathering that receives participants, roles, and circles as its parameters.
+
+The function simulates a community gathering around an ancient guardstone, organizing participants based on their names and roles, and determining their positions in concentric circles around the guardstone.
+
+Follow these steps to solve the challenge:
+- Sort the participants based on their roles using a custom sorting order: elders first, then warriors, healers, and craftsmen. If a role is not one of these four, it should be placed at the end.
+- Create concentric circles around the guardstone, placing participants in each circle. The number of circles is determined by the circles parameter.
+- Within each circle, arrange participants based on the alphabetical order of their names.
+- Implement advanced string comparison to handle cases where names have special characters or diacritics. Consider using String.compareTo() method for this purpose.
+- Ensure that the number of participants in each circle decreases as you move outward from the guardstone. The innermost circle should have the most participants, and the outermost circle should have the least.
+
+Parameters:
+- participants (String[]): An array of participant names.
+- roles (String[]): An array of participant roles, corresponding to the participants array.
+- circles (int): The number of concentric circles around the guardstone.
+
+The function returns a 2D string array representing the organized positions of participants around the guardstone. Each inner array represents a circle, with the first array being the innermost circle and the last array being the outermost circle.
+
+Note: Ensure that your implementation handles cases where the number of participants is not evenly divisible by the number of circles. In such cases, place any extra participants in the inner circles.
+
+Constraints:
+1 ≤ participants.length ≤ 100
+participants.length == roles.length
+1 ≤ circles ≤ 10
+All names and roles are non-empty strings containing only printable ASCII characters.
+Names may contain special characters or diacritics.
+
 ### 23 - Museum Catalog Correction
 
 Create a program that helps update museum records after a dating equipment calibration error was discovered. You'll receive artifact ages and a calibration factor - multiply each age by the factor and print the corrected ages (rounded to nearest integers). Then, read an old catalog code, a new catalog code, and a description text. Replace the first occurrence of the old code with the new code in the description and print the updated text.
