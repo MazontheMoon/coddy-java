@@ -4,7 +4,15 @@
 
 ## February
 
-### 24 Organize Guardstone Gathering
+### 25 - Volunteer Badge Formatter
+
+Create a program that processes volunteer shift information for the community center. Read a volunteer's name, their assigned room number, and their ID number. 
+Clean the name by removing all punctuation, check if the room number is a valid power of 10 (1, 10, 100, 1000, or 10000), and format the ID with leading zeros to make it exactly 6 digits.
+
+Print the cleaned name, "Valid" or "Invalid" for the room, and the formatted ID on separate lines.
+
+
+### 24 - Organize Guardstone Gathering
 
 Create a function named organizeGuardstoneGathering that receives participants, roles, and circles as its parameters.
 
