@@ -4,6 +4,11 @@
 
 ## February
 
+### 26 - Organize the Hive Grid
+Write a function organizeHive that takes a partially filled 9×9 grid (representing hive compartment assignments) and solves it like a Sudoku puzzle. Empty cells are marked with 0, and you need to fill them so that each number 1-9 appears exactly once in every row, column, and 3×3 section.
+
+Return the completed grid. If the puzzle has no valid solution, return the original grid unchanged.
+
 ### 25 - Volunteer Badge Formatter
 
 Create a program that processes volunteer shift information for the community center. Read a volunteer's name, their assigned room number, and their ID number. 
