@@ -4,6 +4,30 @@
 
 ## February
 
+### 27 - Heart Rate Variability Simulation for Nervous Patient
+
+Create a function named calculateHeartRateVariability that receives baselineHeartRate, anxietyLevel, waitingTimeMinutes, and injectionMoment as its parameters.
+
+The function simulates a nervous patient's heart rate variability (HRV) during a doctor's visit for a flu shot, using expert mathematical operations and bit manipulation.
+
+Implement the following steps to calculate the HRV:
+- Encode the anxiety level and waiting time into a single integer using bitwise operations.
+- Use trigonometric functions (sin, cos, tan) to simulate natural heart rate fluctuations.
+- Apply the mathematical constant e to model the exponential increase in heart rate as the injection moment approaches.
+- Implement a custom algorithm using bitwise XOR and bit shifting to introduce subtle variations in the heart rate pattern.
+- Utilize the golden ratio (phi) to create a more natural rhythm in the heart rate changes.
+- Use logarithmic functions to model the gradual return to baseline after the injection.
+- Apply Euler's number and pi with bitwise operations to add complexity to the HRV pattern.
+- Create a deterministic pseudo-random number generator using bitwise operations and the inputs for unpredictable variations.
+
+Parameters:
+- baselineHeartRate (int): The patient's normal resting heart rate in beats per minute.
+- anxietyLevel (int): A value from 1 to 10 representing the patient's anxiety level.
+- waitingTimeMinutes (int): The time spent in the waiting room in minutes.
+- injectionMoment (int): The minute at which the flu shot is administered.
+
+The function returns an integer array representing the patient's heart rate variability over the course of the visit, with each element corresponding to the heart rate for each minute.
+
 ### 26 - Organize the Hive Grid
 Write a function organizeHive that takes a partially filled 9×9 grid (representing hive compartment assignments) and solves it like a Sudoku puzzle. Empty cells are marked with 0, and you need to fill them so that each number 1-9 appears exactly once in every row, column, and 3×3 section.
 
