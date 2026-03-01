@@ -2,7 +2,53 @@
 
 # 2026
 
+## March
+
+### 1 - Community Center Buffet Menu Filter
+
+Write a function createBuffetMenu that takes vegetarianDishes, nonVegetarianDishes, and allowed and returns a filtered buffet menu.
+
+The function merges the two dish arrays and filters out items where the corresponding allowed value is false.
+
+Parameters:
+- vegetarianDishes (String[]): Array of vegetarian dishes
+- nonVegetarianDishes (String[]): Array of non-vegetarian dishes
+- allowed (boolean[]): Array indicating which dishes are allowed (matches merged array length)
+
+Returns: String array containing only the allowed dishes from the merged menu. Format: ["dish1", "dish2", "dish3"]
+
 ## February
+
+### 28 - Personalized Yoga Schedule Generator
+
+Create a function named generateYogaSchedule that receives patientData, centerConstraints, and availableStyles as its parameters.
+
+Your task is to create a personalized yoga session schedule generator for a rehabilitation center. This function should optimize yoga routines based on patient parameters and center constraints.
+
+Parameters:
+- patientData (float[]): An array containing patient information in the following order:
+	- Age (int)
+	- Flexibility score (0.0 to 1.0)
+	- Strength score (0.0 to 1.0)
+	- Balance score (0.0 to 1.0)
+	- Respiratory capacity (percentage as decimal)
+- centerConstraints (int[]): An array containing center constraints in the following order:
+	- Number of days in rehabilitation program
+	- Maximum daily yoga session duration (in minutes)
+- availableStyles (String[]): An array of available yoga styles
+
+The function should return a 2D String array representing the personalized yoga schedule. Each inner array contains the daily yoga routine, with elements representing individual yoga poses or activities.
+
+Implement the following calculations and logic:
+- Calculate an overall health score using weighted averages of flexibility, strength, balance, and respiratory capacity.
+- Determine the optimal session duration for each day based on the patient's age, health score, and maximum allowed duration.
+- Calculate the number and intensity of poses for each day using exponential growth functions, considering the patient's progress over time.
+- Implement an algorithm to select appropriate yoga styles and poses based on the patient's scores and available styles.
+- Adjust the routine difficulty using logarithmic functions to ensure a challenging but safe progression.
+- Calculate rest periods between poses using inverse proportions of the patient's scores.
+- Use modular arithmetic to create variety in the routine while maintaining a consistent structure.
+- Implement a "recovery day" algorithm that adjusts the routine's intensity based on the cumulative difficulty of previous days.
+- Ensure your implementation makes extensive use of arithmetic operations, including working with fractions, decimals, percentages, exponents, and roots. Use complex conditional statements to create a cohesive and personalized yoga routine that adapts to the patient's needs and progress throughout the rehabilitation program.
 
 ### 27 - Heart Rate Variability Simulation for Nervous Patient
 
