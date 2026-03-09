@@ -4,6 +4,189 @@
 
 ## March
 
+### 9 - Detective's Dilemma: Cracking the Case with Sets and Arrays
+
+Create a function named solveCriminalCase that receives suspectsAndAssociates, crimeScenes, evidence, and alibis as its parameters.
+
+As a frustrated detective, you're tasked with analyzing complex case data using set theory and advanced array operations to identify the most likely suspects.
+
+Implement the following operations:
+- Create sets of suspects and their associates from the 2D array input.
+- Find intersections between suspects present at multiple crime scenes using set operations.
+- Analyze evidence and alibis using array operations (map, filter, reduce).
+- Generate power sets of evidence to consider all possible combinations.
+- Apply Venn diagram concepts to eliminate suspects based on alibis and evidence.
+- Calculate the cardinality of suspect sets to determine the most likely culprits.
+
+Parameters:
+- suspectsAndAssociates (String[][]): A 2D array where each sub-array contains a suspect's name followed by their known associates.
+- crimeScenes (String[]): An array of crime scene locations.
+- evidence (String[]): An array of evidence found at each crime scene, corresponding to the crimeScenes array.
+- alibis (String[]): An array of alibis provided by suspects, in the same order as they appear in suspectsAndAssociates.
+
+The function returns a String array containing the names of the most likely suspects, sorted alphabetically.
+
+### 8 - Springtime Nature Hike Analyzer
+Create a function named analyzeNatureHike that receives fieldNotes as its parameter.
+
+Your task is to analyze and process field notes from a springtime nature hike, extracting valuable information about the flora and fauna observed during the journey.
+
+The function should parse the input string, categorize observations, extract specific details, perform statistical analysis, and generate a formatted report summarizing the hike's findings.
+
+Parameters:
+- fieldNotes (String): A string containing multiple observations in a semi-structured format. Each observation is separated by a semicolon (;) and follows the pattern: "Category: Species, Count, Location".
+
+The function should perform the following operations:
+- Parse the input string to extract individual observations.
+- Categorize observations into different types (plants, birds, insects, mammals).
+- Extract specific details like species names, counts, and locations.
+- Perform statistical analysis on the observations (most common species per category, total count per category).
+- Generate a formatted report summarizing the hike's findings.
+
+The function returns a formatted string containing a summary report of the hike's findings. The report should include:
+- Total number of observations
+- Number of observations per category
+- Most common species per category
+- Total count of individuals per category
+- List of unique locations visited
+
+Example of the input format:
+"Plant: Oak, 3, Forest Edge; Bird: Robin, 2, Meadow; Insect: Butterfly, 5, Flower Field; Mammal: Squirrel, 1, Oak Tree; Plant: Daisy, 10, Meadow;"
+
+Note: Use appropriate regex patterns, string manipulation techniques, and array operations to process the data efficiently.
+
+### 7 - Analyze Rare Glyceria Plant Specimen
+Create a function named analyzeGlyceriaSpecimen that receives geneticSequence and markerLengths as its parameters.
+
+The function analyzes the genetic sequence of a rare Glyceria plant specimen to determine its rarity and identify unique genetic markers.
+
+Implement the following steps in your function:
+- Create a hash of the entire genetic sequence using a custom rolling hash function.
+- For each length in the markerLengths array:
+	- Generate all substrings of that length from the genetic sequence.
+	- Calculate a hash for each substring.
+	- Store unique hashes in a set.
+- Compare the number of unique substrings (hashes) for each length to the following thresholds to determine the rarity:
+	- Less than 10% unique: "Common"
+	- 10% to 30% unique: "Rare"
+	- 30% to 60% unique: "Very Rare"
+	- More than 60% unique: "Extremely Rare"
+- Identify the most frequent substring of each length as a characteristic marker for the specimen.
+- Generate a report string that includes:
+The overall rarity of the specimen
+The number of unique genetic markers found for each length
+The most frequent genetic marker for each length
+
+Parameters:
+- geneticSequence (String): A string representing the genetic sequence of the Glyceria plant specimen. It consists of uppercase letters A, C, G, and T, and has a length of up to 1000 characters.
+- markerLengths (int[]): An integer array representing the lengths of genetic markers to search for. Each element is between 1 and the length of the geneticSequence.
+
+The function returns a String containing the analysis report of the Glyceria specimen.
+
+### 6 - Morning Walk Simulation in a City Park
+Create a function named simulateParkWalk that receives int numSteps, String[] parkFeatures, and boolean isMisty as its parameters.
+
+The function simulates a morning walk through a city park, incorporating the theme of a misty morning with children playing and adults strolling. It should return a string that describes the walk through the park, incorporating the park features, the presence of children and adults, and the misty atmosphere.
+
+Implement the following logic in your function:
+- Simulate the walk step by step, for the number of steps provided.
+- At each step, select a park feature from the parkFeatures array using the step number as an index (wrap around if necessary).
+- Decide whether to encounter children, adults, or both at each step.
+- Add appropriate descriptions to the output string, taking into account the misty atmosphere if isMisty is true.
+- Use break or continue statements to control the flow of the walk based on certain conditions.
+- Use advanced string concatenation to build a complex string that describes the walk.
+- Employ advanced logical operators to combine multiple conditions and determine what happens at each step of the walk.
+
+Parameters:
+- numSteps (int): The number of steps to simulate in the park walk.
+- parkFeatures (String[]): An array of strings representing different features in the park (e.g., "bench", "playground", "pond", "statue").
+- isMisty (boolean): Indicates whether the morning is misty (true) or not (false).
+
+The function returns a string describing the simulated walk through the park.
+
+Constraints:
+- The solution should be between 20 and 49 lines of code.
+- Do not use any random number generation. Instead, use the step number to create deterministic but varying behavior.
+- Ensure that your string concatenation is efficient and your control flow is clear and purposeful.
+
+Hints:
+- Use the modulo operator (%) to wrap around the parkFeatures array index.
+- Consider using a StringBuilder for efficient string concatenation.
+- Think about how you can use logical operators to create interesting combinations of events in the park.
+
+### 5 - Newspaper Coded Messages
+Write a function createCodedMessages that takes headlines and returns a new 2D array where each headline is reversed letter by letter.
+
+The newspaper's puzzle editor needs to create coded messages by reversing all article headlines in each section for the weekly puzzle page.
+
+Parameters:
+- headlines (String[][]): 2D array where each row represents a newspaper section containing headlines
+
+Returns: 2D array with all headlines reversed. Format: [["reversed headline 1", "reversed headline 2"], ["reversed headline 3"]]
+
+### 4 - Neighborhood Watch Patrol Assignment
+Write a function processPatrolShift that takes patrolRoute, patrolId, shiftChange and returns a formatted patrol report string.
+
+The function processes neighborhood watch patrol assignments by updating patrol IDs based on shift changes and creating a report with reversed neighborhood codes.
+
+Logic:
+- Apply the shift change to the patrol ID using increment/decrement operators
+- Extract neighborhood codes from the patrol route (uppercase letters)
+- Reverse each neighborhood code
+- Concatenate the reversed codes with the updated patrol ID in the format shown below
+
+Parameters:
+- patrolRoute (String): Route containing neighborhood codes (uppercase letters) and other characters
+- patrolId (int): Current patrol officer ID number
+- shiftChange (int): Positive number to increment ID, negative to decrement
+
+Returns: Formatted patrol report string. Format: Patrol-[updatedId]: [reversedCode1][reversedCode2]...
+
+### 3 - Bird Habitat Analyzer
+
+Create a function named findLargestHabitat that receives String[][] lakeGrid and String targetSpecies as its parameters.
+
+The function analyzes bird sighting data recorded by scientists at a lakeside research station. It finds the largest contiguous area where a specific bird species has been observed.
+
+The lake is represented as a 2D grid, where each cell contains a string representing the bird species sighted in that location. The function should identify the largest connected area where the target bird species is present.
+
+Parameters:
+- lakeGrid (String[][]): A 2D array representing the lake area. Each element is a string denoting the bird species observed in that cell.
+- targetSpecies (String): The name of the bird species for which we want to find the largest habitat.
+- The function returns an integer representing the size (number of cells) of the largest contiguous area where the target bird species was observed.
+
+Important Notes:
+- Two cells are considered adjacent if they share a side (up, down, left, or right).
+- Diagonal cells are not considered adjacent.
+- The bird species names in the grid may be partial matches of the full species name. For example, if the target species is "Blue Jay", cells containing "Blue" or "Jay" should also be considered matches.
+- If the target species is not found in the grid, the function should return 0.
+- The grid may contain empty strings, which should be ignored in the habitat calculation.
+
+Example:
+String[][] lakeGrid = {
+    {"Blue Jay", "Robin", "Sparrow", "Blue"},
+    {"Jay", "Eagle", "Blue Jay", "Hawk"},
+    {"Robin", "Blue", "Sparrow", "Jay"},
+    {"Sparrow", "Hawk", "Eagle", "Robin"}
+};
+
+### 2 - Pizza Franchise Menu Creator
+Write a function createFranchiseMenu that takes basePizzas, gourmetToppings and returns a reversed menu array of all possible pizza combinations.
+
+Your pizza franchise needs to create a complete menu by combining every base pizza with every gourmet topping, then reverse the final menu for optimal display ordering.
+
+Logic:
+- Use nested loops to concatenate each gourmet topping to every base pizza (format: "basePizza + gourmetTopping")
+- Store all combinations in order
+- Reverse the entire combined menu array
+- Return the reversed menu
+
+Parameters:
+- basePizzas (String[]): Array of base pizza names
+- gourmetToppings (String[]): Array of gourmet toppings to add
+- Returns: String array of all pizza combinations in reversed order. 
+Format: ["Margherita + Truffle", "Margherita + Prosciutto", "Pepperoni + Truffle", "Pepperoni + Prosciutto"]
+
 ### 1 - Community Center Buffet Menu Filter
 
 Write a function createBuffetMenu that takes vegetarianDishes, nonVegetarianDishes, and allowed and returns a filtered buffet menu.
