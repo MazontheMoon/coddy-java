@@ -4,6 +4,52 @@
 
 ## March
 
+### 11 - Collaborative Nature Workbook Analysis
+
+Create a function named natureWorkbookCollaboration that receives studentNames, observations, observationTimes, and usedSpecialEquipment as its parameters.
+
+The function simulates a collaborative nature workbook for a group of students exploring the outdoors. It uses advanced hashing techniques, logical operators, and game theory to analyze and summarize the students' observations.
+
+Parameters:
+- studentNames (String[]): An array of student names.
+- observations (String[]): An array of nature observations made by each student, corresponding to the studentNames array.
+- observationTimes (int[]): An array representing the time (in minutes) each student spent observing, corresponding to the studentNames array.
+- usedSpecialEquipment (boolean[]): An array indicating whether each student used special equipment (like binoculars or magnifying glasses), corresponding to the studentNames array.
+
+The function returns a String containing a summary of the group's collaborative effort, including:
+
+The most common type of observation (using hashing for efficient counting)
+The student who made the most unique observations (using hashing and logical operators)
+
+A "collaboration score" calculated using game theory principles, rewarding both individual contributions and group synergy
+
+Implement the following in your solution:
+- Use a hash map to count observation types efficiently.
+- Implement logical operators to determine unique observations and analyze data.
+- Apply game theory concepts to calculate the collaboration score, considering observation time, equipment usage, and unique contributions.
+- Ensure your implementation is efficient and handles potential edge cases, such as empty arrays or tied results.
+
+
+### 10 - Bird Station Data Consolidation
+Write a function setupBirdStation that takes morningData, eveningData, goldenEyeCount, and eyecupStock and returns a single integer array.
+
+The function merges morning and evening bird sighting matrices, adjusts golden-eyed fly counts using increment operators, and concatenates the results with equipment inventory.
+
+Logic:
+- Merge the two 2D arrays by adding corresponding elements (morningData[i][j] + eveningData[i][j])
+- For each day (row), use pre-increment (++goldenEyeCount) before adding to the first column, then post-decrement (goldenEyeCount--) after processing each row
+- Flatten the merged 2D array into a 1D array
+- Concatenate the flattened sighting data with the eyecup stock array
+
+Parameters:
+- morningData (int[][]): 2D array of morning bird sightings
+- eveningData (int[][]): 2D array of evening bird sightings
+- goldenEyeCount (int): Initial count of golden-eyed fly sightings
+- eyecupStock (int[]): Array of eyecup inventory levels
+
+Returns: Single integer array containing merged sighting data followed by eyecup stock. 
+Format: [day1_col1, day1_col2, ..., day2_col1, day2_col2, ..., stock1, stock2, ...]
+
 ### 9 - Detective's Dilemma: Cracking the Case with Sets and Arrays
 
 Create a function named solveCriminalCase that receives suspectsAndAssociates, crimeScenes, evidence, and alibis as its parameters.
