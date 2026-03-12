@@ -4,6 +4,19 @@
 
 ## March
 
+### 12 - Community Center Seating Queue
+
+Write a function getNextScheduled that takes queue, scheduled, seats and returns a string array of the first scheduled visitors who can be seated.
+
+The function finds visitors with appointments and returns up to seats number of their names in the order they appear in the queue.
+
+Parameters:
+- queue (String[]): Array of visitor names in waiting order
+- scheduled (boolean[]): Array indicating if each visitor has an appointment (true = scheduled, false = walk-in)
+- seats (int): Maximum number of available chairs
+
+Returns: String array of scheduled visitor names who can be seated. Format: ["Alice", "Bob"]
+
 ### 11 - Collaborative Nature Workbook Analysis
 
 Create a function named natureWorkbookCollaboration that receives studentNames, observations, observationTimes, and usedSpecialEquipment as its parameters.
