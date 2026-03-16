@@ -4,6 +4,115 @@
 
 ## March
 
+### 16 - Axel's Spice Market Adventure
+
+Create a function named exploreSpiceMarket that receives spices and isAdventurous as its parameters.
+
+The function simulates Axel's journey through a fragrant spice market in a distant land. Axel collects spices based on his exploration style and the characteristics of the spices.
+
+Here's how Axel's spice collection works:
+- If Axel is feeling adventurous, he collects spices in the order he encounters them.
+- If Axel is feeling cautious, he collects spices in reverse order, starting from the last spice he encountered.
+- Regardless of his exploration style, Axel only collects spices with names longer than 4 characters.
+
+Parameters:
+- spices (String[]): An array of strings representing the spices Axel encounters in order.
+- isAdventurous (boolean): A boolean indicating whether Axel is feeling adventurous (true) or cautious (false).
+
+The function returns a String array representing Axel's final spice collection based on his exploration style and the spice name lengths.
+
+### 15 - Terrarium Creature Analysis
+
+Create a function named analyzeTerrarium that receives creatures and days as its parameters.
+
+You are a curious scientist studying unusual creatures in a laboratory terrarium. Your task is to analyze the creatures' characteristics and simulate their growth over time.
+
+Implement the following operations:
+- Calculate the probability of finding a creature with the rarest combination of attributes.
+- Simulate the growth and changes in the terrarium over the given number of days.
+- Analyze the diversity of creatures using combinatorics principles.
+- Implement a simple representation of creature lineage.
+
+Parameters:
+- creatures (int[][]): A 2D array where each sub-array represents a creature with four attributes:
+	- Index 0: Size (1-10)
+	- Index 1: Color code (1-5)
+	- Index 2: Number of appendages (1-8)
+	- Index 3: Lifespan in days (1-100)
+- days (int): The number of days to simulate (1-365)
+
+The function returns a String array containing four elements:
+- The probability of finding a creature with the rarest combination of attributes (formatted as a percentage with 2 decimal places, e.g., "12.50%").
+- The number of unique creature types after the simulation.
+- The length of the longest lineage chain.
+- The most common attribute combination after the simulation (in the format "size-color-appendages").
+
+Simulation Rules:
+- Each day, creatures have a 10% chance of spawning a new creature with slightly modified attributes (±1 for each attribute, within the allowed ranges).
+- Creatures die when they reach their lifespan.
+- The terrarium has a maximum capacity of 1000 creatures. If this limit is reached, no new creatures spawn until others die.
+
+Note: Use a simple deterministic approach for random number generation to ensure consistent results. You can use the following function for this purpose:
+private static int deterministicRandom(int seed, int max) {
+    return (seed * 1103515245 + 12345) % (max + 1);
+}
+
+Use the current day number as the seed for this function when needed in your simulation.
+
+### 14 - Thrush Observation Analysis in National Park
+
+Create a function named analyzeThrushSightings that receives days, dailySightings, and speciesNames as its parameters.
+
+The function simulates a birdwatcher's observation of thrushes in a national park. It processes bird sighting data and generates a comprehensive report.
+
+Your task is to implement the following operations:
+- Convert the daily sightings from decimal to binary representation.
+- Calculate the total number of thrushes spotted for each species over the observation period.
+- Determine the species with the highest number of sightings.
+- Calculate the average number of thrushes spotted per day, rounded to two decimal places.
+- Generate a "rarity score" for each species based on its sighting frequency.
+
+Parameters:
+- days (int): The number of days of observation.
+- dailySightings (int[][]): A 2D array where each row represents a day, and each column represents a thrush species. The values are the number of sightings in decimal.
+- speciesNames (String[]): An array containing the names of the thrush species observed.
+
+The function returns a string containing a formatted report of the birdwatcher's observations, including:
+- Total number of thrushes spotted (in both decimal and binary)
+- The name of the most frequently spotted thrush species
+- The average number of thrushes spotted per day
+- A list of species with their respective rarity scores
+
+Note:
+- The rarity score for each species should be calculated as: (1 - (species_sightings / total_sightings)) * 100, rounded to two decimal places.
+- Use nested loops to process the multi-dimensional data of daily sightings for each species.
+- Implement number base conversion by converting decimal sightings to binary representation.
+- Ensure all calculations involving division are performed using floating-point arithmetic to maintain precision.
+
+### 13 - Deathwatch Dialogue Disorder
+
+Create a function named reverseAndSliceDialogue that receives dialogue and wordsToKeep as its parameters.
+
+At a solemn deathwatch, a peculiar conversation unfolds due to a misunderstanding. Your task is to simulate this unusual dialogue by reversing and slicing the given phrases.
+
+The function should reverse the order of the phrases in the input array and then slice each phrase to keep only the specified number of words. If a phrase has fewer words than the specified number, it should remain unchanged.
+
+Parameters:
+- dialogue (String[]): An array of strings representing the original dialogue phrases.
+- wordsToKeep (int): The number of words to keep from each phrase after slicing.
+
+The function returns a new string array containing the reversed and sliced dialogue phrases.
+
+Follow these steps to solve the challenge:
+- Reverse the order of phrases in the input array.
+- For each phrase in the reversed array:
+- Split the phrase into words.
+- Keep only the specified number of words (or all words if the phrase is shorter).
+- Join the kept words back into a phrase.
+Return the new array with the modified phrases.
+
+Remember to handle edge cases, such as empty input arrays or when wordsToKeep is 0 or negative.
+
 ### 12 - Community Center Seating Queue
 
 Write a function getNextScheduled that takes queue, scheduled, seats and returns a string array of the first scheduled visitors who can be seated.
