@@ -4,6 +4,22 @@
 
 ## March
 
+### 18 - Repairing the Quantum Sequencer
+
+Create a function named repairQuantumSequencer that receives initialValue and sequenceLength as its parameters.
+
+This function aims to repair the malfunctioning Quantum Sequencer by generating the correct sequence of numbers based on the initial value and the desired sequence length.
+
+The correct formula for generating the sequence is:
+- For each number in the sequence, multiply the previous number by 5, add 1, and then calculate the remainder when divided by 1000.
+- The first number in the sequence is the initial value provided as input.
+
+Parameters:
+- initialValue (int): The initial value for the sequence.
+- sequenceLength (int): The desired length of the sequence to be generated.
+
+The function returns an int[] representing the generated sequence of numbers.
+
 ### 17 - Detective's Dilemma: Solving a Murder Mystery with Set Theory
 
 Create a function named investigateMurderMystery that receives crimeSceneEvidence, suspectStatements, witnessAccounts, forensicResults, and detectiveMegrimIntensity as its parameters.
