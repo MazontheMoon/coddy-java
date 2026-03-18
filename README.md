@@ -4,6 +4,45 @@
 
 ## March
 
+### 17 - Detective's Dilemma: Solving a Murder Mystery with Set Theory
+
+Create a function named investigateMurderMystery that receives crimeSceneEvidence, suspectStatements, witnessAccounts, forensicResults, and detectiveMegrimIntensity as its parameters.
+
+You are a detective investigating a mysterious corpse found in a dimly lit alley. Despite battling a persistent megrim (headache), you must analyze the evidence and solve the case using expert set theory and conditional logic.
+
+Your task is to implement the following set theory concepts and operations:
+- Create sets from the input arrays.
+- Perform set operations like union, intersection, and difference to analyze relationships between evidence.
+- Generate power sets of certain evidence sets to explore all possible combinations.
+- Use set operations to represent Venn diagram relationships between different sets of evidence.
+- Calculate the cardinality of various sets to determine the strength of evidence.
+
+Additionally, incorporate the detective's megrim intensity into your analysis:
+- As the megrim intensity increases, the detective's ability to analyze complex set relationships decreases.
+- Implement conditional statements to adjust the detective's reasoning based on the megrim intensity.
+- At higher megrim intensities, the detective might miss certain clues or make incorrect conclusions.
+
+Your solution should involve:
+- Implementing various set operations using Java's Set interface and its implementations.
+- Creating custom classes to represent evidence, suspects, and witnesses if needed.
+- Implementing complex conditional logic to simulate the detective's reasoning process.
+- Using bitwise operations to generate power sets efficiently.
+- Implementing a scoring system based on the strength and consistency of evidence.
+- Adjusting the scoring system and analysis based on the detective's megrim intensity.
+
+Parameters:
+- crimeSceneEvidence (String[]): An array of strings representing evidence found at the crime scene.
+- suspectStatements (String[]): An array of strings representing statements from different suspects.
+- witnessAccounts (String[]): An array of strings representing accounts from witnesses.
+- forensicResults (String[]): An array of strings representing forensic analysis results.
+- detectiveMegrimIntensity (int): An integer from 1 to 10 representing the intensity of the detective's headache.
+
+The function returns a String that represents the detective's conclusion about the case. This conclusion should include:
+- The most likely suspect(s) based on the evidence analysis.
+- Key pieces of evidence that led to the conclusion.
+- Any uncertainties or inconsistencies in the case.
+- A disclaimer about the potential impact of the detective's megrim on the investigation.
+
 ### 16 - Axel's Spice Market Adventure
 
 Create a function named exploreSpiceMarket that receives spices and isAdventurous as its parameters.
