@@ -4,6 +4,30 @@
 
 ## March
 
+
+### 19 - Sustainable Neighborhood Recycling Sorter
+
+Create a function named sustainableSort that receives items and targetBase as its parameters.
+
+Your eco-friendly neighbor has devised an innovative recycling system for the community. Your task is to implement this system by sorting various items into different categories based on their properties.
+
+The function should process each item according to the following rules:
+- If an item is a palindrome (reads the same forwards and backwards, case-sensitive), it goes to the "Reuse" category.
+- If an item contains an anagram of "ECO" (case-insensitive), it goes to the "Compost" category.
+- For items containing numbers:
+	- Convert the numbers to the specified target base.
+	- If the converted number is greater than 100 in the target base, it goes to the "Recycle" category.
+	- Otherwise, it goes to the "Landfill" category.
+-Any remaining items go to the "Landfill" category.
+
+After processing, prefix each item with its category (e.g., "Reuse: item1", "Compost: item2", etc.) and return the sorted array.
+
+Parameters:
+- items (String[]): An array of strings representing the recyclable items. Each item is a combination of letters and numbers.
+- targetBase (int): An integer representing the target base for number conversion (between 2 and 16, inclusive).
+
+The function returns a String[] where each element is prefixed with its category, followed by a colon and space, then the original item.
+
 ### 18 - Repairing the Quantum Sequencer
 
 Create a function named repairQuantumSequencer that receives initialValue and sequenceLength as its parameters.
