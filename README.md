@@ -4,6 +4,37 @@
 
 ## March
 
+### 20 - Marine Manuscript Analysis
+
+Create a function named analyzeMarineManuscript that receives String[] paragraphs, int minKeywordFrequency, and String[] keywords as its parameters.
+
+The function simulates a meticulous editor's prereview process for an unusual marine biology manuscript. It analyzes the given text, focusing on specific marine-related keywords, their frequency, and their positioning within the text.
+
+Your task is to implement the following analysis steps:
+- Count the total number of marine-related keywords found in the entire manuscript.
+- Identify keywords that appear more frequently than the given minimum frequency.
+- Find the paragraph numbers (1-indexed) where the most keywords are found.
+- Calculate a "peculiarity score" based on the concentration and variety of keywords.
+- Use advanced variables, array slicing, and control flow concepts (including break and continue) to optimize your solution.
+
+Parameters:
+- paragraphs (String[]): An array of strings, where each string represents a paragraph from the manuscript.
+- minKeywordFrequency (int): The minimum frequency of a keyword to be flagged in the analysis.
+- keywords (String[]): An array of marine-related keywords to look for in the text.
+
+The function returns a String that summarizes the analysis in the following format:
+"Total keywords: [count]\n" +
+"Frequent keywords: [keyword1], [keyword2], ...\n" +
+"Paragraphs with most keywords: [paragraph_number1], [paragraph_number2], ...\n" +
+"Peculiarity score: [score]"
+
+Note:
+- The "Frequent keywords" are those appearing more than minKeywordFrequency times.
+- The "Paragraphs with most keywords" should list the numbers of paragraphs containing the highest keyword count.
+- Calculate the "Peculiarity score" as: (total keywords * unique keywords) / total words in the manuscript.
+- Round the peculiarity score to two decimal places.
+- Ensure your implementation is case-insensitive when counting keywords.
+
 
 ### 19 - Sustainable Neighborhood Recycling Sorter
 
