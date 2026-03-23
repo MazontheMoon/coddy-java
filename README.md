@@ -4,6 +4,106 @@
 
 ## March
 
+### 23 - The Grumpy Sailor's Unusual Encounter
+
+Create a function named dockEncounter that receives sailorMood, birdTraits, dockItems, weatherConditions, and timeOfDay as its parameters.
+
+The function simulates a complex interaction between a grumpy old sailor and an unusual bird at the docks, using expert-level conditional statements and set theory concepts.
+
+Implement the following operations:
+- Create sets from the input arrays and perform set operations (union, intersection, difference, symmetric difference) to determine the context of the encounter.
+- Implement complex conditional statements using the results of set operations and other inputs to determine the sailor's actions and the bird's responses.
+- Use the power set concept to generate all possible combinations of mood factors, bird traits, and environmental conditions.
+- Calculate the cardinality of various sets and use it in decision-making processes.
+- Implement a Venn diagram-like logic to analyze the relationships between different sets of information.
+- Use bit manipulation techniques to efficiently handle set operations and conditional logic.
+- Implement a scoring system based on the interactions between different sets and use it to determine the final outcome.
+
+Parameters:
+- sailorMood (int[]): An array of integers representing different aspects of the sailor's mood (e.g., grumpiness, curiosity, hunger).
+- birdTraits (String[]): An array of strings representing the bird's unique traits.
+- dockItems (String[]): An array of strings representing items present at the dock.
+- weatherConditions (String[]): An array of strings representing current weather conditions.
+- timeOfDay (int): An integer representing the hour of the day (0-23).
+
+The function returns a String describing the outcome of the encounter between the sailor and the bird.
+
+### 22 - Decoding Manatee Observation Data
+
+Create a function named analyzeManateeData that receives binaryData and manateeCount as its parameters.
+
+As a wildlife researcher studying manatees in their natural habitat, you've developed an advanced system to track and analyze their behavior. Your task is to decode a complex binary data stream containing information about manatee sightings and behaviors, and present it in a human-readable format.
+
+The binary data stream encodes information for multiple manatees using the following format for each manatee observation:
+- Manatee ID: 5 bits
+- X coordinate: 10 bits
+- Y coordinate: 10 bits
+- Behavior code: 4 bits
+- Time of observation: 12 bits
+
+Total bits per observation: 41 bits
+
+Your function should decode this information and return a formatted string for each manatee observation. Use bitwise operations to extract the data and string manipulation techniques to format the output.
+
+Behavior codes:
+0000: Resting
+0001: Feeding
+0010: Swimming
+0011: Playing
+0100: Surfacing
+Others: Unknown
+
+Parameters:
+- binaryData (String): A string of '0's and '1's representing the binary data stream of manatee observations.
+- manateeCount (int): The number of manatees being tracked in this data set.
+
+The function returns a String array where each element is a formatted string containing information about a single manatee observation.
+
+Output format for each observation:
+"Manatee #[ID]: ([X], [Y]) - [Behavior] at [Time]"
+
+Where:
+- [ID] is the manatee's ID (0-31)
+- [X] and [Y] are the coordinates (0-1023 each)
+- [Behavior] is the decoded behavior
+- [Time] is the observation time in hours:minutes format (00:00 to 23:59)
+
+Additional requirements:
+- Use bitwise operations (AND, OR, XOR, shift) to extract information from the binary data.
+- Implement input validation using regex to ensure the binary data string contains only '0's and '1's and has the correct length (41 * manateeCount bits).
+- Use string manipulation methods (e.g., substring, format) to create the output strings.
+- Handle potential errors gracefully, returning an appropriate error message in the output array if the input is invalid.
+
+### 21 - Marine Manuscript Analysis
+
+Create a function named analyzeMarineManuscript that receives String[] paragraphs, int minKeywordFrequency, and String[] keywords as its parameters.
+
+The function simulates a meticulous editor's prereview process for an unusual marine biology manuscript. It analyzes the given text, focusing on specific marine-related keywords, their frequency, and their positioning within the text.
+
+Your task is to implement the following analysis steps:
+- Count the total number of marine-related keywords found in the entire manuscript.
+- Identify keywords that appear more frequently than the given minimum frequency.
+- Find the paragraph numbers (1-indexed) where the most keywords are found.
+- Calculate a "peculiarity score" based on the concentration and variety of keywords.
+- Use advanced variables, array slicing, and control flow concepts (including break and continue) to optimize your solution.
+
+Parameters:
+- paragraphs (String[]): An array of strings, where each string represents a paragraph from the manuscript.
+- minKeywordFrequency (int): The minimum frequency of a keyword to be flagged in the analysis.
+- keywords (String[]): An array of marine-related keywords to look for in the text.
+
+The function returns a String that summarizes the analysis in the following format:
+"Total keywords: [count]\n" +
+"Frequent keywords: [keyword1], [keyword2], ...\n" +
+"Paragraphs with most keywords: [paragraph_number1], [paragraph_number2], ...\n" +
+"Peculiarity score: [score]"
+Note:
+- The "Frequent keywords" are those appearing more than minKeywordFrequency times.
+- The "Paragraphs with most keywords" should list the numbers of paragraphs containing the highest keyword count.
+- Calculate the "Peculiarity score" as: (total keywords * unique keywords) / total words in the manuscript.
+- Round the peculiarity score to two decimal places.
+- Ensure your implementation is case-insensitive when counting keywords.
+
 ### 20 - Marine Manuscript Analysis
 
 Create a function named analyzeMarineManuscript that receives String[] paragraphs, int minKeywordFrequency, and String[] keywords as its parameters.
