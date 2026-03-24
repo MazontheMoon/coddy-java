@@ -4,6 +4,23 @@
 
 ## March
 
+### 24 - Reversing Key Phrases in a Political Debate
+
+Create a function named reverseDebate that receives transcript and keyPhrases as parameters.
+
+This function extracts key phrases from a political debate transcript, reverses each phrase, and combines them into a single string.
+
+Parameters:
+- transcript (String): The full text of the political debate.
+- keyPhrases (int[][]): A 2D array of integers, where each inner array contains the start and end indices of a key phrase within transcript.
+
+Steps:
+- Iterate through each inner array in keyPhrases.
+- Extract the substring from transcript using the start and end indices.
+- Reverse the extracted substring.
+- Append the reversed substring to a result string, followed by a space.
+- Return the result string containing the reversed key phrases separated by spaces.
+
 ### 23 - The Grumpy Sailor's Unusual Encounter
 
 Create a function named dockEncounter that receives sailorMood, birdTraits, dockItems, weatherConditions, and timeOfDay as its parameters.
