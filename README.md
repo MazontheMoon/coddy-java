@@ -4,6 +4,33 @@
 
 ## March
 
+### 25 - Yo-Yo Trick Simulator
+
+Create a function named playWithYoYo that receives yoyoString, basicMotions, aroundTheWorld, and walkTheDog as its parameters.
+
+Imagine a child playing with a bandalore (yo-yo) in the backyard on a quiet afternoon. Your task is to simulate the motion of the yo-yo using advanced array manipulation techniques. The function will represent various yo-yo tricks and motions.
+
+Implement the following yo-yo tricks:
+- Basic up-down motion:
+	- Reverse the array (simulating the yo-yo going down and up).
+	- Increment each element by 1 (simulating the string getting slightly looser).
+- "Around the world" trick:
+	 - Rotate the array to the right by one position (simulating the circular motion).
+	 - Decrement each element by 1 (simulating the string getting slightly tighter).
+- "Walk the dog" trick:
+	- Replace the middle third of the array with zeros (simulating the yo-yo touching the ground).
+	- Increment the first and last thirds of the array by 2 (simulating the string getting looser at the ends).
+
+Parameters:
+- yoyoString (int[]): An array representing the initial position of the yo-yo string, where each element represents a segment of the string.
+- basicMotions (int): The number of basic up-down motions to perform.
+- aroundTheWorld (int): The number of "around the world" tricks to perform.
+- walkTheDog (int): The number of "walk the dog" tricks to perform.
+
+The function returns a String array representing the final state of the yo-yo string after performing all the tricks. Each element in the returned array should be the String representation of the corresponding integer in the final yo-yo string.
+
+Note: Ensure that all array operations are performed using advanced slicing techniques. When implementing the "walk the dog" trick, if the array length is not divisible by 3, round down the size of each third.
+
 ### 24 - Reversing Key Phrases in a Political Debate
 
 Create a function named reverseDebate that receives transcript and keyPhrases as parameters.
