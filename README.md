@@ -4,6 +4,12 @@
 
 ## March
 
+### 26 - Fundraiser Event Organizer
+
+Create a program that helps organize a community fundraiser by processing three key tasks: count how many donations match the first donation amount, sort volunteer shift codes (M for morning, A for afternoon) so all Ms come before As, and check if your fundraising goal and actual amount raised differ by at most $5.
+
+You'll receive donation amounts, volunteer shift codes, and two dollar amounts. Print the count of matching donations, the sorted volunteer codes, and whether the goal was met.
+
 ### 25 - Yo-Yo Trick Simulator
 
 Create a function named playWithYoYo that receives yoyoString, basicMotions, aroundTheWorld, and walkTheDog as its parameters.
