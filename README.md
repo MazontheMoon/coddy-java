@@ -2,7 +2,131 @@
 
 # 2026
 
+## April
+
+### 1 - Horseshoe Crab Beach Scene Generator
+
+Create a function named generateHorseshoeCrabScene that receives int numCrabs, int beachWidth, and int waveLayers as its parameters.
+
+The function should generate a visual representation of horseshoe crabs on a beach, symbolizing a naval officer's contemplation of empire. This scene will be created using advanced string concatenation, nested loops, and increment/decrement operators.
+
+Your task is to create a scene with the following elements:
+- Waves at the top, represented by '~' or '-'
+- Horseshoe crabs in the middle, represented by '@' or '*'
+- Sand at the bottom, represented by '.'
+
+Follow these guidelines to construct the scene:
+- Use nested loops to create patterns for the beach, waves, and horseshoe crabs.
+- Apply advanced string concatenation to build the scene row by row.
+- Utilize increment and decrement operators to control the positioning and size of elements in the scene.
+- Construct the scene from bottom to top.
+- Position the horseshoe crabs using a combination of loops and mathematical operations.
+
+Parameters:
+- numCrabs (int): The number of horseshoe crabs to display (range: 1 to 10).
+- beachWidth (int): The width of the beach (range: 10 to 50).
+- waveLayers (int): The number of wave layers to display (range: 1 to 5).
+
+The function returns a string representing the generated beach scene.
+
+Note: Ensure your implementation uses between 20 and 49 lines of code. Focus on efficient looping, creative string manipulation, and dynamic scene construction to reflect the naval officer's philosophical musings.
+
 ## March
+
+### 31 - Pharmacy Low Stock Alert
+
+Write a function getLowStockMedications that takes medications, stockCounts, and threshold and returns a string array of medication names that need reordering.
+
+The function identifies medications with stock levels below the reorder threshold to help the pharmacy maintain adequate inventory.
+
+Parameters:
+- medications (String[]): Array of medication names
+- stockCounts (int[]): Array of current stock counts for each medication
+- threshold (int): Minimum stock level before reordering is needed
+
+Returns: String array of medication names with stock below threshold. Format: ["Aspirin", "Ibuprofen"]
+
+
+### 30 - Health Fair Organizer
+
+Create a program that helps organize a community health fair by handling three tasks: clean up volunteer names by removing duplicate letters (keeping only the first occurrence), multiply booth supply quantities by the number of shifts, and calculate valid pairing arrangements using Catalan numbers.
+
+You'll receive a volunteer name, supply quantities with a multiplier, and a number representing pairs of items. The nth Catalan number (C(n) = (2n)! / ((n+1)! × n!)) tells you how many valid ways n pairs can be arranged.
+
+### 29 - Paleontology Dig Site Simulator
+
+Create a function named simulateDinosaurDigSite that receives numSites, fossilTypes, and numTrainees as its parameters.
+
+The function simulates a paleontology dig site training exercise, incorporating advanced hashing techniques, string formatting, and combinatorics. It distributes fossils across dig sites, calculates probabilities of trainees finding specific fossils, and generates a formatted report.
+
+Implement the following steps in your function:
+- Use a custom hashing technique to distribute the fossils across the dig sites. Ensure a realistic and pseudo-random distribution.
+- Calculate the probability of each trainee finding a specific type of fossil using combinatorics.
+- Generate a formatted report string that includes:
+	- A summary of the dig sites and their fossil distributions
+	- The probability of each trainee finding each type of fossil
+	- A snide remark from the new recruit observing the exercise
+
+Parameters:
+- numSites (int): The number of dig sites.
+- fossilTypes (String[]): An array containing different types of dinosaur fossils.
+- numTrainees (int): The number of trainees participating in the exercise.
+
+The function returns a String representing the formatted report of the simulation.
+
+Constraints:
+1 ≤ numSites ≤ 10
+1 ≤ fossilTypes.length ≤ 10
+1 ≤ numTrainees ≤ 20
+Each fossil type in fossilTypes is a non-empty string with a maximum length of 20 characters
+
+Note: Use the following hash function to distribute fossils:
+
+int hash(String s, int m) {
+    int hash = 0;
+    for (int i = 0; i < s.length(); i++) {
+        hash = (hash * 31 + s.charAt(i)) % m;
+    }
+    return hash;
+}
+Where 's' is the fossil type and 'm' is the number of dig sites.
+
+### 28 - Cassava Crop Health Evaluation
+
+Create a function named evaluateCropHealth that receives sensorData as its parameter.
+
+This function analyzes the health of a cassava crop based on sensor data indicating whipworm activity. The sensor data is a boolean array where true means whipworm activity detected, and false means no activity.
+
+Calculate the percentage of sensors detecting whipworm activity by counting the true values and dividing by the total number of sensors, then multiplying by 100.
+
+Determine the crop's health based on the percentage:
+- Less than 20%: "Healthy"
+- 20% to 50%: "Moderate"
+- More than 50%: "Critical"
+
+Parameters:
+- sensorData (boolean[]): An array representing sensor outputs. true indicates whipworm activity detected, false means no activity.
+
+The function returns a String: "Healthy", "Moderate", or "Critical".
+
+
+
+### 27 - Clumsy Chef's Pasta Straining Adventure
+
+Create a function named strandPasta that receives pastaTypes and chefAction as its parameters.
+
+The function simulates a clumsy chef's attempt to strain pasta in a bustling kitchen. It should concatenate the pasta types, add the chef's action, and include some predefined phrases to create a humorous description of the scene.
+
+Parameters:
+- pastaTypes (String[]): An array of strings representing different types of pasta.
+- chefAction (String): A string describing the chef's action while straining the pasta.
+
+The function should perform the following steps:
+- Join the pasta types with commas and 'and' before the last item. For example, ["spaghetti", "penne", "fusilli"] should become "spaghetti, penne, and fusilli".
+- Create a sentence that includes the joined pasta types and the chef's action.
+- Add a predefined phrase at the beginning and end of the sentence to set the scene and describe the outcome.
+
+The function returns a string that describes the chaotic scene in the kitchen.
 
 ### 26 - Fundraiser Event Organizer
 
