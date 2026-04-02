@@ -4,6 +4,19 @@
 
 ## April
 
+### 2 - Garden Plot Information Formatter
+
+Write a function formatPlotInfo that takes plotCode, plantName, date and returns a formatted garden plot information string.
+
+The function extracts the letter and number from the plot code using substrings, then formats them into a readable plot assignment message.
+
+Parameters:
+- plotCode (String): A plot identifier with one letter followed by numbers (e.g., "A12", "B5")
+- plantName (String): The name of the plant to be grown
+- date (String): The planting date
+
+Returns: A formatted string. Format: Plot [letter]-[number]: [plantName] on [date]
+
 ### 1 - Horseshoe Crab Beach Scene Generator
 
 Create a function named generateHorseshoeCrabScene that receives int numCrabs, int beachWidth, and int waveLayers as its parameters.
