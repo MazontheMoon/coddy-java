@@ -4,6 +4,219 @@
 
 ## April
 
+### 10 - Simulating Aldrovanda Growth in a Convolvulaceae Greenhouse
+
+Create a function named simulateAldrovanadaGrowth that receives days, initialPopulation, growthRates, initialAldrovanda, and trapSuccessRate as its parameters.
+
+The function simulates the growth patterns of the rare Aldrovanda species (a carnivorous aquatic plant) in a controlled greenhouse environment, alongside other members of the Convolvulaceae family. It models the plant's unique developmental stages and interactions using advanced combinatorics and complex looping structures.
+
+Implement the following concepts in your simulation:
+- Use Bell numbers to model the partitioning of the greenhouse into different microenvironments.
+- Apply derangements to simulate the rearrangement of plants due to greenhouse maintenance.
+- Utilize Catalan numbers to model the branching patterns of the Aldrovanda plants.
+- Implement nested loops and recursion to simulate daily growth cycles and interactions between plants.
+- Use combinations to calculate the probability of successful pollination between Aldrovanda plants.
+- Apply permutations to model the possible arrangements of trap closure sequences in Aldrovanda plants.
+
+Parameters:
+- days (int): The number of days to simulate (1 ≤ days ≤ 30).
+- initialPopulation (int[]): The initial population of different Convolvulaceae species in the greenhouse (1 ≤ length ≤ 10, 0 ≤ each element ≤ 100).
+- growthRates (float[]): The daily growth rates for each species (same length as initialPopulation, 0.0 ≤ each element ≤ 1.0).
+initialAldrovanda (int): The number of Aldrovanda plants initially present (0 ≤ initialAldrovanda ≤ 50).
+- trapSuccessRate (float): The Aldrovanda's trap closure success rate (0.0 ≤ trapSuccessRate ≤ 1.0).
+
+The function returns a String[][] where each inner array represents a day in the simulation. Each element in the inner array is a string describing the state of the Aldrovanda population and its interactions with other plants.
+
+Note: To calculate Bell numbers, use the formula: B(n+1) = Σ(k=0 to n) C(n,k) * B(k), where C(n,k) is the binomial coefficient.
+
+For Catalan numbers, use the formula: C(n) = (1 / (n+1)) * C(2n, n)
+
+For derangements, use the formula: !n = (n-1) * (!(n-1) + !(n-2))
+
+Ensure your implementation is efficient and falls within the 50-99 lines range.
+
+### 9 - Moving Truck Loading Sequence
+
+Write a function calculateLoadingSequence that takes boxes, maxWeight and returns the truck sections in optimal loading order.
+
+You're organizing boxes for moving day! Group boxes by destination room using hash-based assignment, then return sections in reverse priority order for optimal weight distribution.
+
+Logic:
+- Calculate hash for each room name (sum of ASCII values % 4) to assign truck sections (0-3)
+- Group boxes by their assigned sections and calculate total weight per section
+- Sort sections by total weight in descending order (heaviest first)
+- Only include sections that don't exceed maxWeight limit
+
+Parameters:
+- boxes (String[]): Array where each element is "room:weight" (e.g., "kitchen:25")
+- maxWeight (int): Maximum weight limit per truck section
+
+Returns: String with section numbers in loading order. Format: "3,1,0" (comma-separated, no spaces)
+
+### 8 - Simulating a Dancer's Performance
+
+Create a function named simulateDancePerformance that receives movements and stagePositions as its parameters.
+
+The function simulates a dancer's performance by manipulating the input data and calculating a dance score. It processes the dancer's movements and stage positions to create a representation of the dance performance.
+
+Parameters:
+- movements (String): A string representing the dancer's movements. Each movement is separated by an underscore (e.g., "TWIRL_LEAP_SPIN_BOW").
+- stagePositions (int[]): An integer array representing the stage positions (e.g., [1, 3, 5, 2, 4]).
+
+The function should perform the following operations:
+- Reverse the dancer's movements string in a special way:
+- Reverse each word separated by underscores individually.
+- Then reverse the entire string.
+- Create a linked list from the stage positions array.
+- Calculate the "dance score" by performing arithmetic operations on the stage positions:
+	 - Sum up all even-indexed positions.
+	 - Multiply all odd-indexed positions.
+	 - Subtract the sum from the product.
+	 - Generate a performance summary string that includes:
+		 - The reversed dance movements.
+		 - The linked list representation of stage positions.
+		 - The calculated dance score.
+
+The function returns a string containing the performance summary.
+
+Note: You may use the built-in LinkedList class from java.util package for creating the linked list.
+
+Example:
+
+For the input movements "TWIRL_LEAP_SPIN_BOW" and stagePositions [1, 3, 5, 2, 4], the output might look like:
+
+WOB_NIPS_PAEL_LRIWT
+LinkedList: [1, 3, 5, 2, 4]
+Dance Score: 53
+This example demonstrates the reversed movements, the linked list representation, and a sample dance score calculation.
+
+### 7 - Playground Development Analysis
+
+Create a function named analyzePlaygroundData that receives String[] activities, int[] ages, and float[] durations as its parameters.
+
+Your task is to assist a curious chapwoman in analyzing the psychomotor development of children at a local playground. The function should process the observed activities, calculate developmental scores, and provide insights into each child's strengths.
+
+The function should perform the following steps:
+- Parse the activity strings to categorize them into different developmental areas: physical, cognitive, and social.
+- Calculate a score for each child based on their age, activities, and duration.
+- Normalize scores across age groups using the formula: normalizedScore = rawScore * (1 + log(age) / 10).
+- Determine the primary area of strength for each child (the area with the highest score).
+- Generate a formatted result string for each child.
+
+Use the following categorization for activities:
+- Physical: "running", "jumping", "climbing", "sliding"
+- Cognitive: "puzzle", "reading", "counting", "drawing"
+- Social: "sharing", "talking", "playing together", "helping"
+
+Calculate the raw score for each area as follows: score = sum(duration * activityWeight), where activityWeight is 1 for ages 3-5, 1.2 for ages 6-8, and 1.5 for ages 9 and above.
+
+Parameters:
+- activities (String[]): An array of observed activities for each child.
+- ages (int[]): An array of ages corresponding to each child.
+- durations (float[]): An array of activity durations in minutes for each child.
+
+The function returns a String array where each element is a formatted string containing the child's age, normalized score, and primary area of strength.
+
+Example of a formatted result string: "Age 7: Score 8.2 - Primary Strength: Physical"
+
+Constraints:
+- All input arrays will have the same length, representing data for each child.
+- Ages will be between 3 and 12 (inclusive).
+- Activity strings will only contain lowercase letters and spaces.
+- Durations will be positive numbers.
+
+Note: Use Math.log() for calculating the natural logarithm in the score normalization formula.
+
+### 6 - Farmers Market Daily Status Generator
+
+Write a function generateMarketStatus that takes weatherCondition, inventoryLevel, dayOfWeek and returns a formatted status message string.
+
+The function generates daily operation status messages for self-service farmers market stands, providing customers with availability information and weather-specific instructions.
+
+Logic:
+- Check weather conditions to determine if special rain protocols are needed
+- Evaluate inventory levels to set availability status
+- Apply day-specific operational rules (weekends have extended hours)
+- Format the complete status message with all relevant information
+
+Conditions:
+- If weather is "rainy": Add "RAIN PROTOCOL: Use covered stations only"
+- If inventory is "low": Add "LIMITED STOCK" warning
+- If inventory is "empty": Status becomes "CLOSED - Restocking in progress"
+- If day is "Saturday" or "Sunday": Add "Extended hours until 8 PM"
+
+Parameters:
+- weatherCondition (String): Weather status ("sunny", "cloudy", "rainy")
+- inventoryLevel (String): Stock level ("full", "medium", "low", "empty")
+- dayOfWeek (String): Day name ("Monday", "Tuesday", etc.)
+
+Returns: Formatted status message. Format: MARKET STATUS: [status] WEATHER: [condition] - [weather instructions if rainy] INVENTORY: [level] [warning if applicable] HOURS: Standard 9 AM - 6 PM [extended hours if weekend]
+
+### 5 - Shadow Garden Growth Simulator
+
+Create a function named calculateShadowGrowth that receives lightIntensity, plantTypes, and days as its parameters.
+
+In a botanist's secret garden, unusual plants thrive in the shadows. Your task is to simulate the growth of these shadow-loving plants over a specified number of days, considering various factors such as light intensity and plant type.
+
+The garden is divided into sections, each with its own light intensity and plant type. The growth of each plant depends on these factors. Use the following rules to calculate the growth:
+- If the light intensity is less than 5, the plant grows 2 units per day.
+- If the light intensity is between 5 and 10 (inclusive), the plant grows 1 unit per day.
+- If the light intensity is greater than 10, the plant doesn't grow.
+Additionally, each plant type has a growth modifier:
+	- "Shadeleaf": multiplies daily growth by 1.5
+	- "Nightbloom": multiplies daily growth by 1.2
+	- "Moonflower": multiplies daily growth by 1.0
+	- Any other plant type: multiplies daily growth by 0.8
+- To simulate changing light conditions, reverse the lightIntensity array every 5 days.
+
+Parameters:
+- lightIntensity (int[]): An array of integers representing the light intensity in different sections of the garden. Each integer is between 0 and 15.
+- plantTypes (String[]): An array of strings representing the types of plants in each section. Each string is one of "Shadeleaf", "Nightbloom", "Moonflower", or any other type.
+- days (int): An integer representing the number of days to simulate growth. It is between 1 and 30.
+
+The function returns an integer array representing the final height of each plant after the simulation period. Assume all plants start at height 0.
+
+Note: Use integer division when calculating growth to avoid floating-point arithmetic. Round down any fractional growth
+
+### 4 - Coaching Conference Debate Simulator
+
+Create a function named debateOutcome that receives philosophy1, philosophy2, team1, and team2 as its parameters.
+
+The function simulates a heated debate at a high school coaching conference by comparing coaching styles and combining team rosters.
+
+Your task is to implement the following steps:
+- Compare the two coaching philosophy strings (ignoring case).
+- Determine which philosophy is "better" based on the length of the string (longer is considered better).
+- Concatenate the two team roster arrays.
+- Count the total number of players in the combined roster.
+
+Create a summary string that includes the debate outcome and the combined team information.
+
+Parameters:
+- philosophy1 (String): The coaching philosophy of the first coach.
+- philosophy2 (String): The coaching philosophy of the second coach.
+- team1 (String[]): An array of player names from the first team.
+- team2 (String[]): An array of player names from the second team.
+
+The function returns a String that summarizes the debate outcome and the combined team information in the following format:
+"Better philosophy: [winning philosophy]
+Total players: [number of players]
+All players: [player1], [player2], ..., [playerN]"
+Note: The players should be listed in the order they appear in the concatenated array (team1 followed by team2).
+
+
+### 3 - Botanical Garden Catalog System
+
+Create a program that helps organize the botanical garden's spring plant collection by solving three cataloging tasks.
+
+First, generate all letter-case permutations of a plant's scientific name (e.g., "ab" becomes "ab", "aB", "Ab", "AB"). This helps botanists find specimens regardless of how the name was recorded.
+
+Second, identify all Hamming numbers up to a given limit N. Hamming numbers contain only the prime factors 2, 3, and 5 (like 1, 2, 3, 4, 5, 6, 8, 9, 10, 12...). Plants with these catalog IDs are prototypic specimens that deserve special display.
+
+Third, calculate the extended GCD of two bed dimensions. Given dimensions A and B, find their GCD along with coefficients X and Y where A×X + B×Y = GCD. This determines the optimal grid layout for planting arrangements.
+
+Your program reads a plant name (letters only), a maximum catalog ID N, and two bed dimensions A and B. Output the case permutations in lexicographical order, the Hamming numbers up to N, and the extended GCD result formatted as "GCD: g, X: x, Y: y".
+
 ### 2 - Garden Plot Information Formatter
 
 Write a function formatPlotInfo that takes plotCode, plantName, date and returns a formatted garden plot information string.
