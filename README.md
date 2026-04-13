@@ -4,6 +4,54 @@
 
 ## April
 
+### 13 - Ancient Fossil Sequence Analysis
+
+Create a function named analyzeFossilSequence that receives int[] fossilAges and int targetAge as its parameters.
+
+As a biologist studying ancient plant fossils in a museum laboratory, you need to analyze and reconstruct fossil sequences based on their ages. Your task is to implement a function that processes an array of fossil ages according to specific rules.
+
+The function should perform the following operations:
+- Iterate through the fossilAges array.
+- If a fossil's age is greater than the targetAge, reverse the subarray from that index to the end of the array.
+- If a fossil's age is equal to the targetAge, reverse the subarray from the beginning of the array to that index (inclusive).
+- If a fossil's age is less than the targetAge, continue to the next fossil without any action.
+- After processing all fossils, reverse the entire array.
+
+Parameters:
+- fossilAges (int[]): An array of integers representing the ages of plant fossils in millions of years.
+- targetAge (int): The target age for comparison, in millions of years.
+The function returns an int[] representing the final processed array of fossil ages.
+
+### 12 - Harvest Festival Booth Organization
+
+Write a function organizeHarvestBooths that takes boothSections, troublesomeVolunteerId and returns a single concatenated array of all valid harvest items.
+
+The function organizes festival booth displays by combining vegetable arrays, but only includes "perfect" harvest numbers and skips sections containing the troublesome volunteer.
+
+Logic:
+- Skip any booth section that contains the troublesome volunteer's ID
+- For remaining sections, only include "perfect" numbers (sum of digits equals number of digits)
+- Concatenate all valid items into one final display array
+- Perfect Numbers: A number where the sum of its digits equals the number of digits (e.g., 12 → 1+2=3, has 2 digits, so not perfect; 21 → 2+1=3, has 2 digits, so not perfect; 111 → 1+1+1=3, has 3 digits, so perfect)
+
+Parameters:
+- boothSections (int[][]): Array of booth sections, each containing harvest item numbers
+- troublesomeVolunteerId (int): ID number of the volunteer to avoid
+
+Returns: Single array containing all valid harvest items from processed sections. Format: [item1, item2, item3, ...]
+
+### 11 - Amplify Security Alerts for Elderly Home System
+
+Write a function amplifyAlerts that takes signals, threshold, amplificationFactor and returns a new integer array with amplified security alerts.
+
+The function amplifies sensor signals above the threshold by multiplying them with the amplification factor, while keeping other signals unchanged.
+
+Parameters:
+- signals (int[]): Array of security sensor readings
+- threshold (int): Minimum value to trigger amplification
+- amplificationFactor (int): Multiplier for signals above threshold
+Returns: New integer array with amplified alerts. Format: [signal1, signal2, signal3, ...]
+
 ### 10 - Simulating Aldrovanda Growth in a Convolvulaceae Greenhouse
 
 Create a function named simulateAldrovanadaGrowth that receives days, initialPopulation, growthRates, initialAldrovanda, and trapSuccessRate as its parameters.
