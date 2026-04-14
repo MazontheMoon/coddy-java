@@ -4,6 +4,22 @@
 
 ## April
 
+### 14 - Art Studio Supply Organization
+
+Write a function organizeArtSupplies that takes supplies and returns a reorganized 2D array with each shelf's supplies reversed.
+
+The newcomer artist has art supplies organized on multiple shelves, with each shelf containing different supplies. To optimize studio workflow, reverse the order of supplies on each shelf while keeping the shelf structure intact.
+
+Logic:
+- Iterate through each shelf (row) in the 2D array
+- For each shelf, reverse the order of supplies using nested loops
+- Return the modified 2D array with all shelves reorganized
+
+Parameters:
+- supplies (String[][]): 2D array where each row represents a shelf of art supplies
+
+Returns: 2D array with supplies on each shelf reversed. Format: [["canvas", "brush"], ["pencil", "eraser"]]
+
 ### 13 - Ancient Fossil Sequence Analysis
 
 Create a function named analyzeFossilSequence that receives int[] fossilAges and int targetAge as its parameters.
