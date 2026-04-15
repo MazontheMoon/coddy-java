@@ -4,6 +4,26 @@
 
 ## April
 
+### 15 - Misty Graveyard Array Manipulation
+
+Create a function named mistyGraveyard that receives names and epitaphs as its parameters.
+
+The function should combine these arrays to create a "misty" representation of the graveyard, simulating a foggy morning walk through an ancient cemetery.
+
+Your task is to:
+- Concatenate the two input arrays, alternating between names and epitaphs.
+- Add a "fog" element (represented by "~") between each name and epitaph pair.
+- Surround each name with square brackets [] to represent the gravestones.
+- Add ellipsis (...) after each epitaph to create a sense of mystery.
+
+Parameters:
+- names (String[]): An array of strings representing the names on the gravestones.
+- epitaphs (String[]): An array of strings representing the epitaphs on those gravestones.
+
+The function returns a String array representing the misty graveyard scene.
+
+Note: Assume that the names and epitaphs arrays have the same length.
+
 ### 14 - Art Studio Supply Organization
 
 Write a function organizeArtSupplies that takes supplies and returns a reorganized 2D array with each shelf's supplies reversed.
