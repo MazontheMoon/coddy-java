@@ -4,6 +4,33 @@
 
 ## April
 
+### 16 - Picnic Basket Packer
+
+Create a function named packPicnicBasket that receives items, quantities, and maxWeight as its parameters.
+
+This function aims to pack a picnic basket with items from the provided list, considering their quantities and the maximum weight limit of the basket. The goal is to pack as many items as possible without exceeding the weight limit.
+
+To solve this problem, you can follow these steps:
+- Create a list to store the packed items and their quantities.
+- Iterate through the items and quantities lists simultaneously.
+- For each item, check if adding its quantity to the current total weight of the basket would exceed the maxWeight.
+	- If it doesn't exceed, add the item and its quantity to the packed items list and update the total weight.
+	- If it exceeds, skip the item and move to the next one.
+- After iterating through all the items, check if the packed items list is empty.
+	- If it is empty, return the string "Basket is too heavy!".
+	- If it is not empty, sort the packed items list alphabetically by item name.
+- Create a formatted string representation of the packed items and their quantities.
+	- Each item should be on a new line in the format "item: quantity".
+
+Return the formatted string.
+
+Parameters:
+- items (String[]): An array of strings representing the picnic items.
+- quantities (int[]): An array of integers representing the quantities corresponding to each item in the items array.
+- maxWeight (int): An integer representing the maximum weight limit of the picnic basket.
+
+The function returns a String representing the packed items and their quantities, organized by item name in alphabetical order. Each item should be on a new line in the format "item: quantity". If the basket cannot hold anything, the function returns the string "Basket is too heavy!".
+
 ### 15 - Misty Graveyard Array Manipulation
 
 Create a function named mistyGraveyard that receives names and epitaphs as its parameters.
