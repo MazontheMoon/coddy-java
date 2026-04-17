@@ -4,6 +4,27 @@
 
 ## April
 
+### 17 - Genetic Code Combination Simulator
+
+Create a function named combineGeneticCodes that receives int[] parent1Genes, int[] parent2Genes, and int mutationFactor as its parameters.
+
+The function simulates the genetic combination of brain and spinal cord characteristics in a laboratory study of interbreeding effects. It combines the genetic codes of two specimens to produce a new genetic code for the offspring.
+
+Follow these steps to implement the function:
+- Create a new array to store the offspring's genetic code. Its length should be the sum of the lengths of parent1Genes and parent2Genes.
+- Use a loop to alternate between genes from both parents, placing them into the offspring's genetic code array.
+- Apply the mutation factor to every third gene in the offspring's genetic code:
+	- If the gene's value is even, increment it by the mutation factor.
+	- If the gene's value is odd, decrement it by the mutation factor.
+-Ensure all genes in the offspring's genetic code remain positive after mutation. If a gene becomes negative, set it to 0.
+
+Parameters:
+- parent1Genes (int[]): An array representing the genetic code of the first parent specimen.
+- parent2Genes (int[]): An array representing the genetic code of the second parent specimen.
+- mutationFactor (int): An integer representing the mutation factor to be applied during the combination process.
+
+The function returns an integer array representing the combined and mutated genetic code of the offspring.
+
 ### 16 - Picnic Basket Packer
 
 Create a function named packPicnicBasket that receives items, quantities, and maxWeight as its parameters.
