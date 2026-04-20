@@ -4,6 +4,47 @@
 
 ## April
 
+### 20 - Hikers' Trail Mix
+
+Create a function named prepareTrailMix that receives hikersCount and snacks as parameters.
+
+This function combines the snacks brought by each hiker into a single trail mix array, ensuring variety by removing duplicates and sorting the final mix alphabetically.
+
+Parameters:
+- hikersCount (int): The number of hikers in the group.
+- snacks (String[][]): A 2D array where each inner array represents the snacks brought by an individual hiker.
+
+The function should return a String[] representing the final trail mix, sorted alphabetically and with duplicates removed.
+
+
+### 19 - Community Bulletin Board Post Organization
+
+Write a function organizeBulletinPosts that takes postIds and returns a 2D array containing sorted post IDs and filtered prime IDs for featured slots.
+
+The function sorts all post IDs in ascending order, then identifies which ones are prime numbers for special featured placement on the community bulletin board.
+
+Parameters:
+- postIds (int[]): Array of bulletin post ID numbers
+
+Returns: 2D integer array where first row contains all IDs sorted ascending, second row contains only the prime IDs from the sorted list. Format: [[sorted_ids], [prime_ids]]
+
+### 18 - Pet Daycare Care Instructions
+
+Write a function organizePetCare that takes petNames, isAnxious and returns an array of care instructions for each pet.
+
+The function creates care labels for pets at your daycare, marking anxious pets as needing extra attention while reversing the order for easier staff processing.
+
+Conditions:
+- If a pet is anxious (true), label them "Needs extra care"
+- If a pet is calm (false), label them "Standard care"
+- Return the care instructions in reverse order
+
+Parameters:
+- petNames (String[]): Array of pet names at the daycare
+- isAnxious (boolean[]): Parallel array indicating if each pet is anxious
+
+Returns: Array of care instruction strings in reverse order. Format: ["Buddy: Standard care", "Max: Needs extra care"]
+
 ### 17 - Genetic Code Combination Simulator
 
 Create a function named combineGeneticCodes that receives int[] parent1Genes, int[] parent2Genes, and int mutationFactor as its parameters.
