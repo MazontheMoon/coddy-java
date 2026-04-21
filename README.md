@@ -4,6 +4,24 @@
 
 ## April
 
+### 21 - Symphony Arrangement at the Park Picnic
+
+Create a function named symphonySeating that receives parkGrid and compareRow as its parameters.
+
+The function helps organize a picnic event at the park where a symphony of euphonium music will be played. The park layout is a 2D grid, where each cell indicates the number of audience members expected in that section.
+
+Steps to solve the challenge:
+- Find the row in parkGrid with the highest total number of audience members.
+- Reverse the order of audience numbers in that row.
+- Compare the reversed row with the row specified by compareRow.
+- Return "true" if the arrangements match, otherwise return "false".
+
+Parameters:
+- parkGrid (int[][]): a 2D array of integers representing the number of audience members in each section of the park.
+- compareRow (int): an integer representing the row index (0-based) to be checked against the most populated row after reversing.
+
+The function returns a String, eithe
+
 ### 20 - Hikers' Trail Mix
 
 Create a function named prepareTrailMix that receives hikersCount and snacks as parameters.
