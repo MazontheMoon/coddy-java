@@ -4,6 +4,12 @@
 
 ## April
 
+### 22 - Amsterdam Station Operations Manager
+
+Create a program that manages three critical operations at Amsterdam Central Station. First, find the platform number (index) where the first available slot exists for an incoming train. Second, verify if four given resource values can combine (using +, -, *, /) to reach a target of 24 - this validates optimal resource allocation. Third, calculate the Nth Stirling number of the second kind with parameter K to determine how many ways you can distribute N staff members into K non-empty departments.
+
+Your program should read the operation type and corresponding data, then output the result for each operation. The Stirling number S(n,k) represents the number of ways to partition n objects into k non-empty subsets, which helps plan flexible staff rotation schedules.
+
 ### 21 - Symphony Arrangement at the Park Picnic
 
 Create a function named symphonySeating that receives parkGrid and compareRow as its parameters.
