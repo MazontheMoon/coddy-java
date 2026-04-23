@@ -4,6 +4,36 @@
 
 ## April
 
+### 23 - Moth Population Simulation in a Study Room
+
+Create a function named mothPopulationSimulation that receives initialPopulation, lightIntensities, simulationDays, growthRate, and migrationProbability as its parameters.
+
+As a curious entomologist examining moth specimens in a dimly lit study room, you've decided to create a simulation of moth population growth and migration patterns. Your task is to implement this simulation using advanced hashing techniques and concepts from game theory.
+
+The simulation should model the growth and movement of moths across different areas of the study room, each with varying light intensities. Use efficient hashing techniques to track and update the moth population in different areas, and apply game theory concepts to determine how moths decide to migrate between areas based on light intensity and population density.
+
+Parameters:
+- initialPopulation (int): The initial total number of moths in the study room.
+- lightIntensities (int[]): An array representing the light intensities in different areas of the study room. Each element is an integer from 0 (darkest) to 10 (brightest).
+- simulationDays (int): The number of days to run the simulation.
+- growthRate (float): The daily growth rate of the moth population (e.g., 0.05 for 5% daily growth).
+- migrationProbability (float): The probability of a moth migrating to a different area each day (0.0 to 1.0).
+
+The function should return a String array representing the final distribution of moths in different areas of the study room after the simulation period. Each string in the array should be in the format "Area X: Y moths", where X is the area index (starting from 0) and Y is the number of moths in that area.
+
+Implement the simulation following these guidelines:
+- Initially distribute the moths evenly across all areas.
+- For each day of the simulation:
+	- Increase the population in each area according to the growth rate.
+	- Calculate migration probabilities based on light intensities and current population densities.
+	- Move moths between areas based on the migration probabilities and the migration probability parameter.
+	- Use a hash table to efficiently store and update the population data for each area.
+	- Apply game theory concepts to model how moths make decisions about migration. Consider factors such as:
+		- Attraction to areas with optimal light intensity (not too bright, not too dark)
+		- Avoidance of overcrowded areas
+	-Balance between staying in a known area and exploring new areas
+- Round all calculations to the nearest integer when updating moth populations.
+
 ### 22 - Amsterdam Station Operations Manager
 
 Create a program that manages three critical operations at Amsterdam Central Station. First, find the platform number (index) where the first available slot exists for an incoming train. Second, verify if four given resource values can combine (using +, -, *, /) to reach a target of 24 - this validates optimal resource allocation. Third, calculate the Nth Stirling number of the second kind with parameter K to determine how many ways you can distribute N staff members into K non-empty departments.
