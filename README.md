@@ -4,6 +4,37 @@
 
 ## April
 
+### 24 - Science Fair Project Analyzer
+
+Create a function named analyzeProjects that receives projectDetails as its parameter.
+
+You are tasked with analyzing and categorizing student projects at a science fair focused on plant diseases and viral infections. Your function should parse the project details, extract relevant information, and provide a comprehensive analysis.
+
+Project Format:
+Each project detail in the input array follows this format: "StudentName: ProjectTitle - KeyFindings"
+
+Analysis Requirements:
+- Count the number of projects focusing on plant diseases and viral infections.
+- Identify the most common organism studied across all projects.
+- Calculate a complexity score for each project based on the presence of specific keywords in the project title and key findings.
+- Determine the project with the highest complexity score.
+
+Complexity Score Calculation:
+- Add 2 points for each of these words: "genome", "mutation", "protein"
+- Add 1 point for each of these words: "analysis", "structure", "mechanism"
+
+Parameters:
+- projectDetails (String[]): An array of strings, where each string represents a project in the specified format.
+
+The function returns a string containing the analysis results in the following format:
+"Plant Disease Projects: X
+Viral Infection Projects: Y
+Most Common Organism: Z
+Highest Complexity Project: StudentName - ProjectTitle (Score: S)"
+Where X, Y are integers, Z is a string (organism name), and S is an integer (complexity score).
+
+Note: If there's a tie for the most common organism or highest complexity project, return the first one encountered in the input array.
+
 ### 23 - Moth Population Simulation in a Study Room
 
 Create a function named mothPopulationSimulation that receives initialPopulation, lightIntensities, simulationDays, growthRate, and migrationProbability as its parameters.
