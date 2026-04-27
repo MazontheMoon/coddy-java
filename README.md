@@ -4,6 +4,71 @@
 
 ## April
 
+### 27 - Community Garden Crop Inventory
+
+Write a function getAllUniqueCrops that takes gardenPlots and returns a string array of all unique crop types being grown across the community garden, sorted alphabetically.
+
+The function processes a 2D array representing 12 garden plots, where each plot contains multiple crop types, and combines them into one sorted list without duplicates.
+
+Logic:
+- Flatten all crop arrays from the 12 plots into a single collection
+- Remove duplicate crop names
+- Sort the unique crops alphabetically
+- Return as a string array
+
+Parameters:
+- gardenPlots (String[][]): 2D array where each row represents a garden plot containing crop names
+
+Returns: String array of unique crop types sorted alphabetically. Format: ["beans", "carrots", "tomatoes"]
+
+### 26 - Vintage Daguerreotype Analysis
+
+Create a function named analyzeDaguerreotypes that receives titles, years, and photographer as its parameters.
+
+The function simulates the process of analyzing and comparing vintage daguerreotypes in an old photography studio. It should perform various operations on the given data and return a formatted string containing the analysis results.
+
+Implement the following operations:
+- Sort the daguerreotypes based on their years, from oldest to newest.
+- Compare adjacent daguerreotypes' titles for similarities. Two titles are considered similar if they share at least 3 consecutive characters (case-insensitive).
+- Count the number of daguerreotypes taken by the given photographer.
+- Calculate the average year of the daguerreotypes.
+- Determine the longest streak of consecutive years with daguerreotypes.
+
+Return a string containing all this information, formatted as follows:
+"Sorted: [title1 (year1), title2 (year2), ...]
+Similar pairs: X
+By photographer: Y
+Average year: Z
+Longest streak: W years"
+Where X is the number of similar title pairs, Y is the count of daguerreotypes by the given photographer, Z is the average year (rounded to 2 decimal places), and W is the length of the longest streak of consecutive years.
+
+Parameters:
+- titles (String[]): An array of strings representing the titles of the daguerreotypes.
+- years (int[]): An array of integers representing the years the daguerreotypes were taken.
+- photographer (String): A string representing the photographer's name to search for.
+The function returns a string containing the formatted analysis results.
+
+Note: Assume that the input arrays titles and years have the same length and are not empty. The photographer string may be empty or null, in which case the count should be 0.
+
+### 25 - Coastal Wetland Shrimp Report
+
+Create a function named formatShrimpReport that receives speciesName, count, length, color, and habitat as its parameters.
+
+The function should format the input information into a structured report for a curious bird watcher observing rare shrimp species at a coastal wetland.
+
+- Format the report as follows:
+"Shrimp Species: [speciesName]\nCount: [count]\nAverage Length: [length] cm\nColor: [color]\nHabitat: [habitat]"
+- Make sure to format the length to one decimal place.
+
+Parameters:
+- speciesName (String): The name of the shrimp species observed.
+- count (int): The number of shrimp observed.
+- length (float): The average length of the shrimp in centimeters.
+- color (String): The primary color of the shrimp.
+- habitat (String): The specific habitat where the shrimp were observed.
+
+The function returns a String containing the formatted shrimp report.
+
 ### 24 - Science Fair Project Analyzer
 
 Create a function named analyzeProjects that receives projectDetails as its parameter.
