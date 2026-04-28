@@ -4,6 +4,23 @@
 
 ## April
 
+### 28 - Community Garden Crop Inventory
+
+Write a function getAllUniqueCrops that takes gardenPlots and returns a string array of all unique crop types being grown across the community garden, sorted alphabetically.
+
+The function processes a 2D array representing 12 garden plots, where each plot contains multiple crop types, and combines them into one sorted list without duplicates.
+
+Logic:
+- Flatten all crop arrays from the 12 plots into a single collection
+- Remove duplicate crop names
+- Sort the unique crops alphabetically
+- Return as a string array
+
+Parameters:
+- gardenPlots (String[][]): 2D array where each row represents a garden plot containing crop names
+
+Returns: String array of unique crop types sorted alphabetically. Format: ["beans", "carrots", "tomatoes"]
+
 ### 27 - Community Garden Crop Inventory
 
 Write a function getAllUniqueCrops that takes gardenPlots and returns a string array of all unique crop types being grown across the community garden, sorted alphabetically.
