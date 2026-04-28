@@ -4,22 +4,33 @@
 
 ## April
 
-### 28 - Community Garden Crop Inventory
+### 28 - Advanced Spring Garden Growth Simulation
 
-Write a function getAllUniqueCrops that takes gardenPlots and returns a string array of all unique crop types being grown across the community garden, sorted alphabetically.
+Create a function named simulateGardenGrowth that receives days, initialHeights, growthRates, sunlightExposure, nutrientLevels, avgTemperature, and dailyRainfall as its parameters.
 
-The function processes a 2D array representing 12 garden plots, where each plot contains multiple crop types, and combines them into one sorted list without duplicates.
+The function simulates the growth of various plants in a peaceful spring garden using advanced mathematical concepts. It models the growth of different plant species over time, considering factors such as sunlight, nutrients, and environmental conditions.
 
-Logic:
-- Flatten all crop arrays from the 12 plots into a single collection
-- Remove duplicate crop names
-- Sort the unique crops alphabetically
-- Return as a string array
+Implement the following mathematical concepts in your solution:
+- Use differential equations to model plant growth over time.
+- Apply trigonometric functions to model the effect of sunlight exposure throughout the day.
+- Utilize calculus to determine optimal growth conditions and inflection points.
+- Implement different growth patterns for various plant species (e.g., exponential, logistic, or oscillating growth).
+
+Use expert-level conditional statements to handle various scenarios, such as:
+- Adjusting growth rates based on temperature and rainfall.
+- Modeling competition between plants for resources.
+- Simulating the effects of extreme weather conditions.
 
 Parameters:
-- gardenPlots (String[][]): 2D array where each row represents a garden plot containing crop names
+- days (int): The number of days to simulate (1 ≤ days ≤ 365).
+- initialHeights (float[]): Initial heights of different plant species in centimeters (1 ≤ length ≤ 10).
+- growthRates (float[]): Growth rates for each plant species in cm/day (same length as initialHeights).
+- sunlightExposure (float[]): Sunlight exposure for each plant as a percentage (0 ≤ value ≤ 100, same length as initialHeights).
+- nutrientLevels (float[]): Nutrient levels for each plant on a scale of 0 to 1 (same length as initialHeights).
+- avgTemperature (float): Average daily temperature in Celsius (-10 ≤ avgTemperature ≤ 40).
+- dailyRainfall (float): Daily rainfall in millimeters (0 ≤ dailyRainfall ≤ 50).
 
-Returns: String array of unique crop types sorted alphabetically. Format: ["beans", "carrots", "tomatoes"]
+The function returns a 2D float array representing the heights of all plants for each day of the simulation.
 
 ### 27 - Community Garden Crop Inventory
 
