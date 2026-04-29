@@ -4,6 +4,34 @@
 
 ## April
 
+### 29 - Paleontologist's Fossil Excavation Simulator
+
+Create a function named excavateFossils that receives digSite, minAge, and maxExtract as its parameters.
+
+You are a paleontologist preparing for a nonbreeding season fossil excavation. Your task is to simulate the excavation process, identifying and extracting the most valuable fossils from a dig site.
+
+The function should perform the following operations:
+- Iterate through the 2D array digSite using nested loops to simulate the excavation process.
+- Identify fossils that are older than the specified minAge.
+- Calculate a "rarity score" for each valuable fossil using the formula: score = age * (row + 1) * (column + 1).
+- Sort the valuable fossils based on their rarity score in descending order using a custom sorting algorithm (e.g., merge sort or quicksort).
+- Extract the top N fossils, where N is the maxExtract value.
+
+Parameters:
+- digSite (int[][]): A 2D integer array representing the dig site, where each number represents a fossil's age in millions of years.
+- minAge (int): The minimum age (in millions of years) for a fossil to be considered valuable.
+- maxExtract (int): The maximum number of fossils that can be extracted due to time constraints.
+
+The function returns an integer array containing the ages of the extracted fossils, sorted by their rarity score in descending order.
+
+Note: Implement an efficient sorting algorithm manually, such as merge sort or quicksort, rather than using built-in sorting functions.
+
+Example calculation of rarity score:
+
+If a fossil with age 100 million years is found at digSite[2][3], its rarity score would be:
+score = 100 * (2 + 1) * (3 + 1) = 1200
+This score takes into account both the age of the fossil and its position in the dig site, making deeper and more centrally located fossils potentially more valuable.
+
 ### 28 - Advanced Spring Garden Growth Simulation
 
 Create a function named simulateGardenGrowth that receives days, initialHeights, growthRates, sunlightExposure, nutrientLevels, avgTemperature, and dailyRainfall as its parameters.
