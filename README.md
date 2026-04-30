@@ -4,6 +4,31 @@
 
 ## April
 
+### 30 - The Librarian's Enigma: Unraveling Ancient Knowledge
+
+Create a function named exploreAncientLibrary that receives initialBooks, libraryBooks, explorationRounds, keywords, and bookRelations as its parameters.
+
+You are a student exploring an ancient library filled with rare books and forgotten knowledge. Your task is to navigate through the library, discover new books, and uncover hidden connections between them using advanced set theory operations and conditional logic.
+
+The function should simulate your journey through the library, performing the following operations:
+- Generate the power set of the initial books, representing all possible combinations of knowledge.
+- For each exploration round:
+	- Perform set operations (union, intersection, symmetric difference) between the power set and the library's book set to simulate new discoveries.
+	- Use the keywords to filter and prioritize certain books or themes.
+	- Update your knowledge based on the book relations, simulating the uncovering of hidden connections.
+- Implement a scoring system based on the cardinality of discovered sets, the relationships between book groups, and the alignment with keywords.
+- Use conditional statements to determine the outcome of your exploration based on your discoveries and score.
+Parameters:
+- initialBooks (String[]): An array of book titles representing your initial discoveries.
+- libraryBooks (String[]): An array of all book titles available in the library.
+- explorationRounds (int): The number of rounds you have to explore the library.
+- keywords (String[]): An array of special keywords or themes you're interested in.
+- bookRelations (int[][]): A 2D array where each inner array represents a group of related books by their indices in the libraryBooks array.
+
+The function returns a String describing the final state of your knowledge, rare books discovered, and any ancient puzzles you've solved.
+
+Note: Ensure your implementation makes extensive use of Set operations (union, intersection, difference, symmetric difference) and complex conditional logic. Your solution should be between 50 and 99 lines of code, balancing complexity with readability.
+
 ### 29 - Paleontologist's Fossil Excavation Simulator
 
 Create a function named excavateFossils that receives digSite, minAge, and maxExtract as its parameters.
