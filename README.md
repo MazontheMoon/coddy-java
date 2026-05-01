@@ -2,6 +2,12 @@
 
 # 2026
 
+## May
+
+### 1 - Pantry Organization Helper
+
+Create a program that helps organize the community food pantry by performing three tasks. First, read a donation ID number and check if it's a disarium number (where the sum of each digit raised to its position equals the number itself—for example, 135 is disarium because 1¹ + 3² + 5³ = 135). Print "Priority" if it is, or "Standard" if not. Second, read a daily spending amount and calculate the projected monthly expense for 30 days. Third, read a three-digit shelf code and check if its middle digit is even—print "Refrigerated" if it is, or "Dry Storage" if not.
+
 ## April
 
 ### 30 - The Librarian's Enigma: Unraveling Ancient Knowledge
