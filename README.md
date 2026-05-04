@@ -4,6 +4,73 @@
 
 ## May
 
+### 4 - Sleepwalker's Luminous Journey
+
+Create a function named simulateSleepwalker that receives room, startX, startY, and steps as its parameters.
+
+Your task is to simulate the movement of a sleepwalker in a dimly lit room, represented by a 2D array. The sleepwalker's position and movements will be influenced by light intensity and obstacles.
+
+The function should perform the following operations:
+- Initialize the sleepwalker's position using startX and startY.
+- For each step:
+	- Calculate the average light intensity in the surrounding cells (including diagonals).
+	- Determine the sleepwalker's movement direction based on the light intensity gradient.
+	- Move the sleepwalker to the new position if it's not an obstacle.
+	- Update the room layout by reducing light intensity in cells the sleepwalker passes through by 1 (minimum value is 2).
+- After all steps, sort each row of the room array in descending order of light intensity, keeping obstacles (1) and the sleepwalker's final position (-1) in place.
+- Return the final room layout.
+
+Parameters:
+- room (int[][]): A 2D array representing the layout of the room, where 0 is empty space, 1 is an obstacle, and values 2-9 represent light intensity.
+- startX (int): The starting X coordinate of the sleepwalker.
+- startY (int): The starting Y coordinate of the sleepwalker.
+- steps (int): The number of steps the sleepwalker will take.
+
+The function returns an int[][] representing the updated room layout after the sleepwalker's movement, where the sleepwalker's final position is marked with -1.
+
+To determine the sleepwalker's movement direction:
+- Calculate the average light intensity for each adjacent cell (including diagonals).
+- Move towards the cell with the lowest average light intensity.
+- If multiple cells have the same lowest intensity, prioritize in this order: up, left, down, right, up-left, up-right, down-left, down-right.
+
+For sorting each row:
+- Use a custom sorting algorithm (e.g., bubble sort or insertion sort) to sort the non-obstacle cells in descending order of light intensity.
+- Ensure that obstacles (1) and the sleepwalker's position (-1) remain in their original positions.
+
+Note: Ensure that the sleepwalker doesn't move out of the room boundaries.
+
+### 3 - Optimized Study Plan
+
+Create a function named optimizeStudyPlan that receives dailySchedule, studyTopics, and timeAvailable as its parameters.
+
+This function simulates a college student's day, optimizing study time based on the schedule, study topics, and available hours.
+
+The function should:
+- Identify free time slots for studying from dailySchedule.
+- Sort studyTopics by importance and urgency (earlier means more urgent).
+- Allocate study topics to available hours, prioritizing contextually relevant topics (e.g., biology topics after a biology class).
+- Handle edge cases like more topics than hours or no available study hours using 'break' and 'continue' statements.
+
+Parameters:
+- dailySchedule (String[]): Array of daily events (class, study time, leisure).
+- studyTopics (String[]): Array of topics to study (biology and ecology).
+- timeAvailable (int): Number of study hours available.
+
+Returns a String[] describing the study topic for each available hour.
+
+### 2 - Family Reunion Picnic Planner
+
+Write a function planReunionPicnic that takes familyNames, foodItems, activities and returns a formatted planning summary.
+
+The function creates a guest list from family member names and combines all picnic items into one complete array for planning purposes.
+
+Parameters: 
+- familyNames (String[]): Array of family member names
+- foodItems (String[]): Array of food items to bring
+- activities (String[]): Array of planned activities
+
+Returns: Planning summary string. Format: Guest List: [name1, name2, name3] Items: [item1, item2, item3, activity1, activity2]
+
 ### 1 - Pantry Organization Helper
 
 Create a program that helps organize the community food pantry by performing three tasks. First, read a donation ID number and check if it's a disarium number (where the sum of each digit raised to its position equals the number itself—for example, 135 is disarium because 1¹ + 3² + 5³ = 135). Print "Priority" if it is, or "Standard" if not. Second, read a daily spending amount and calculate the projected monthly expense for 30 days. Third, read a three-digit shelf code and check if its middle digit is even—print "Refrigerated" if it is, or "Dry Storage" if not.
