@@ -4,6 +4,14 @@
 
 ## May
 
+### 5 - Garden Plot Validator
+
+Create a program that helps validate garden plot measurements entered by volunteers. Read a series of measurement entries and check which ones are valid decimal numbers (like "12.5" or "3.0"), then count how many consecutive pairs of valid measurements are identical.
+
+A valid decimal must have digits, exactly one decimal point, and at least one digit after the point. Among valid measurements, count consecutive equal pairs - for example, three identical values in a row create two pairs.
+
+Print two numbers: the count of valid decimals, and the count of consecutive equal pairs.
+
 ### 4 - Sleepwalker's Luminous Journey
 
 Create a function named simulateSleepwalker that receives room, startX, startY, and steps as its parameters.
