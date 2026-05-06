@@ -4,6 +4,18 @@
 
 ## May
 
+### 6 - Organize Internal Communication System
+
+Write a function organizeMessages that takes messages (a 2D array of internal messages) and reminders (a 1D array of automated reminders) and returns a single 1D array containing all messages in reverse order.
+
+The function flattens the 2D messages array, concatenates it with the reminders array, then reverses the entire result.
+
+Parameters:
+- messages (String[][]): 2D array of internal messages between employees
+- reminders (String[]): 1D array of automated system reminders
+
+Returns: String array with all messages concatenated and reversed. Format: ["last_reminder", "second_last_message", "first_message"]
+
 ### 5 - Garden Plot Validator
 
 Create a program that helps validate garden plot measurements entered by volunteers. Read a series of measurement entries and check which ones are valid decimal numbers (like "12.5" or "3.0"), then count how many consecutive pairs of valid measurements are identical.
