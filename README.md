@@ -4,6 +4,31 @@
 
 ## May
 
+### 7 - Author's Book Signing Queue Organizer
+
+Create a function named organizeBookSigningQueue that receives attendees and maxBooksPerPerson as its parameters.
+
+The function simulates an author's book signing event, organizing the queue and processing attendees based on specific criteria.
+
+Implement the following logic:
+- Organize the queue:
+	- Move VIP attendees (names starting with "VIP_") to the front of the queue.
+	- Give priority to attendees with the first name "John" (the author's name) after VIPs.
+	- Sort the remaining attendees alphabetically.
+	- Remove duplicate names from the queue (each attendee should appear only once).
+- Process the queue:
+	- Sign books for each attendee, up to maxBooksPerPerson.
+	- Stop when all attendees have been served or when 100 books have been signed in total.
+
+Parameters:
+- attendees (String[]): An array of attendee names.
+- maxBooksPerPerson (int): The maximum number of books the author can sign per person.
+
+The function returns a String containing a summary of the event, formatted as follows:
+"Attendees served: [number], Books signed: [number], Last person served: [name], Unfinished requests: [names]"
+
+- If there are no unfinished requests, omit that part from the summary.
+
 ### 6 - Organize Internal Communication System
 
 Write a function organizeMessages that takes messages (a 2D array of internal messages) and reminders (a 1D array of automated reminders) and returns a single 1D array containing all messages in reverse order.
