@@ -4,6 +4,33 @@
 
 ## May
 
+### 8 - Garden Growth Simulation
+
+Create a function named simulateGardenGrowth that receives numDays, initialPlants, growthProbabilities, and decayProbabilities as its parameters.
+
+This function simulates the growth and decay of plants in a garden over a specified number of days, considering the probabilities of plant growth and decay for each day.
+
+The simulation works as follows:
+- Start with the initial number of plants specified by initialPlants.
+- For each day from 1 to numDays:
+	- Calculate the number of new plants that will grow based on the number of existing plants and the growth probability for that day.
+	- Calculate the number of plants that will decay based on the number of existing plants and the decay probability for that day.
+	- Update the total number of plants by adding the new plants and subtracting the decayed plants.
+ - After simulating all the days, return the final number of plants in the garden.
+
+Formulas:
+- New plants = existing plants × growth probability
+- Decayed plants = existing plants × decay probability
+Note: The growth and decay probabilities for each day are provided as arrays, where the index corresponds to the day number (starting from 0).
+
+Parameters:
+- numDays (int): The number of days to simulate the garden growth.
+- initialPlants (int): The initial number of plants in the garden.
+- growthProbabilities (float[]): An array of growth probabilities for each day.
+- decayProbabilities (float[]): An array of decay probabilities for each day.
+
+The function returns an integer representing the final number of plants in the garden after the simulation.
+
 ### 7 - Author's Book Signing Queue Organizer
 
 Create a function named organizeBookSigningQueue that receives attendees and maxBooksPerPerson as its parameters.
