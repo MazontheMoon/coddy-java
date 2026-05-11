@@ -4,6 +4,90 @@
 
 ## May
 
+### 11 - Eccentric Book Organization System
+
+Create a function named organizeRareBooks that receives pages, ages, and titles as its parameters.
+
+You are an assistant to an eccentric collector who needs help organizing their rare books in a cluttered attic. The collector has devised a unique system based on mathematical properties to determine the optimal placement of books. Your task is to implement this system and return the arrangement of books.
+
+The organization process involves the following steps:
+- Calculate a "rarity score" for each book using the formula:
+	rarity_score = (Math.sin(pages) * Math.cos(age) * Math.log(pages + age)) / Math.pow(Math.E, (pages/1000.0))
+- Determine the probability of each book being placed in one of three sections: "Arithmetic", "Geometric", or "Harmonic" using a custom probability distribution based on the rarity score.
+- Calculate the expected value of the arrangement based on the rarity scores and probabilities.
+- Use Bayes' theorem to adjust the probabilities based on the condition that no more than 40% of the books can be in any single section.
+- Arrange the books in the three sections, ensuring that the arrangement maximizes the expected value while adhering to the conditions.
+
+Parameters:
+- pages (int[]): An array representing the number of pages in each book.
+- ages (float[]): An array representing the age of each book in years.
+- titles (String[]): An array containing the titles of the books.
+
+The function returns a String array where each element is in the format: "Title - Section".
+
+Constraints:
+- All input arrays will have the same length, representing the number of books.
+- The number of books will be between 1 and 1000.
+- Page numbers will be positive integers.
+- Ages will be positive floats.
+- Titles will be non-empty strings.
+
+Note: You may use Math.sin(), Math.cos(), Math.log(), Math.pow(), and Math.E for calculations. For probability calculations, you may assume a uniform distribution if not specified otherwise.
+
+### 10 - Optimal Weekend Getaway Planner
+
+Create a function named planWeekendGetaway that receives preferences, budgets, activityCosts, and accommodationCosts as its parameters.
+
+The function should determine the optimal weekend getaway plan for a group of friends based on their preferences, budgets, and available options. The goal is to maximize overall group satisfaction while staying within budget constraints.
+
+Parameters:
+- preferences (int[][]): A 2D array where each row represents a friend's preferences for different activities on a scale of 1-10. Each column represents an activity (e.g., hiking, shopping, sightseeing).
+- budgets (int[]): An array representing each friend's budget for the trip.
+- activityCosts (int[][]): A 2D array where each row represents a day of the weekend (2 days), and each column represents the cost of an activity for that day.
+- accommodationCosts (int[]): An array representing the cost of different accommodation options.
+
+The function should return a String array containing the optimal plan for the weekend getaway, including chosen activities for each day and the selected accommodation.
+
+To solve this challenge, follow these steps:
+- Calculate the average preference score for each activity across all friends.
+- Sort the activities based on the average preference scores in descending order.
+- Find the lowest accommodation cost that fits within all friends' budgets.
+- For each day of the weekend:
+	- Select the highest-ranked activity that fits within the remaining budget for all friends.
+	- Update the remaining budget for each friend.
+- If there's remaining budget, consider adding a second activity for each day following the same process.
+- Generate the final plan as a String array, including the chosen accommodation and activities for each day.
+
+This challenge involves advanced array manipulation to process preferences and costs, nested loops to iterate through friends and activities, and elements of game theory to balance individual preferences with group satisfaction. The solution should be implemented efficiently within the 20-49 lines of code range.
+
+### 9 - Shoesmith's Coding Journey
+
+Create a function named careerTransition that receives days as its parameter.
+
+The function simulates a shoesmith's transition to a new career as a programmer. It tracks the shoesmith's progress in learning programming concepts over a given number of days.
+
+Use a loop to iterate through the days, employing basic control flow (break, continue) and increment/decrement operators to track the shoesmith's progress. The challenge focuses on using these basic concepts to create a narrative of the shoesmith's journey.
+
+Parameters:
+- days (int): The number of days since the shoesmith started learning programming.
+
+The function returns a String describing the shoesmith's progress in learning programming concepts.
+
+Follow these steps to implement the function:
+- Initialize variables to track the shoesmith's progress (e.g., lines of code written, concepts learned).
+- Use a loop to iterate through the days.
+- For each day, increment or decrement progress variables based on certain conditions.
+- Use break or continue statements to simulate setbacks or breakthroughs in the learning process.
+- After the loop, return a string that summarizes the shoesmith's progress.
+
+Implement the following logic in your function:
+-Every day, the shoesmith writes 10 lines of code.
+-Every 3 days, the shoesmith learns a new concept.
+-If the day is divisible by 7, the shoesmith takes a break and doesn't code (use continue).
+-If the shoesmith has learned 5 concepts, they have a breakthrough and the learning process ends (use break).
+
+The returned string should include the total lines of code written and the number of concepts learned.
+
 ### 8 - Garden Growth Simulation
 
 Create a function named simulateGardenGrowth that receives numDays, initialPlants, growthProbabilities, and decayProbabilities as its parameters.
