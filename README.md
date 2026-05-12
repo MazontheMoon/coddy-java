@@ -4,6 +4,34 @@
 
 ## May
 
+### 12 - City Intersection Traffic Simulator
+
+Create a function named simulateTraffic that receives pedestrianWaves, vehicleWaves, trafficLights, and simulationTime as its parameters.
+
+This function simulates the flow of pedestrians and vehicles at a city intersection.
+
+pedestrianWaves is a 2D integer array where each inner array represents a wave of pedestrians crossing from each direction (north, east, south, west).
+
+vehicleWaves is a 2D integer array similar to pedestrianWaves, representing waves of vehicles.
+
+trafficLights is a string array indicating the sequence of traffic light changes: "NS" (north-south green), "EW" (east-west green), "G" (green), and "R" (red).
+
+simulationTime is an integer representing the total time for the simulation.
+
+Implement the function to simulate traffic flow based on the inputs. Use array slicing to extract pedestrian and vehicle counts from each wave. Use conditional statements to determine traffic flow based on the current traffic light state.
+
+Track the total number of pedestrians and vehicles that pass through the intersection, the direction with the highest pedestrian traffic, and the direction with the highest vehicle traffic.
+
+Return a string summarizing the simulation results, including the total number of pedestrians and vehicles, the busiest pedestrian and vehicle directions, and the number of traffic light changes.
+
+Parameters:
+- pedestrianWaves (int[][]): Waves of pedestrians crossing the intersection.
+- vehicleWaves (int[][]): Waves of vehicles passing through the intersection.
+- trafficLights (String[]): Sequence of traffic light changes.
+- simulationTime (int): Total time for the simulation.
+
+The function returns a string summarizing the simulation results.
+
 ### 11 - Eccentric Book Organization System
 
 Create a function named organizeRareBooks that receives pages, ages, and titles as its parameters.
