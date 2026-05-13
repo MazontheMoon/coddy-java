@@ -4,6 +4,35 @@
 
 ## May
 
+### 13 - Analyzing Rare Pipridae Sightings in the Forest Canopy
+
+Create a function named analyzePipridaeSightings that receives sightings and minDuration as its parameters.
+
+As a birdwatcher exploring the forest canopy, you've gathered data on rare Pipridae species sightings. Your task is to analyze this data and provide insights on the most frequently observed birds.
+
+Your function should process the sightings data, filter out invalid observations, and return information about the top 3 most observed Pipridae species.
+
+Parameters:
+- sightings (int[][]): A 2D array where each inner array contains three integers: [birdId, treeHeight, observationDuration]
+- minDuration (int): The minimum observation duration (in minutes) for a sighting to be considered valid
+
+The function should perform the following operations:
+- Filter out invalid sightings based on the minimum observation duration.
+- Group the remaining sightings by birdId.
+- For each group, calculate the average tree height and total observation duration.
+- Sort the groups based on total observation duration in descending order.
+- Return a 2D array containing the top 3 most observed bird species (or fewer if there are less than 3 species).
+
+The function returns an int[][] where each inner array contains [birdId, averageTreeHeight, totalObservationDuration] for a bird species. The averageTreeHeight should be rounded to the nearest integer.
+
+Constraints:
+1 ≤ sightings.length ≤ 100
+sightings[i].length == 3
+1 ≤ birdId ≤ 1000
+1 ≤ treeHeight ≤ 100
+1 ≤ observationDuration ≤ 120
+1 ≤ minDuration ≤ 60
+
 ### 12 - City Intersection Traffic Simulator
 
 Create a function named simulateTraffic that receives pedestrianWaves, vehicleWaves, trafficLights, and simulationTime as its parameters.
