@@ -4,6 +4,24 @@
 
 ## May
 
+### 14 - Schedule Armstrong Number Patient IDs
+
+Write a function scheduleArmstrongPatients that takes studentIds, maxCount and returns an array of student IDs that are Armstrong numbers.
+
+The function processes student IDs to find Armstrong numbers (numbers equal to the sum of their digits raised to the power of the number of digits), skipping non-positive IDs and stopping when the result list reaches the maximum count.
+
+Logic:
+- Skip non-positive student IDs using continue
+- Check if each valid ID is an Armstrong number
+- Add Armstrong numbers to the result
+- Stop processing when result reaches maxCount using break
+
+Parameters:
+- studentIds (int[]): Array of student ID numbers to check
+- maxCount (int): Maximum number of Armstrong numbers to return
+
+Returns: Array of student IDs that are Armstrong numbers, up to maxCount. Format: [153, 371, 407]
+
 ### 13 - Analyzing Rare Pipridae Sightings in the Forest Canopy
 
 Create a function named analyzePipridaeSightings that receives sightings and minDuration as its parameters.
