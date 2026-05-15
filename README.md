@@ -4,6 +4,27 @@
 
 ## May
 
+### 15 - Plan a Clumsy Escape through the Museum
+
+Create a function named planClumsyEscape that receives exhibits and magicWord as its parameters.
+
+Your task is to simulate planning a clumsy escape route through a natural history museum. The function should create a string representing the escape route based on the given exhibits, but with some special rules.
+
+Follow these steps to create the escape route:
+- Split the exhibits string into an array of individual exhibit names.
+- Iterate through each exhibit name:
+	- If the exhibit name contains the letter 'o' (case-sensitive), skip it using the continue statement.
+	- If the exhibit name matches the magicWord (case-sensitive), immediately end the plan using the break statement.
+	- Otherwise, add the exhibit name to the escape route.
+- Join the selected exhibits in the escape route with " -> ".
+- If the escape route is empty (all exhibits skipped or magic word encountered immediately), return "Oops! Back to the drawing board!".
+
+Parameters:
+- exhibits (String): A comma-separated list of exhibit names in the museum.
+- magicWord (String): A word that, when encountered, immediately ends the escape plan.
+
+The function returns a String representing the clumsy escape route or "Oops! Back to the drawing board!" if the route is empty.
+
 ### 14 - Schedule Armstrong Number Patient IDs
 
 Write a function scheduleArmstrongPatients that takes studentIds, maxCount and returns an array of student IDs that are Armstrong numbers.
