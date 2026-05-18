@@ -4,6 +4,104 @@
 
 ## May
 
+### 18 - Sunday Afternoon Floor Coating
+
+Create a function named applyTopcoat that receives roomLength, roomWidth, and coatAvailable as its parameters.
+
+The function simulates the process of applying a topcoat to a wooden floor on a quiet Sunday afternoon. It should calculate the total area of the room, determine if there's enough topcoat to cover the entire floor, and provide a formatted string describing the coating process.
+
+Follow these guidelines to implement the function:
+- 1 gallon of topcoat covers 100 square feet.
+- Apply the topcoat row by row, updating the progress after each row.
+- If the topcoat runs out before finishing the room, stop the process.
+- Use string formatting to create progress updates and the final output.
+- Use control flow (like loops and conditional statements) to manage the coating process.
+
+Parameters:
+- roomLength (int): The length of the room in feet.
+- roomWidth (int): The width of the room in feet.
+- coatAvailable (float): The amount of topcoat available in gallons.
+
+The function returns a string that includes:
+- The total area of the room
+- The amount of topcoat needed for the entire room
+- Progress updates for each row coated
+- A final statement indicating whether the entire floor was coated or not
+
+Here's an example of how the output string should be formatted:
+Room area: 200 sq ft
+Topcoat needed: 2.00 gallons
+Row 1 coated. 1.00 gallons remaining.
+Row 2 coated. 0.00 gallons remaining.
+Floor coating complete. Used 2.00 gallons of topcoat.
+
+Or if the topcoat runs out:
+Room area: 300 sq ft
+Topcoat needed: 3.00 gallons
+Row 1 coated. 1.00 gallons remaining.
+Row 2 coated. 0.00 gallons remaining.
+Ran out of topcoat. 100 sq ft left uncoated.
+
+### 17 - Analyzing Friendship Connections at the Seaside Café
+
+Create a function named analyzeFriendshipConnections that receives connections and inquiries as its parameters.
+
+This function simulates and analyzes the connections among a group of old friends gathered at an opalescent seaside café. It handles complex string manipulations and set operations to reveal insights about the group dynamics.
+
+The function should parse the connections to build relationships using sets to manage the dynamic connections, subsets, and supersets. It should also implement string manipulations to extract query details and manage response formatting. The function should support regex to validate and potentially normalize input formats.
+
+Parameters:
+- connections (String[]): An array where each element represents a direct friendship connection between two friends in the form of "FriendA-FriendB".
+- inquiries (String[]): An array where each element is a query about the group. Possible queries are:
+	"all_friends" to list all unique friends
+	"direct_friends-FriendA" to list all direct friends of FriendA
+	"common_friends-FriendA-FriendB" to find mutual friends between FriendA and FriendB
+
+The function returns a single string that summarizes the inquiries, one per line, in the order they were asked. Each line should be formatted as follows:
+- For "all_friends": "All friends: friend1, friend2, ..."
+- For "direct_friends-FriendA": "Direct friends of FriendA: friend1, friend2, ..."
+- For "common_friends-FriendA-FriendB": "Common friends of FriendA and FriendB: friend1, friend2, ..."
+
+Constraints:
+- Assume all friend names in input are cleaned and whitespace-trimmed.
+- If a query does not yield any results (e.g., no direct friends found), return an empty list for that query.
+- The friends in each result should be sorted alphabetically.
+- There should be no duplicate friends in any result.
+
+To solve this challenge, you'll need to use advanced string manipulation techniques, including regex for parsing and validating input formats, as well as set theory concepts for managing and analyzing the friendship connections. You'll need to create sets to represent friend groups, perform set operations like union and intersection, and use these to answer the different types of inquiries.
+
+Here's a step-by-step approach you might consider:
+- Parse the connections array to build a map or set structure representing the friendship network.
+- Implement methods to handle each type of inquiry, using set operations where appropriate.
+- Use regex to validate and parse the inquiry strings.
+- For each inquiry, call the appropriate method and format the result as specified.
+- Combine all results into a single string, with each result on a new line.
+- Remember to handle edge cases, such as when a friend has no connections or when there are no common friends between two people.
+
+### 16 - Decoding a Child's Fake Illness Strategy
+
+Create a function named analyzeChildSymptoms that receives symptomDescription and previousAttempts as its parameters.
+
+Your task is to implement a function that analyzes a child's attempt to deceive their parents about being sick. The function should use advanced string manipulation and game theory concepts to determine if the child is likely faking or genuinely ill.
+
+The challenge involves parsing a reversed string of symptoms, identifying key phrases even when misspelled or obfuscated, and applying game theory principles to assess the likelihood of the child's strategy being successful.
+
+Parameters:
+- symptomDescription (String): A reversed string representing the child's description of their symptoms. This string may contain misspellings and obfuscated words (e.g., "r,e.v:e;f" for "fever").
+- previousAttempts (int): The number of previous attempts the child has made to fake illness, representing a "parental suspicion" factor.
+
+The function should perform the following steps:
+- Reverse the symptomDescription string to obtain the actual description.
+- Parse the reversed string to identify symptom-related words and phrases, even when misspelled or obfuscated.
+- Assign weights to various symptoms and their combinations based on their likelihood of being faked or genuine.
+- Apply game theory principles to assess the child's strategy, taking into account the number of previous attempts.
+- Calculate a "genuineness score" based on the identified symptoms and their weights.
+- Determine the final diagnosis and confidence level based on the genuineness score and previous attempts.
+
+The function returns a String in the format "[Diagnosis]: [Confidence]%", where [Diagnosis] is one of "Genuinely Ill", "Possibly Faking", or "Definitely Faking", and [Confidence] is an integer between 0 and 100.
+
+Note: Implement the solution using only the allowed Java types and ensure your code is between 20 and 49 lines long.
+
 ### 15 - Plan a Clumsy Escape through the Museum
 
 Create a function named planClumsyEscape that receives exhibits and magicWord as its parameters.
