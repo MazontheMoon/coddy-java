@@ -4,6 +4,15 @@
 
 ## May
 
+### 19 - Pet Adoption Fair Manager
+
+Create a program that manages three systems for a pet adoption fair. 
+First, check if booth numbers are powers of 2 (these get premium pricing). 
+Second, validate compound animal names - determine if a name can be formed by concatenating two or more words from your breed dictionary. 
+Third, maintain a "most recently viewed" queue of size K that tracks animal viewing history, moving animals to the front when viewed again.
+
+Your program reads a booth number, a list of breed dictionary words, compound names to validate, the queue size K, and a sequence of animal viewing events. Output whether the booth qualifies for premium pricing, which compound names are valid, and the final state of the viewing queue.
+
 ### 18 - Sunday Afternoon Floor Coating
 
 Create a function named applyTopcoat that receives roomLength, roomWidth, and coatAvailable as its parameters.
