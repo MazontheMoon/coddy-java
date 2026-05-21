@@ -4,6 +4,58 @@
 
 ## May
 
+### 21 - Exotic Flower Greenhouse Simulation
+
+Create a function named tendGreenhouse that receives String[] flowerTypes, int[] growthStages, int days, float waterPerDay, and float fertilizerPerDay as its parameters.
+
+The function simulates a gardener tending to exotic flowers in a sunny greenhouse over a specified number of days. The gardener must manage the growth and care of various exotic flowers with limited resources.
+
+Implement the following logic in your function:
+- Prioritize watering and fertilizing flowers based on their current growth stage.
+- Advance the growth stage of flowers when proper care is provided.
+- Handle special care requirements for different types of exotic flowers.
+- Manage limited resources (water and fertilizer) efficiently.
+- Generate status messages for each flower at the end of the simulation.
+
+Use advanced variables, assignment techniques, loops, and array searching to implement this functionality efficiently.
+
+Parameters:
+- flowerTypes (String[]): An array representing the types of flowers in the greenhouse.
+- growthStages (int[]): An array representing the current growth stage of each flower (0-5, where 0 is a seed and 5 is fully bloomed).
+- days (int): The number of days to simulate.
+- waterPerDay (float): The amount of water available each day.
+- fertilizerPerDay (float): The amount of fertilizer available each day.
+
+The function returns a String array representing the status of each flower after the simulation period. Each status message should include the flower type, final growth stage, and a brief description of its condition.
+
+Note:
+- Ensure that the flowerTypes and growthStages arrays have the same length.
+- Growth stages are integers from 0 to 5 (inclusive).
+- The number of days, water per day, and fertilizer per day are always positive values.
+
+Implement helper methods within the main function as needed to organize your code and keep the solution within the 20-49 lines range.
+
+### 20 - Path to Hidden Waterfall
+
+Create a function named pathToHiddenWaterfall that receives terrainDescriptions and steps as its parameters.
+
+This function aims to simulate a hiking adventure through a forest where the user needs to find the hidden waterfall by navigating through paths represented by advanced manipulation of arrays and substrings.
+
+The function should perform the following steps:
+- Reverse the entries in terrainDescriptions.
+- For every third description in the reversed array, if the description contains the substring "rocky", replace it with "stream".
+- If the length of any description is odd and contains the substring "tree", append " - path found" to that description.
+- After applying the above manipulations, use the steps input to determine the index position of the terrain description that contains the hidden waterfall. Assume steps could loop around the array if it exceeds the length.
+- Return the description of the terrain at the index calculated from the step count.
+
+As users solve the challenge, they should feel like they are hiking through a mysterious forest, decoding nature's signs that lead to a scenic waterfall hidden away from the usual path.
+
+Parameters:
+- terrainDescriptions (String[]): An array where each string describes the terrain of a particular section of the forest. The array needs to be manipulated to reverse the order and modify specific entries to simulate finding hidden clues.
+- steps (int): The number of steps the user takes forward, which affects how the terrain array is interpreted.
+
+The function returns a String representing the final description of the terrain where the hidden waterfall is located, obtained by correctly manipulating the input descriptions.
+
 ### 19 - Pet Adoption Fair Manager
 
 Create a program that manages three systems for a pet adoption fair. 
