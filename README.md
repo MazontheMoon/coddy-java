@@ -4,6 +4,34 @@
 
 ## May
 
+### 22 - Himalayan Embroidery Pattern Generator
+
+Create a function named generateHimalayanEmbroideryPattern that receives patternSize, complexity, baseFrequency, and colorDepth as its parameters.
+
+This function simulates an intricate embroidery pattern generation inspired by the serene Himalayan landscape, using advanced mathematical concepts and expert numbers. The function will generate a complex, symmetric pattern based on trigonometric functions, the golden ratio (phi), and other mathematical constants.
+
+Implement the function using the following guidelines:
+- Use mathematical constants such as pi (π), e, and phi (φ, golden ratio) in your calculations.
+- Utilize trigonometric functions (sin, cos, tan) to create wave-like patterns.
+- Incorporate logarithmic spirals inspired by natural formations in the Himalayas.
+- Implement fractals to add self-similar details at different scales.
+- Create color gradients based on the distance from the center, using exponential functions.
+
+To maintain precision in your calculations, use the following approximations:
+π (pi) ≈ 3.14159265358979323846
+e ≈ 2.71828182845904523536
+φ (phi) ≈ 1.61803398874989484820
+
+Parameters:
+- patternSize (int): The size of the square pattern (e.g., 100 for a 100x100 pattern). Must be a positive integer.
+- complexity (int): A value between 1 and 10 determining the intricacy of the pattern.
+- baseFrequency (float): A base frequency for the trigonometric functions. Must be a positive float.
+- colorDepth (int): The number of color gradients to use (between 2 and 10).
+
+The function returns a 2D integer array representing the embroidery pattern, where each integer represents a color in the pattern. The size of the returned array should be patternSize x patternSize.
+
+Ensure your implementation is efficient and well-structured, combining the mathematical concepts creatively to generate a visually appealing and complex pattern. Use nested loops, conditional statements, and careful calculations to ensure the pattern is symmetric and follows the desired complexity.
+
 ### 21 - Exotic Flower Greenhouse Simulation
 
 Create a function named tendGreenhouse that receives String[] flowerTypes, int[] growthStages, int days, float waterPerDay, and float fertilizerPerDay as its parameters.
