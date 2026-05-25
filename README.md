@@ -4,6 +4,100 @@
 
 ## May
 
+### 25 - Bitwise Knitting Pattern Generator
+
+Create a function named generateKnittingPattern that receives colors, width, height, and techniques as its parameters.
+
+Your task is to create a complex knitting pattern generator using bitwise operations and set theory concepts. This function will simulate the process of creating an intricate knitting pattern, combining different colors and techniques, much like a cozy evening of knitting by the fireplace.
+
+The function should generate a unique knitting pattern based on the input parameters, using bitwise operations to manipulate colors and techniques, and set theory concepts to combine different sections of the pattern.
+
+Parameters:
+- colors (int): The number of yarn colors available (1 to 32).
+- width (int): The width of the knitting pattern (1 to 64).
+- height (int): The height of the knitting pattern (1 to 64).
+- techniques (int[]): An array representing the available knitting techniques. Each technique is encoded as a power of 2 (e.g., [1, 2, 4, 8, 16]).
+
+The function should perform the following operations:
+- Generate a power set of knitting techniques using bitwise operations.
+- Use bit manipulation to assign colors and techniques to each stitch in the pattern.
+- Apply set operations to combine and modify different sections of the pattern.
+
+The function returns a 2D char array representing the generated knitting pattern, where each character represents a specific color and knitting technique combination.
+
+Additional guidelines:
+- Use bitwise AND, OR, and XOR operations to combine colors and techniques.
+- Implement bit shifting to create variations in the pattern.
+- Use bitwise operations to create masks for different sections of the pattern.
+- Apply set theory concepts like union, intersection, and complement using bitwise operations to modify pattern sections.
+- Ensure that your implementation is efficient and doesn't exceed the time complexity limits.
+
+Remember, think of the bits as strands of yarn, and your task is to weave them into a new tapestry using the principles of set theory and bitwise operations, much like creating an intricate knitting pattern from simple threads.
+
+### 24 - Disband Artist Collective
+
+Create a function named disbandArtistCollective that receives String collective as its parameter.
+
+The function simulates the disbanding of an artist collective, where each artist is represented by a unique color code. The function will take a string input representing the collective's current state and return a modified string showing the disbanding process.
+
+The disbanding process follows these rules:
+- Each artist is represented by a 7-character hex color code (including the "#" symbol).
+- Artists are removed from the collective one by one, following a specific pattern.
+- The removal pattern starts with the first artist, then every third artist after that (1st, 4th, 7th, etc.).
+- After reaching the end of the collective, the pattern continues from the beginning, skipping already removed artists.
+- The process continues until all artists are removed.
+
+To implement this, you should:
+- Parse the input string and create a linked list to store the artists' color codes.
+- Implement the disbanding algorithm using the linked list structure.
+- Use increment and decrement operators to navigate through the linked list and determine which artists to remove.
+- Construct the output string by replacing removed artists' color codes with spaces.
+
+Parameters:
+- collective (String): A string representing the initial state of the artist collective, where each artist is represented by a 7-character hex color code (including the "#" symbol).
+
+The function returns a string representing the final state of the collective after the disbanding process, with removed artists replaced by spaces.
+
+Example:
+String collective = "#FF0000#00FF00#0000FF#FFFF00#FF00FF#00FFFF";
+String result = disbandArtistCollective(collective);
+System.out.println(result);
+// Output: "       #00FF00       #FFFF00       #00FFFF"
+In this example, the artists are removed in the following order: #FF0000 (1st), #0000FF (4th), #FF00FF (2nd), #00FF00 (3rd), #FFFF00 (5th), #00FFFF (6th).
+
+### 23 - Apartment Governance Voting System
+
+Create a function named determineApartmentRules that receives roommates and proposedRules as its parameters.
+
+Your task is to implement a voting system for apartment governance decisions based on a unique hashing and reversing algorithm. This system will help a group of friends arrive at a decision for their shared living space, considering each roommate's input while adding a twist of complexity to the voting process.
+
+The function should perform the following steps:
+- Create a unique hash for each roommate based on their name.
+- Reverse the hash and use it as a voting power for each roommate.
+- Implement a voting system where each roommate's vote is weighted by their reversed hash value.
+- Use conditional statements to handle tie-breakers and special cases.
+- Return the winning rule as a string, with a prefix indicating the level of agreement.
+
+For hashing, use the following algorithm:
+long hash = 0;
+for (char c : name.toCharArray()) {
+    hash = 31 * hash + c;
+}
+return Math.abs(hash);
+
+To reverse the hash, convert it to a string, reverse the string, and convert it back to a long. This reversed value will be the voting power.
+
+Parameters:
+- roommates (String[]): An array of strings representing the names of the roommates.
+- proposedRules (String[]): An array of strings representing the rules proposed by each roommate, in the same order as the roommates array.
+
+The function returns a string representing the winning rule, prefixed with either "Unanimous: " if all roommates agree, or "Majority: " otherwise.
+
+Constraints:
+- The number of roommates and proposed rules will always be the same and between 2 and 10.
+- Each roommate name and proposed rule will be a non-empty string with a maximum length of 50 characters.
+- In case of a tie, choose the rule proposed by the roommate with the highest voting power.
+
 ### 22 - Himalayan Embroidery Pattern Generator
 
 Create a function named generateHimalayanEmbroideryPattern that receives patternSize, complexity, baseFrequency, and colorDepth as its parameters.
