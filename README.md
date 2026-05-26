@@ -4,6 +4,32 @@
 
 ## May
 
+### 26 - Garden Ecosystem Simulator
+
+Create a function named simulateGardenEcosystem that receives days, plantSpecies, initialQuantities, growthRates, environmentalFactors, factorFrequencies, chemicalCompounds, and compoundRates as its parameters.
+
+The function simulates the growth and chemical production of a complex garden ecosystem over a specified number of days. It should return a detailed report of the garden's state after the simulation period.
+
+Implement the simulation using nested loops, recursion for environmental effects, and advanced string manipulation for data analysis and report generation. Use regex for efficient data processing and loop control statements to handle special cases like plant die-offs or exponential growth.
+
+Parameters:
+- days (int): The number of days to simulate (1 to 365).
+- plantSpecies (String[]): Names of plant species in the garden (1 to 10 species).
+- initialQuantities (int[]): Initial quantities of each plant species (corresponding to plantSpecies).
+- growthRates (float[]): Daily growth rates for each plant species (0.0 to 2.0).
+- environmentalFactors (String[]): Environmental conditions (e.g., "sunny", "rainy", "windy").
+- factorFrequencies (int[]): Frequency of each environmental factor (corresponding to environmentalFactors).
+- chemicalCompounds (String[]): Chemical compounds produced by each plant species.
+- compoundRates (float[]): Daily production rates of chemical compounds for each plant species (0.0 to 1.0).
+
+The function returns a string containing a detailed report of the garden's final state, including:
+- Final quantity of each plant species
+- Total amount of each chemical compound produced
+- Summary of environmental factors and their effects
+- Identification of the most prolific plant species and the most abundant chemical compound
+
+Ensure your implementation handles edge cases and unexpected inputs gracefully. Format the output for readability, using appropriate indentation and line breaks.
+
 ### 25 - Bitwise Knitting Pattern Generator
 
 Create a function named generateKnittingPattern that receives colors, width, height, and techniques as its parameters.
