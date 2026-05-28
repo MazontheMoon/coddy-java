@@ -4,6 +4,29 @@
 
 ## May
 
+### 28 - Optimal Crop Distribution in Challenging Fields
+
+Create a function named optimizeCropDistribution that receives fieldDimensions, cropTypes, growthRates, weatherProbability, and growingSeason as its parameters.
+
+The function should determine the optimal arrangement of crops across multiple fields to maximize yield, considering various complex factors such as field geometry, crop growth patterns, and environmental conditions.
+
+To solve this challenge, you'll need to apply advanced mathematical concepts including calculus, geometry, trigonometry, statistics, probability, linear algebra, and combinatorics. Here's a breakdown of the problem:
+- Model crop growth over time using differential equations.
+- Optimize space utilization by calculating field areas.
+- Consider sunlight exposure for different parts of the fields using trigonometric functions.
+- Analyze the impact of adverse weather conditions using statistical methods.
+- Solve systems of equations for resource allocation using linear algebra.
+- Generate and evaluate different crop arrangement possibilities using combinatorial algorithms.
+
+Parameters:
+- fieldDimensions (float[][]): A 2D array where each sub-array contains two floats representing the length and width of a field.
+- cropTypes (int[]): An array of integers representing the types of crops available.
+- growthRates (float[]): An array of floats representing the growth rates of each crop type.
+- weatherProbability (float): A float representing the probability of adverse weather conditions.
+- growingSeason (int): An integer representing the number of days in the growing season.
+
+The function returns a 2D integer array representing the optimal arrangement of crops in each field to maximize yield. Each element in the returned array should correspond to a crop type from the cropTypes array.
+
 ### 27 - Histogeny Simulation with Expert Numbers
 
 Create a function named histogenySimulation that receives expertNumbers, operations, iterations, initialBase, and finalBase as its parameters.
