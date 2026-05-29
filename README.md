@@ -4,6 +4,17 @@
 
 ## May
 
+### 29 - Reverse Banquet Table Seating
+
+Write a function reverseSeatingOrder that takes tables and returns a new 2D array with the seating order at each table reversed.
+
+You're organizing a country-style banquet and need to reverse the seating arrangement at each table to improve conversation flow between guests.
+
+Parameters:
+- tables (String[][]): A 2D array where each inner array represents a table with guest names
+
+Returns: A new 2D array with the same tables but guest seating order reversed at each table. Format: [["guest3", "guest2", "guest1"], ["guest6", "guest5", "guest4"]]
+
 ### 28 - Optimal Crop Distribution in Challenging Fields
 
 Create a function named optimizeCropDistribution that receives fieldDimensions, cropTypes, growthRates, weatherProbability, and growingSeason as its parameters.
