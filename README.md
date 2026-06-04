@@ -2,6 +2,100 @@
 
 # 2026
 
+## June
+
+### 4 - Precision Medication Dispenser
+
+Create a function named optimizeMedicationDistribution that receives patientConditions, availableMedications, patientWeights, patientAges, and hospitalStayDays as its parameters.
+
+In a bustling hospital ward, a nurse is tasked with preparing and distributing medications to multiple patients. Your function will assist in optimizing this process using advanced bitwise operations and mathematical concepts.
+
+The function should determine the optimal medication distribution for each patient based on their medical condition, available medications, and personal characteristics. It should then return a 2D array representing the optimized medication dosages for each patient.
+
+Follow these steps to implement the function:
+- Decode each patient's medical condition using bitwise operations. Each bit in the condition represents a specific medical need.
+- Match patient conditions with available medications using bitwise AND operations.
+- Calculate base dosages using the patient's weight and age. Use the formula: baseDosage = (weight * 0.5) + (age * 0.2)
+- Adjust dosages based on the length of hospital stay using a logarithmic scale: adjustedDosage = baseDosage * log(hospitalStayDays + 1)
+- Implement a medication effectiveness score using matrix operations. Create a 2D array where each row represents a patient and each column represents a medication. Fill this matrix with the adjusted dosages.
+- Apply a sigmoid function to normalize the effectiveness scores: normalizedScore = 1 / (1 + e^(-adjustedDosage))
+- Use dynamic programming to optimize the medication combination for each patient. The goal is to maximize the sum of normalized scores while keeping the total number of medications below a threshold.
+- Generate a unique identifier for each patient's medication combination using the Chinese Remainder Theorem.
+- Implement error correction using a simple parity bit for each medication dosage.
+
+Parameters:
+- patientConditions (int[]): An array where each element represents a patient's medical condition encoded as a binary number.
+- availableMedications (int[]): An array where each element represents an available medication encoded as a binary number.
+- patientWeights (float[]): An array of patient weights in kilograms.
+- patientAges (float[]): An array of patient ages in years.
+- hospitalStayDays (int[]): An array representing the number of days each patient has been in the hospital.
+
+The function returns a 2D float array where each row represents a patient and each column represents the optimized dosage for a specific medication.
+
+### 3 - Optimal Tenant Retention Strategy
+
+Create a function named calculateOptimalIncentive that receives tenantSatisfaction, windowDraftiness, currentRent, marketRent, maintenanceCost, seasonalFactor, and economicOutlook as its parameters.
+
+As a worried landlady, you're trying to incentivize tenants to stay in your building despite its drafty windows. Your task is to implement a complex decision-making algorithm that determines the optimal incentive strategy for each tenant.
+
+The function should use expert-level logical operators and advanced probability concepts to analyze various factors and output the best incentive strategy for each tenant. Here's a detailed breakdown of what your function should do:
+- Implement complex logical conditions using XOR, NAND, NOR, Implication, and Biconditional operators to evaluate tenant satisfaction in relation to window draftiness and rent prices.
+- Create probability distributions to model tenant behavior and satisfaction levels based on the input parameters.
+- Use conditional probability and Bayes' theorem to update the likelihood of tenants staying given different incentive options.
+- Calculate the expected value and variance for each potential incentive strategy.
+- Apply the central limit theorem to estimate the overall impact of strategies on tenant retention.
+- Implement a risk assessment model using probability concepts to evaluate potential outcomes of different strategies.
+- Consider trade-offs between various incentive options such as rent reduction, window improvements, or other perks.
+- Factor in the economic outlook and seasonal effects on tenant decision-making.
+
+Parameters:
+- tenantSatisfaction (float[]): An array of satisfaction scores (0.0 to 1.0) for each tenant.
+- windowDraftiness (float[]): An array of draftiness scores (0.0 to 1.0) for each apartment's windows.
+- currentRent (int[]): An array of current monthly rents for each apartment.
+- marketRent (int): The average market rent for similar apartments in the area.
+- maintenanceCost (int): The monthly maintenance cost per apartment.
+- seasonalFactor (float): A factor representing the current season's impact on drafts (0.5 for summer, 1.0 for winter).
+- economicOutlook (float): A factor representing the economic outlook (0.0 to 1.0, where 1.0 is very positive).
+
+The function returns a String array (String[]) where each element represents the optimal incentive strategy for the corresponding tenant. Possible strategies could include "Rent Reduction", "Window Improvement", "Offer Perks", or "No Action".
+
+Your implementation should be sophisticated enough to require 50-99 lines of code, utilizing advanced logical operations and probability concepts throughout. This challenge will test your ability to apply expert-level concepts in a practical, real-world scenario while creating a complex decision-making algorithm.
+
+### 2 - Weave an Intricate Lace Pattern
+
+Create a function named weaveIntricateLace that receives n and patterns as its parameters.
+
+The function simulates a lace-making process by manipulating and combining arrays of different lace patterns to create an intricate final design.
+
+Follow these steps to create the intricate lace pattern:
+
+Sort each input lace pattern array based on the complexity of the patterns. Complexity is determined by the length of each string in the array.
+Concatenate the sorted lace pattern arrays in order of increasing overall complexity. Overall complexity is determined by the sum of string lengths in each array.
+Interleave the concatenated array with itself to create a more intricate pattern. This step simulates the weaving process in lace-making.
+Parameters:
+
+n (int): The number of lace patterns. It will be between 1 and 10, inclusive.
+patterns (String[][]): A 2D array of strings, where each sub-array represents a different lace pattern. Each sub-array will contain between 1 and 20 strings, and each string will have a length between 1 and 50 characters.
+The function returns a String array representing the final interwoven lace pattern.
+
+Note: Ensure your implementation handles edge cases, such as when n is 1 or when some pattern arrays are empty. The final output should not contain any empty strings.
+
+### 1 - Garden Center Color Pair Inventory
+Write a function organizeByColorPairs that takes plantLabels and returns a sorted string array with formatted color pair counts.
+
+The function groups bicolor plant labels by their color combinations and formats the results for display in the garden center.
+
+Logic:
+- Parse each label to extract the two colors and plant name
+- Group plants by color pairs using a hash map (treat "Red|Blue" and "Blue|Red" as the same pair)
+- Format each group as "<Color1> & <Color2>: <count> plants"
+- Sort results alphabetically by the formatted string
+
+Parameters:
+- plantLabels (String[]): Array of plant labels in format "Color1|Color2|PlantName"
+
+Returns: String array with formatted color pair counts, sorted alphabetically. Format: ["Blue & Red: 2 plants", "Green & Yellow: 1 plants"]
+
 ## May
 
 ### 31 - Maritime Dispute Arbitrator: Fair Distribution Using Combinatorics and Bit Manipulation
