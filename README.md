@@ -4,6 +4,59 @@
 
 ## May
 
+### 31 - Maritime Dispute Arbitrator: Fair Distribution Using Combinatorics and Bit Manipulation
+
+Create a function named maritimeDisputeArbitrator that receives n, claim1, claim2, and maxValue as its parameters.
+
+You are a fair judge presiding over a maritime dispute between two ships. Each ship claims ownership of a set of items, and your task is to develop a system that fairly distributes these items based on their claims.
+
+Your function should use advanced combinatorics and bit manipulation techniques to determine the fairest distribution of items between the two ships. The distribution should be based on the claims made by each ship, while ensuring that no ship gets exactly what they claimed (to maintain impartiality).
+
+Here's a detailed breakdown of how to approach this challenge:
+- Generate all possible partitions of the n items using Bell numbers and partition generation algorithms.
+- For each partition, calculate a fairness score using bitwise operations to efficiently compare the claims and the partition.
+- Use Catalan numbers to generate all possible ways of dividing the partitions between the two ships.
+- Apply derangement concepts to ensure that no ship gets exactly what they claimed.
+- Use combinations and permutations to explore different arrangements of items within each ship's allocation.
+- Implement efficient bit manipulation techniques to store and process the various distributions and scores.
+- Use bitwise operations to calculate the final score for each distribution, taking into account the claims and the maxValue.
+
+Return the distribution with the highest fairness score.
+Parameters:
+- n (int): The number of disputed items.
+- claim1 (int[]): An array representing the first ship's claim. Each element is a binary value (0 or 1) where 1 indicates the ship claims that item.
+- claim2 (int[]): An array representing the second ship's claim. Each element is a binary value (0 or 1) where 1 indicates the ship claims that item.
+- maxValue (int): The maximum value of any item.
+
+The function returns an integer array representing the fair distribution of items between the two ships. The returned array should have the same length as the input claims, where 1 indicates the item is given to the first ship, and 0 indicates it's given to the second ship.
+
+Constraints:
+
+1 ≤ n ≤ 20 (due to the complexity of the problem)
+claim1.length == claim2.length == n
+All elements in claim1 and claim2 are either 0 or 1
+1 ≤ maxValue ≤ 1000
+Note: Due to the complexity of this problem, focus on implementing the core logic and optimizing your solution as much as possible within the 50-99 lines constraint. You may need to simplify some aspects of the algorithm while still maintaining the use of advanced combinatorics and bit manipulation techniques.
+
+### 30 - Sauce Verte Dish Price Binary Converter
+
+Write a function processSauceVerteDishes that takes dishCodes, prices and returns a string array of binary price representations.
+
+The function filters dishes containing "SV" (sauce verte), sorts them by price in ascending order, and converts their prices to binary strings.
+
+Logic:
+- Filter dish codes that contain "SV" substring along with their corresponding prices
+- Sort the filtered dishes by price in ascending order
+- Convert each price to its binary string representation
+
+Return the array of binary strings in the sorted order
+
+Parameters:
+- dishCodes (String[]): Array of dish codes
+- prices (int[]): Parallel array of dish prices
+
+Returns: String array of binary representations of filtered and sorted prices. Format: ["1010", "1100", "10000"]
+
 ### 29 - Reverse Banquet Table Seating
 
 Write a function reverseSeatingOrder that takes tables and returns a new 2D array with the seating order at each table reversed.
