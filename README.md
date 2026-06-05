@@ -4,6 +4,21 @@
 
 ## June
 
+### 5 - Chemical Chaos Simulator
+
+Create a function named simulateChemicalChaos that receives grid as its parameter.
+
+During a late-night study session in the chemistry lab, a lively debate breaks out among the students. In their excitement, they accidentally reverse the order of chemical elements in each row of their experiment grid. Your task is to create a function that simulates this chaos by reversing the order of elements in each row of the given 2D array.
+
+The function should:
+ - Reverse the order of elements in each row of the array.
+- Return the new 2D array with reversed rows.
+
+Parameters:
+- grid (String[][]): A 2D array representing the initial arrangement of chemical elements in the grid. Each string represents a chemical element symbol.
+
+The function returns a 2D string array representing the new arrangement of chemical elements after the chaotic debate.
+
 ### 4 - Precision Medication Dispenser
 
 Create a function named optimizeMedicationDistribution that receives patientConditions, availableMedications, patientWeights, patientAges, and hospitalStayDays as its parameters.
