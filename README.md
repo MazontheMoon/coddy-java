@@ -4,6 +4,36 @@
 
 ## June
 
+
+### 6 - Klondike Gold Panner's Secret Code
+
+Create a function named goldPannerGame that receives message and encryptionKey as its parameters.
+
+The function simulates a game created by a group of friends panning for gold in the Klondike. The game involves encoding and decoding messages using mathematical transformations and string manipulation, inspired by the melodious sounds of nature surrounding them.
+
+The function should perform the following operations:
+- Encode the Message:
+- Reverse the message string.
+- For each character in the reversed string, shift its Unicode value by adding the encryption key.
+- Convert the shifted Unicode values back into a string.
+- Decode the Message:
+    - Take the encoded message from step 1.
+    - For each character in the encoded string, shift its Unicode value by subtracting the encryption key.
+    - Reverse the resulting string to retrieve the original message.
+
+Parameters:
+- message (String): The original message to encode and decode.
+- encryptionKey (int): The key used to shift Unicode values during encoding and decoding.
+
+The function returns a String array containing two elements: the encoded message and the decoded message.
+
+Important Notes:
+- Ensure that the encryption key is within a reasonable range to prevent integer overflow when shifting Unicode values.
+- Handle edge cases such as empty strings or very long messages appropriately.
+- Consider the case where shifting a character's Unicode value might result in a value outside the printable ASCII range.
+
+This challenge will help you practice advanced string manipulation through character reversal and Unicode shifting, use of loops to iterate and process strings, and applications of basic math concepts in encoding and decoding transformations.
+
 ### 5 - Chemical Chaos Simulator
 
 Create a function named simulateChemicalChaos that receives grid as its parameter.
