@@ -5,6 +5,26 @@
 ## June
 
 
+### 7 - Tech Support Volunteer Matching System
+
+Write a function matchTechSupport that takes volunteers, requests, timeSlots and returns a string array of valid volunteer-request pairings.
+
+The function matches tech support volunteers with help requests by combining skill codes with priority levels and checking availability overlap.
+
+Logic:
+- Concatenate each volunteer's skill code with each request's priority level
+- Extract time availability substrings (characters 2-4) from timeSlots for both volunteer and request
+- A pairing is valid if: volunteer skills contain request skills AND time availabilities have at least 2 overlapping characters
+- Return all valid pairings in format "VolunteerName-RequestID"
+
+Parameters:
+- volunteers (String[]): Array of volunteer data in format "Name:SkillCode"
+- requests (String[]): Array of request data in format "ID:RequiredSkills:Priority"
+- timeSlots (String[]): Array of time availability data in format "Name/ID:TimeCode"
+
+Returns: String array of valid pairings. Format: ["Alice-REQ001", "Bob-REQ002"]
+
+
 ### 6 - Klondike Gold Panner's Secret Code
 
 Create a function named goldPannerGame that receives message and encryptionKey as its parameters.
