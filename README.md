@@ -4,6 +4,25 @@
 
 ## June
 
+### 8 - Recover the Experiment Data
+
+Create a function named recoverExperimentData that receives originalData and corruptedData as its parameters.
+
+This function aims to recover the original experiment data that was corrupted due to a scientific experiment gone wrong. The corrupted data is represented by the corruptedData array, which is a modified version of the originalData array. The modifications include:
+- Some elements have their signs flipped.
+- Some pairs of elements are swapped.
+- Random values are inserted at random positions.
+
+To recover the original data, the function should:
+- Identify and correct the sign-flipped elements.
+- Identify swapped elements and swap them back to their original positions.
+- Identify and remove any random values that were inserted and do not belong to the original array.
+
+Parameters:
+- originalData (int[]): An integer array representing the sequence of data before corruption.
+- corruptedData (int[]): An integer array representing the data after corruption. The length of this array may vary due to insertions.
+
+The function should return an int[] representing the corrected version of the corrupted data, matching the originalData.
 
 ### 7 - Tech Support Volunteer Matching System
 
