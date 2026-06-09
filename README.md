@@ -4,6 +4,17 @@
 
 ## June
 
+### 9 - Organize Church Coat Close
+
+Write a function organizeCoatCloset that takes items and returns a sorted array with heavy coats first, light coats second, and boots last.
+
+The function helps organize donated items in the church coat closet by categorizing and sorting them using nested loops.
+
+Parameters:
+- items (String[]): Array of donated items ("heavy coat", "light coat", or "boots")
+
+Returns: String array sorted by category priority. Format: ["heavy coat", "heavy coat", "light coat", "boots"]
+
 ### 8 - Recover the Experiment Data
 
 Create a function named recoverExperimentData that receives originalData and corruptedData as its parameters.
