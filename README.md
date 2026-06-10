@@ -4,6 +4,37 @@
 
 ## June
 
+### 10 - Beach Explorer: Counting Interesting Sea Creatures
+
+Create a function named exploreBeach that receives seaCreatures and maxObservations as its parameters.
+
+The function simulates a curious landlubber's adventure on the beach, encountering various sea creatures. The landlubber wants to observe interesting creatures but has some specific preferences:
+- If they encounter a "jellyfish", they will immediately leave the beach.
+- If they encounter "seaweed", they will ignore it and continue exploring.
+- All other creatures are considered interesting and will be counted.
+The landlubber will stop exploring when they either encounter a jellyfish, reach the maximum number of observations, or explore the entire beach.
+
+Parameters:
+- seaCreatures (String[]): An array of strings representing different sea creatures found on the beach.
+- maxObservations (int): The maximum number of creatures the landlubber wants to observe before leaving.
+
+The function returns an integer representing the number of interesting creatures observed.
+
+Use basic control flow statements like break and continue to manage the exploration process efficiently.
+
+Here's an example of how to use control flow in your solution:
+
+
+for (String creature : seaCreatures) {
+    if (creature.equals("jellyfish")) {
+        break;  // Stop exploring if a jellyfish is encountered
+    }
+    if (creature.equals("seaweed")) {
+        continue;  // Skip seaweed and continue exploring
+    }
+    // Count other creatures as interesting
+}
+
 ### 9 - Organize Church Coat Close
 
 Write a function organizeCoatCloset that takes items and returns a sorted array with heavy coats first, light coats second, and boots last.
