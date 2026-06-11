@@ -4,6 +4,29 @@
 
 ## June
 
+### 11 - Embassy Surveillance System
+
+Create a function named updateSurveillance that receives cameras, startIndex, endIndex, and cameraToCheck as its parameters.
+
+You are a security guard monitoring surveillance cameras in an Iraqi embassy. Your task is to update the surveillance system and report on its status.
+
+The function should perform the following operations:
+- Count the number of active cameras in the initial array.
+- Replace any inactive cameras (represented by 0) with active ones (represented by 1) in the specified section of the embassy (from startIndex to endIndex, inclusive).
+- Count the number of active cameras after the update.
+- Check the status of the camera at index cameraToCheck.
+
+Parameters:
+- cameras (int[]): An array representing the status of all cameras (1 for active, 0 for inactive).
+- startIndex (int): The starting index of the section to update.
+- endIndex (int): The ending index of the section to update.
+- cameraToCheck (int): The index of the specific camera to check.
+
+The function returns an integer array with three elements:
+- The count of active cameras before any updates.
+- The count of active cameras after updating the specified section.
+- The status of the specific camera to check (1 for active, 0 for inactive).
+
 ### 10 - Beach Explorer: Counting Interesting Sea Creatures
 
 Create a function named exploreBeach that receives seaCreatures and maxObservations as its parameters.
