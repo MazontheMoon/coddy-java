@@ -4,6 +4,38 @@
 
 ## June
 
+### 12 - Decoding Giant's Ancient Message on a Hilltop
+
+Create a function named decodeGiantMessage that receives encodedMessage, strideLength, and slopeAngle as its parameters.
+
+You are tasked with decoding an ancient message left by giants on a hilltop. The message has been encoded using a special cipher that takes into account the giant's stride length and the slope of the hill.
+
+To decode the message, follow these steps:
+- Use the giant's stride length to select specific elements from the input array. Start from the first element and select every nth element, where n is the stride length.
+- Apply a mathematical transformation to each selected element based on the hilltop's slope angle. Multiply each character's ASCII value by the cosine of the slope angle (in radians).
+- Round the result of step 2 to the nearest integer and convert it back to a character.
+Rearrange the transformed elements by sorting them based on their original indices in the input array.
+- Combine the rearranged elements to form the final decoded message.
+
+Parameters:
+- encodedMessage (String[]): An array of strings representing the encoded message, where each element is a word or symbol.
+- strideLength (int): An integer representing the giant's stride length, which will be used in the decoding process. It will always be a positive integer.
+- slopeAngle (float): A float representing the hilltop's slope angle in degrees, which will affect the decoding algorithm. It will be a value between 0 and 90, inclusive.
+
+The function returns a String, which is the decoded message.
+
+Constraints:
+- The encodedMessage array will contain between 1 and 100 elements, inclusive.
+- Each element in encodedMessage will be a non-empty string containing only printable ASCII characters.
+- The strideLength will be a positive integer not exceeding the length of encodedMessage.
+- The slopeAngle will be a float between 0 and 90 degrees, inclusive.
+
+Hint: You may find the following Java methods useful:
+- Math.cos() for calculating the cosine of an angle
+- Math.toRadians() for converting degrees to radians
+- Math.round() for rounding float values to the nearest integer
+
+
 ### 11 - Embassy Surveillance System
 
 Create a function named updateSurveillance that receives cameras, startIndex, endIndex, and cameraToCheck as its parameters.
