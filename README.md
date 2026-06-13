@@ -4,6 +4,19 @@
 
 ## June
 
+### 13 - Find Booth in Craft Fair Layout 
+
+Write a function findBoothInLayout that takes boothName, layoutGrid and returns true if the booth name is found in the grid, false otherwise.
+
+You need to search through the craft fair's booth layout grid to check if Mollie's wickerwork basket booth is assigned a spot.
+
+Parameters:
+- boothName (String): The name of the booth to search for
+- layoutGrid (String[][]): 2D array representing the booth layout grid
+
+Returns: Boolean indicating whether the booth name was found in the grid. Format: true or false
+
+
 ### 12 - Decoding Giant's Ancient Message on a Hilltop
 
 Create a function named decodeGiantMessage that receives encodedMessage, strideLength, and slopeAngle as its parameters.
