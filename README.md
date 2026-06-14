@@ -4,6 +4,28 @@
 
 ## June
 
+### 14 - Chaotic Cantina Reorganization
+
+Create a function named reorganizeChaotiCantina that receives inventory and chaosFactor as its parameters.
+
+An irresponsible manager at a chaotic cantina wants to reorganize the inventory before an important inspection. Your task is to implement the manager's bizarre reorganization method.
+
+Follow these steps to reorganize the inventory:
+- Calculate the sum of all even-indexed elements in the inventory and multiply it by the chaosFactor.
+- Use this result to determine how many elements from the end of the array to reverse. If the result is greater than the array length, reverse the entire array.
+- Reverse the calculated number of elements from the end of the inventory array.
+- For each prime-indexed element in the array (2, 3, 5, 7, 11, etc.), replace it with the result of raising that element to the power of (its index modulo 3 + 1).
+- Calculate the average of all odd-indexed elements (round down to the nearest integer).
+- For each element at an index divisible by 3, add the calculated average to that element.
+- Find the maximum value in the array and use it to circularly shift the entire array to the right by (max value modulo array length) positions.
+
+Parameters:
+- inventory (int[]): An array representing various aspects of the cantina (e.g., number of tables, chairs, utensils, menu items, etc.). The array will contain at least 1 element and at most 100 elements. All elements are non-negative integers less than or equal to 1000.
+- chaosFactor (int): A positive integer representing the "chaos factor" that influences the reorganization process. It will be between 1 and 10, inclusive.
+
+The function returns an int[] representing the modified inventory after the manager's chaotic reorganization.
+
+
 ### 13 - Find Booth in Craft Fair Layout 
 
 Write a function findBoothInLayout that takes boothName, layoutGrid and returns true if the booth name is found in the grid, false otherwise.
