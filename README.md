@@ -4,6 +4,19 @@
 
 ## June
 
+### 15 - Morning Garden Dew Report
+
+Write a function organizeMorningReport that takes dewLevels, sectionNames and returns a String[] of formatted garden reports.
+
+The function sorts garden sections by their dew levels in ascending order and creates formatted morning reports for each section.
+
+Parameters:
+- dewLevels (float[]): Dew measurements in millimeters for each garden section
+- sectionNames (String[]): Names of garden sections (parallel to dewLevels)
+
+Returns: Array of formatted strings sorted by dew level. Format: Morning dew in [section]: [level]mm
+
+
 ### 14 - Chaotic Cantina Reorganization
 
 Create a function named reorganizeChaotiCantina that receives inventory and chaosFactor as its parameters.
