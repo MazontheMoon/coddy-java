@@ -4,6 +4,24 @@
 
 ## June
 
+### 16 - Antique Shop Treasure Hunt
+
+Create a function named exploreAntiqueShop that receives shopItems and desiredItems as its parameters.
+
+You are helping a woman explore an antique shop filled with ornate decorations and curious objects. The shopkeeper has a unique way of organizing his items, and you need to assist the woman in finding specific items she desires.
+
+Your task is to search through the shop's inventory and locate the items the woman is looking for, taking into account some special conditions:
+- Items in the shop may have variations in their names (e.g., "old vase" and "antique vase" could be considered the same item).
+- The woman can only carry a limited number of 5 items, so if she finds more than 5 items, she needs to choose the first 5 she encounters.
+- Some items in the shop may be hidden (represented by empty strings in the array), and these should be skipped during the search.
+- If an item is not found, its position should be represented as -1 in the returned array.
+- To solve this challenge, you'll need to use advanced array searching techniques and handle string comparisons carefully.
+
+Parameters:
+- shopItems (String[]): An array of strings representing the items in the antique shop. Each string is the name of an item, and empty strings represent hidden items.
+- desiredItems (String[]): An array of strings representing the items the woman is looking for.
+The function returns an integer array where each element represents the position of a desired item in the shop. If an item is not found, its position should be -1. The array should have the same length as the desiredItems array.
+
 ### 15 - Morning Garden Dew Report
 
 Write a function organizeMorningReport that takes dewLevels, sectionNames and returns a String[] of formatted garden reports.
