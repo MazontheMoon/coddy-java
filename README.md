@@ -4,6 +4,36 @@
 
 ## June
 
+### 17 - Ancient Forest Explorer
+
+Create a function named exploreAncientForest that receives forest, steps, and preferredHeights as its parameters.
+
+Imagine you're an explorer venturing into an ancient, magical forest. Your task is to calculate the probability of encountering trees of your preferred heights during your journey.
+
+As you walk through this dynamic forest, it changes with each step you take:
+- All trees grow by 1 unit of height per step.
+- Trees that reach a height of 10 fall and become empty spaces (height 0).
+- Empty spaces have a 10% chance of sprouting a new sapling (height 1) each step.
+
+Your exploration is subject to these rules:
+- You can move in four directions: up, down, left, or right.
+- You cannot revisit a location you've already been to.
+- Your goal is to maximize the chance of seeing your preferred tree heights within the given number of steps.
+
+Parameters:
+- forest (int[][]): A 2D array representing the initial forest layout. Each cell contains a number (0-9) representing the height of a tree, or 0 for an empty space.
+- steps (int): The number of steps you can take in your exploration.
+- preferredHeights (int[]): An array of your preferred tree heights to admire.
+
+The function returns an integer representing the probability (as a percentage) of seeing your preferred tree heights during your walk, rounded down to the nearest integer.
+
+To solve this challenge, you'll need to:
+
+Implement a path-finding algorithm that maximizes the chance of encountering preferred tree heights.
+Simulate the dynamic changes in the forest as you move.
+Calculate the probability of encountering preferred tree heights along the optimal path.
+This challenge combines advanced array searching (for pathfinding), combinatorics and probability (for calculating encounter chances), and advanced array manipulation (for updating the forest state).
+
 ### 16 - Antique Shop Treasure Hunt
 
 Create a function named exploreAntiqueShop that receives shopItems and desiredItems as its parameters.
