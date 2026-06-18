@@ -4,6 +4,36 @@
 
 ## June
 
+### 18 - Countryside Landmark Analyzer
+
+Create a function named analyzeCountrysideLandmark that receives landmarkName and mathExpression as its parameters.
+
+As a traveler journeying through a picturesque countryside, you've encountered various landmarks with intriguing names. Your task is to analyze these names for special properties and perform some calculations based on them.
+
+The function should perform the following operations:
+- Check if the landmark name is a palindrome (ignoring spaces, punctuation, and case).
+- Calculate the "anagram value" of the landmark name by summing the ASCII values of its letters (ignoring spaces and punctuation).
+- Evaluate the given mathematical expression, which will contain basic arithmetic operations (+, -, *, /) and may include the anagram value as a variable 'x'.
+- Determine if the result of the mathematical expression is a perfect square.
+
+Parameters:
+- landmarkName (String): The name of the countryside landmark to analyze.
+- mathExpression (String): A mathematical expression to evaluate. It may contain the variable 'x', which should be replaced with the anagram value of the landmark name.
+
+The function returns a String containing the analysis results in the following format:
+"Landmark: [landmarkName]
+Palindrome: [true/false]
+Anagram Value: [calculatedValue]
+Expression Result: [evaluatedResult]
+Perfect Square: [true/false]"
+
+Note:
+- For palindrome checking, ignore spaces, punctuation, and case. For example, "A man a plan a canal Panama" is considered a palindrome.
+- The anagram value is the sum of ASCII values of alphabetic characters only (A-Z, a-z).
+- The mathematical expression will only contain numbers, the four basic operators (+, -, *, /), parentheses, and possibly the variable 'x'.
+Assume that the mathematical expression is always valid and will result in a non-negative integer after evaluation.
+A number is a perfect square if its square root is an integer.
+
 ### 17 - Ancient Forest Explorer
 
 Create a function named exploreAncientForest that receives forest, steps, and preferredHeights as its parameters.
