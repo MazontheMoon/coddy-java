@@ -4,6 +4,219 @@
 
 ## June
 
+### 28 - 
+
+### 27 - Base Conversion with Unenthusiastic Formatting
+
+Create a function named convertAndFormatBase that receives originalNumber, originalBase, and targetBase as its parameters.
+
+This function converts originalNumber from originalBase to targetBase and formats the result.
+
+Handle bases from 2 to 36. Each digit in the result must be followed by a space and a series of periods ('.') equal to its ordinal position (0-9, A-Z). For example, 'A' in hexadecimal should be followed by 'A ..........' because 'A' represents 10 in hexadecimal.
+
+If originalBase or targetBase is incorrect, or if originalNumber is invalid for the given originalBase, return 'Invalid input'.
+
+Parameters:
+- originalNumber (String): The number to be converted.
+- originalBase (int): The base of the input number (2-36).
+- targetBase (int): The base to convert to (2-36).
+
+Returns a String representing the converted number in targetBase, formatted with spaces and periods. If the input is invalid, returns 'Invalid input'.
+
+### 26 - Community Directory Analyzer
+
+Create a program that helps organize a Chilean community phone directory. Read a member's full name and their phone number, then print two numbers: how many words are in their name, and how many times the digit 5 appears in their phone number.
+
+This helps the community center group members and assists older residents who remember the rotary dial system where 5 was the "middle position" digit.
+
+### 25 - Generate Wild Garden Number
+
+Create a function named generateWildGardenNumber that receives days, temperature, hasRained, and dominantPlant as its parameters.
+
+This function calculates a "Wild Garden Number" based on the growth patterns of plants in an untended garden. The number is generated using advanced arithmetic operations and special number properties, then represented as a string using advanced string concatenation techniques.
+
+Follow these steps to generate the Wild Garden Number:
+- Calculate a base number:
+	Multiply the number of days by the temperature
+	Round this to the nearest prime number
+- Apply a growth factor based on the rain condition:
+	If it rained, multiply the base number by 1.5
+	If it didn't rain, multiply the base number by 0.8
+- Generate a special number based on the dominant plant species:
+	Convert each character of the plant name to its ASCII value
+	Sum these values and find the closest perfect square
+- Combine the modified base number and the special number:
+	Add them together
+	Find the nearest Fibonacci number to this sum
+- Create a string representation of the final number:
+	Convert the Fibonacci number to a string
+	Insert hyphens between every third digit from right to left
+	Append a description of the number's properties ("Fibonacci")
+
+Parameters:
+- days (int): The number of days the garden has been untended (1 to 365)
+- temperature (float): The average daily temperature in Celsius (-10.0 to 40.0)
+- hasRained (boolean): Indicates whether it rained in the last week
+- dominantPlant (String): The name of the dominant plant species in the garden
+
+The function returns a string representing the "Wild Garden Number" along with its property description.
+
+Note: You'll need to implement helper methods for finding prime numbers, perfect squares, and Fibonacci numbers. Make sure to handle edge cases and invalid inputs appropriately.
+
+
+### 24 - Seaweed Classification Challenge
+
+Create a function named classifySeaweed that receives length, branches, and hasAirBladders as its parameters.
+
+As a botanist at a coastal research station, you're tasked with classifying seaweed specimens based on their characteristics. Your function should return a string that classifies the seaweed into one of four categories: "Rhexia", "Desmarestia", "Unknown Species A", or "Unknown Species B".
+
+Use the following classification rules:
+- If the seaweed is longer than 50 cm AND has more than 10 branches, classify it as "Rhexia".
+- If the seaweed has air bladders OR is shorter than 30 cm, classify it as "Desmarestia".
+- If the seaweed is between 30 and 50 cm (inclusive) AND has 5 to 10 branches (inclusive), classify it as "Unknown Species A".
+- For all other cases, classify it as "Unknown Species B".
+
+Parameters:
+- length (int): The length of the seaweed in centimeters.
+- branches (int): The number of branches the seaweed has.
+- hasAirBladders (boolean): Indicates whether the seaweed has air bladders (true) or not (false).
+
+The function returns a String representing the classification of the seaweed specimen.
+
+### 23 - Advanced Math Lesson Plan Generator
+
+Create a function named generateAdvancedMathLessonPlan that receives topic, difficulty, duration, conceptsToInclude, and constants as its parameters.
+
+The function should generate a structured lesson plan for an advanced mathematics class, incorporating multiple mathematical concepts, constants, and operations.
+
+The lesson plan should be tailored to the given topic, difficulty level, and duration, while incorporating the specified concepts and mathematical constants. The plan should demonstrate a surgically precise approach to teaching advanced mathematics.
+
+Parameters:
+- topic (String): The main topic of the lesson (e.g., "Complex Analysis", "Differential Equations", "Number Theory")
+- difficulty (int): A value from 1 to 5 representing the difficulty level of the lesson
+- duration (int): The duration of the lesson in minutes
+- conceptsToInclude (String[]): An array of specific mathematical concepts to be included in the lesson
+- constants (float[]): An array of mathematical constants to be used in the lesson (e.g., π, e, φ)
+
+The function returns a String representing a structured lesson plan that includes:
+- An introduction to the main topic
+- A list of subtopics and concepts to be covered
+- Example problems incorporating the specified mathematical constants
+- Advanced operations and formulas relevant to the topic
+- A mini-quiz section with questions of varying difficulty
+
+Your implementation should use mathematical operations such as logarithms, trigonometric functions, and greatest common divisor (GCD) where appropriate. Ensure that the lesson plan is coherent, logically structured, and tailored to the input parameters.
+
+Note: Use Math.PI, Math.E, and other constants from the Math class for precise calculations. For operations, use methods like Math.log(), Math.sin(), and implement your own GCD function if needed.
+
+### 22 - Bat Research Data Analysis
+
+Create a function named analyzeBatData that receives species, coordinates, and healthData as its parameters.
+
+As a bat researcher studying disease prevention in a dimly lit cave, you need to analyze complex data about bat species, their locations, and health status. Your task is to process this data and generate a comprehensive summary.
+
+The function should perform the following operations:
+- Reverse each bat species name in the input array.
+- Calculate the average distance between all bat colonies using the coordinate data.
+- Analyze the health data string to determine the percentage of healthy, sick, and vaccinated bats.
+- Generate a summary string that includes the reversed species names, average distance, and health percentages.
+
+Parameters:
+- species (String[]): An array of strings representing different bat species found in the cave.
+- coordinates (int[][]): A 2D integer array representing the coordinates of bat colonies in the cave. Each sub-array contains x and y coordinates.
+- healthData (String): A string containing health data for each bat, where each character represents the health status of a bat ('H' for healthy, 'S' for sick, 'V' for vaccinated).
+
+The function returns a string containing the analysis summary in the following format:
+"Reversed species: [species1, species2, ...], Average distance: X.XX, Health percentages: H:XX.X%, S:XX.X%, V:XX.X%"
+
+Note:
+Round the average distance and percentages to two decimal places.
+The distance between two points (x1, y1) and (x2, y2) is calculated using the Euclidean distance formula: sqrt((x2-x1)^2 + (y2-y1)^2).
+Ensure to handle potential edge cases, such as empty inputs or division by zero.
+
+### 21 - Restaurant Lunch Rush Order Processing
+
+Write a function processLunchRush that takes ingredients, chefShifts, orders, displayCount and returns a slice of the most recently prepared orders.
+
+The function processes lunch orders by updating ingredient quantities, incrementing chef shift counters, and returning the last few orders for display.
+
+Logic:
+- For each order, subtract the required ingredient amount from available quantities
+- Increment the shift counter for the chef who prepared each order
+- Return the last displayCount orders from the orders array
+
+Parameters:
+- ingredients (int[]): Available quantities of ingredients [tomatoes, lettuce, cheese, meat]
+- chefShifts (int[]): Current shift counters for each chef
+- orders (int[][]): Each order contains [chefId, tomatoes_needed, lettuce_needed, cheese_needed, meat_needed]
+- displayCount (int): Number of recent orders to display
+
+Returns: Array slice of the most recent orders. Format: [[chefId, tomatoes, lettuce, cheese, meat], ...]
+
+### 20 - Yard Sale Fair Pricing Calculator
+
+Write a function calculateFairPrices that takes basePrices, haggleAttempts, sellerTolerance, saleProbabilities and returns an array of final fair prices for yard sale items.
+
+The function determines fair pricing by applying discounts based on haggling pressure while respecting seller tolerance levels and sale probability thresholds.
+
+Logic:
+- Calculate discount percentage: min(haggleAttempts * 5, 25) - maximum 25% discount
+- Apply discount only if seller is tolerant (true) AND sale probability ≥ 0.7
+- If seller is intolerant (false) OR sale probability < 0.7, use base price
+- Round final prices to nearest integer
+
+Parameters:
+- basePrices (int[]): Original asking prices for each item
+- haggleAttempts (int[]): Number of haggle attempts per item
+- sellerTolerance (boolean[]): Whether each seller accepts haggling
+- saleProbabilities (float[]): Probability of selling each item (0.0-1.0)
+
+Returns: Array of final fair prices as integers. Format: [12, 8, 15]
+
+
+
+
+### 19 - Optimize Seaside Barbecue Layout
+
+Create a function named optimizeBeachBarbecueLayout that receives beachWidth, beachLength, grillCount, tableCount, seatingCount, and minDistance as its parameters.
+
+The function should design an optimal layout for a multi-zonal barbecue area on a beach, considering various shapes of grills, seating areas, and seafood preparation stations.
+
+Use advanced geometric calculations and looping techniques to create an efficient layout that maximizes space usage while maintaining proper distances between objects. The layout should be represented as a 2D char array.
+
+Parameters:
+- beachWidth (int): The total width of the beach area in meters.
+- beachLength (int): The total length of the beach area in meters.
+- grillCount (int): The number of circular grills to be placed.
+- tableCount (int): The number of rectangular preparation tables to be placed.
+- seatingCount (int): The number of hexagonal seating areas to be placed.
+- minDistance (float): The minimum distance required between any two objects in meters.
+
+The function returns a 2D char array representing the optimized beach barbecue layout. Use the following characters to represent different elements:
+	'G': Circular grill
+	'T': Rectangular preparation table
+	'S': Hexagonal seating area
+	'W': Water (seaside)
+	'.': Empty sand
+
+Implement the following key aspects in your solution:
+- Geometric calculations:
+	- Calculate areas of circular grills, rectangular tables, and hexagonal seating areas
+	- Use vector operations for object placement and rotation
+	- Apply transformations to optimize space usage
+- Advanced looping:
+	- Use nested loops to iterate through the 2D space
+	- Implement recursive functions for optimal object placement
+	- Utilize loop control statements for collision detection and avoidance
+- Zoning logic:
+	- Divide the beach into different zones (grilling, preparation, seating, waterfront)
+	- Ensure proper distance between objects and zones
+- Optimization algorithms:
+	- Implement a placement strategy that maximizes space efficiency
+	- Use recursion to backtrack and adjust placements if conflicts arise
+
+Ensure that your implementation considers the constraints of the beach size and maintains the minimum distance between objects. The goal is to create a well-organized and efficient layout for the seaside barbecue.
+
 ### 18 - Countryside Landmark Analyzer
 
 Create a function named analyzeCountrysideLandmark that receives landmarkName and mathExpression as its parameters.
