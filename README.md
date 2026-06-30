@@ -4,6 +4,46 @@
 
 ## June
 
+### 29 - Optimizing Building Design with Advanced Logic and Set Theory
+
+Create a function named optimizeBuildingDesign that receives roomSets and operations as its parameters.
+
+As a hopeful architect, you are tasked with optimizing a building design to create a smaller, more efficient layout. You will use advanced logical operators and set theory to determine the best way to organize the building's spaces.
+
+Your function should process sets of room requirements and apply a series of logical operations to derive an optimal set of rooms for the final design. This optimization should aim to maximize efficiency while maintaining all necessary functionalities.
+
+Parameters:
+
+roomSets (int[][]): A 2D array where each inner array represents a set of room IDs required for a specific function in the building. Room IDs are positive integers.
+operations (String[]): An array of strings representing the logical operations to be applied sequentially between the sets. Valid operations are "XOR", "NAND", "NOR", "IMPLIES", and "BICONDITIONAL".
+The function should return an int[] representing the optimal set of room IDs after applying all specified logical operations.
+
+Logical Operations Explained:
+
+XOR (Exclusive OR): The result includes rooms that are in either set, but not in both.
+NAND (Not AND): The result includes all rooms except those that are in both sets.
+NOR (Not OR): The result includes only rooms that are in neither set.
+IMPLIES: If a room is in the first set, it must also be in the second set to be included in the result.
+BICONDITIONAL: The result includes rooms that are either in both sets or in neither set.
+Implementation Details:
+
+Start with the first two sets in roomSets and apply the first operation.
+Continue applying operations sequentially, using the result of the previous operation as the first set and the next set from roomSets as the second set.
+If there are more operations than sets, wrap around to the beginning of roomSets.
+The final result should be a single set of room IDs representing the optimal building design.
+Example:
+
+
+int[][] roomSets = {{1, 2, 3}, {2, 3, 4}, {3, 4, 5}};
+String[] operations = {"XOR", "NAND"};
+
+int[] result = optimizeBuildingDesign(roomSets, operations);
+// Expected output: [1, 5]
+// Explanation:
+// Step 1: {1, 2, 3} XOR {2, 3, 4} = {1, 4}
+// Step 2: {1, 4} NAND {3, 4, 5} = {1, 5}
+Remember, this optimization process symbolizes your journey as an architect, turning complex requirements into an elegant, efficient design. Each logical operation represents a step towards a more harmonious and space-efficient building layout.
+
 ### 28 - Scottish Hospital Welcome Message Generator
 
 Create a function named generateWelcomeMessage that receives name, age, and hasAppointment as its parameters.
