@@ -2,6 +2,14 @@
 
 # 2026
 
+## July
+
+### 1 - Plant Station Efficiency Score
+
+Create a program that calculates the total resource efficiency score for your plant care station. You'll receive a square matrix where each row represents a plant and each column represents a care aspect (like water usage, soil quality, light exposure).
+
+Compute the trace of this matrix—the sum of the diagonal elements—to determine the overall station efficiency rating. The trace represents how well each plant is performing in its primary care category.
+
 ## June
 
 ### 29 - Optimizing Building Design with Advanced Logic and Set Theory
