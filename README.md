@@ -4,6 +4,31 @@
 
 ## July
 
+### 2 - Composer's Numerical Symphony
+Create a function named composeNumericalSymphony that receives bases, numbers, and measures as its parameters.
+
+Your task is to implement a complex musical composition system based on number base conversions and conditional statements. This system will convert a series of numbers in different bases into a compact musical score representation.
+
+Follow these steps to implement the function:
+
+Convert each input number to base 10.
+Map the converted numbers to musical elements using complex conditional statements:
+Notes (A through G, including sharps and flats)
+Durations (whole, half, quarter, eighth, sixteenth notes)
+Dynamics (pp, p, mp, mf, f, ff)
+Ensure musical coherence by implementing:
+Key signature rules
+Rhythmic consistency within measures
+Basic harmonic progression rules
+Generate a compact score representation where each character encodes multiple musical properties.
+Parameters:
+
+bases (int[]): An array of integers representing the base of each number in the composition. Each base will be between 2 and 36, inclusive.
+numbers (String[]): An array of strings containing numbers in their respective bases. Each number will be a valid representation in its corresponding base.
+measures (int): An integer representing the number of measures in the composition. It will be a positive number.
+The function returns a string representing the compact musical score. Each character in the string should represent a note, its duration, and its dynamic.
+
+If any input is invalid (e.g., mismatched array lengths, invalid bases, or numbers that can't be converted), return the string "Invalid input".
 ### 1 - Plant Station Efficiency Score
 
 Create a program that calculates the total resource efficiency score for your plant care station. You'll receive a square matrix where each row represents a plant and each column represents a care aspect (like water usage, soil quality, light exposure).
