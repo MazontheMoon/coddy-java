@@ -4,6 +4,15 @@
 
 ## July
 
+### 3 - Introduction to Variables with Theme
+
+Initialize the following variables:
+
+us: String with value "United States"
+population: int with value 331002651
+
+
+
 ### 2 - Composer's Numerical Symphony
 Create a function named composeNumericalSymphony that receives bases, numbers, and measures as its parameters.
 
