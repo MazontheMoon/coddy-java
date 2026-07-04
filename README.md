@@ -4,6 +4,32 @@
 
 ## July
 
+### 4 - Butterfish Binary Bazaar
+
+Create a function named processButterFishSales that receives int[] quantities and String[] times as its parameters.
+
+The function simulates a seaside market's daily sales report for butterfish transactions. It processes a series of sales, converts quantities to binary, and generates a summary report.
+
+Parameters:
+
+quantities (int[]): An array representing the quantity of butterfish sold in each transaction. Each quantity is between 1 and 63.
+times (String[]): An array representing the time of each sale in 24-hour format (e.g., "14:30"). The length of this array is the same as quantities.
+The function should perform the following operations:
+
+Convert each quantity to its 6-bit binary representation (padded with leading zeros if necessary).
+Calculate the total number of butterfish sold.
+Determine the peak selling hour (the hour with the highest total sales).
+Generate a "binary pattern" representing all sales, where each sale is represented by its 6-bit binary number.
+Use both for and while loops in your implementation. Apply control flow techniques to handle special cases efficiently.
+
+The function returns a string containing the formatted sales report with the following information:
+
+Total number of butterfish sold (in decimal)
+Binary representation of the total sales (without leading zeros)
+Peak selling hour (in 24-hour format)
+The "binary pattern" of all sales
+Each piece of information should be on a new line in the returned string.
+
 ### 3 - Introduction to Variables with Theme
 
 Initialize the following variables:
