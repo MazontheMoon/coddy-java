@@ -4,15 +4,24 @@
 
 ## July
 
-### 5 - Kaprekar's Routine
-Given a 4-digit number, return the number of times you need to apply Kaprekar's routine until reaching 6174.
+### 5 - Tea Shop Profit Calculator and Floral Display Creator
 
-Kaprekar's routine works as follows:
+Create a function named teaShopProfitAndDisplay that receives teaNames and profits as its parameters.
 
-Arrange the digits in descending order to form the largest number
-Arrange the digits in ascending order to form the smallest number (pad with leading zeros if necessary)
-Subtract the smaller from the larger
-Repeat with the new number
+As the owner of a bustling tea shop, you need to calculate your daily profits and create a beautiful floral display message to enhance your shop's ambiance. This function will help you automate these tasks.
+
+Your function should perform the following operations:
+
+Calculate the total profit by summing up all the values in the profits array.
+Create a floral display message by concatenating all the tea names from the teaNames array, separated by flower symbols (🌸).
+Return a string that combines the total profit and the floral display message.
+Parameters:
+
+teaNames (String[]): An array containing the names of tea varieties.
+profits (int[]): An array containing the profits for each tea variety. The profits are in the same order as the tea names.
+The function returns a string in the format: "Total profit: $X | Floral Display: Tea1🌸Tea2🌸Tea3..."
+
+Note: Ensure that the calculated profit is formatted as a whole number (without decimal places) in the output string.
 
 ### 4 - Butterfish Binary Bazaar
 
