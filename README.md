@@ -4,6 +4,41 @@
 
 ## July
 
+
+### 6 - ManageOfficeDay
+
+As a manager of a busy office, you need to handle an unpredictable day filled with various tasks. Your goal is to efficiently manage your schedule by organizing tasks based on their priorities and durations, while keeping track of task frequencies.
+
+Implement the function to simulate the manager's day using a combination of a custom linked list for the schedule and a hash table for task frequency tracking. The function should process the tasks, insert them into the schedule based on priority, and provide a summary of the day's activities.
+
+Parameters:
+
+tasks (String[]): An array of strings representing the names of various office tasks and events.
+priorities (int[]): An array of integers representing the priority of each task (1 being the highest priority).
+durations (int[]): An array of integers representing the duration of each task in minutes.
+The function should perform the following operations:
+
+Implement a custom linked list to represent the schedule. Each node in the list should contain the task name, priority, and duration.
+Create a hash table (you can use Java's HashMap) to track the frequency of each task.
+Process each task in the input array:
+Insert the task into the correct position in the linked list based on its priority (higher priority tasks should come first).
+Update the frequency of the task in the hash table.
+After processing all tasks, generate a summary of the day including:
+The total number of tasks.
+The most frequent task and its frequency.
+The highest priority task.
+The total duration of all tasks.
+The function returns a string containing the summary of the manager's day.
+
+Note: You need to implement the custom linked list yourself. Do not use Java's built-in LinkedList class.
+
+Constraints:
+
+1 ≤ tasks.length ≤ 100
+1 ≤ priorities[i] ≤ 10
+1 ≤ durations[i] ≤ 480 (assuming a maximum of 8 hours per task)
+tasks.length == priorities.length == durations.length
+
 ### 5 - Tea Shop Profit Calculator and Floral Display Creator
 
 Create a function named teaShopProfitAndDisplay that receives teaNames and profits as its parameters.
