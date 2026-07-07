@@ -4,6 +4,21 @@
 
 ## July
 
+### 7 - Beach Shell Collection
+Create a function named findUniqueShells that receives bucketSize and shells as its parameters.
+
+This function aims to find the unique types of shells you can collect during a beach walk, given a limited bucket size.
+
+To solve this challenge, implement a function that takes two parameters: an integer bucketSize representing the maximum number of shells your bucket can hold, and a string array shells containing the types of shells you find during your walk.
+
+Your task is to fill the bucket with the unique shell types you find, in the order you encounter them. If you come across a shell type that you've already collected, skip it and continue searching for new types. Once your bucket is full (i.e., contains bucketSize unique shell types), stop collecting and return the contents of your bucket as a string array.
+
+Parameters:
+
+bucketSize (int): The maximum number of shells your bucket can hold.
+shells (String[]): An array of strings representing the types of shells you find during your walk.
+The function returns a String[] containing the unique shell types you collected, in the order you found them. If you find fewer unique shell types than your bucket size, return all the unique types you found.
+
 
 ### 6 - ManageOfficeDay
 
