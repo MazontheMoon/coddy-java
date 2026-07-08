@@ -4,6 +4,17 @@
 
 ## July
 
+### 8 - Book Club Attendance Roster
+
+Write a function createAttendanceRoster that takes memberNames and returns a formatted attendance roster string.
+
+The function creates a numbered list where each member appears on a separate line with their position number.
+
+Parameters:
+
+memberNames (String[]): Array of book club member names
+Returns: Formatted roster string. Format: 1. Alice 2. Bob 3. Charlie
+
 ### 7 - Beach Shell Collection
 Create a function named findUniqueShells that receives bucketSize and shells as its parameters.
 
