@@ -4,6 +4,22 @@
 
 ## July
 
+### 10 - Garden Survey Route Optimizer
+
+Write a function optimizeSurveyRoute that takes houseResponses and returns the survey responses ordered by reverse hash values for route optimization.
+
+The function processes gardening survey responses by generating unique hash identifiers for each house and returning responses sorted in reverse order of their hash values.
+
+Logic:
+
+Generate a hash for each house address using: hash = (address.length() * 31 + address.charAt(0)) % 1000
+Sort responses by hash values in descending order
+Return the reordered responses
+Parameters:
+
+houseResponses (String[]): Array where each element contains "address:plant_preference"
+Returns: String array of responses ordered by reverse hash values. Format: ["address:plant_preference", "address:plant_preference"]
+
 ### 9 - Simulating Photosynthesis Efficiency
 
 Create a function named simulatePhotosynthesis that receives lightIntensities, temperatures, and nutrientLevels as parameters.
