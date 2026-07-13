@@ -1,0 +1,133 @@
+import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.List;
+
+class AnalyzeFragranceComposition {
+    public static String analyzeFragranceComposition(float[][] perfumeCompositions, String[] perfumeNames, float[] idealComposition) {
+        StringBuilder report = new StringBuilder();
+
+        // 1. Logical comparison with ideal composition
+        int mostSimilarIndex = findMostSimilar(perfumeCompositions, idealComposition);
+        report.append("Most similar to ideal composition: ").append(perfumeNames[mostSimilarIndex]).append("\n");
+
+        // 2. Find most dissimilar perfumes
+        int[] dissimilarPair = findMostDissimilar(perfumeCompositions);
+        report.append("Most dissimilar perfumes: ").append(perfumeNames[dissimilarPair[0]])
+              .append(" and ").append(perfumeNames[dissimilarPair[1]]).append("\n");
+
+        // 3. Find best bridge perfume
+        int bridgeIndex = findBestBridge(perfumeCompositions);
+        report.append("Best bridge perfume: ").append(perfumeNames[bridgeIndex]).append("\n");
+
+        // 4. Classify perfumes
+        String[] classifications = classifyPerfumes(perfumeCompositions);
+        report.append("Perfume classifications:\n");
+        for (int i = 0; i < perfumeNames.length; i++) {
+            report.append(perfumeNames[i]).append(": ").append(classifications[i]).append("\n");
+        }
+
+        // 5. Recommend new composition
+        float[] newComposition = recommendNewComposition(perfumeCompositions);
+        report.append("Recommended new composition: ").append(Arrays.toString(newComposition));
+
+        return report.toString();
+    }
+
+    private static int findMostSimilar(float[][] perfumes, float[] ideal) {
+        int mostSimilarIndex = 0;
+        int maxSimilarity = Integer.MIN_VALUE;
+        for (int i = 0; i < perfumes.length; i++) {
+            int similarity = 0;
+            for (int j = 0; j < perfumes[i].length; j++) {
+                boolean perfumeHigh = perfumes[i][j] > 0.5;
+                boolean idealHigh = ideal[j] > 0.5;
+                if ((perfumeHigh ^ idealHigh) || (!(perfumeHigh && idealHigh)) || (!perfumeHigh && !idealHigh)) {
+                    similarity++;
+                }
+            }
+            if (similarity > maxSimilarity) {
+                maxSimilarity = similarity;
+                mostSimilarIndex = i;
+            }
+        }
+        return mostSimilarIndex;
+    }
+
+    private static int[] findMostDissimilar(float[][] perfumes) {
+        int[] pair = new int[2];
+        double maxDistance = 0;
+        for (int i = 0; i < perfumes.length; i++) {
+            for (int j = i + 1; j < perfumes.length; j++) {
+                double distance = euclideanDistance(perfumes[i], perfumes[j]);
+                if (distance > maxDistance) {
+                    maxDistance = distance;
+                    pair[0] = i;
+                    pair[1] = j;
+                }
+            }
+        }
+        return pair;
+    }
+
+    private static int findBestBridge(float[][] perfumes) {
+        int bestBridge = 0;
+        double maxAngle = 0;
+        for (int i = 0; i < perfumes.length; i++) {
+            for (int j = 0; j < perfumes.length; j++) {
+                for (int k = j + 1; k < perfumes.length; k++) {
+                    if (i != j && i != k) {
+                        double angle = calculateAngle(perfumes[i], perfumes[j], perfumes[k]);
+                        if (angle > maxAngle) {
+                            maxAngle = angle;
+                            bestBridge = i;
+                        }
+                    }
+                }
+            }
+        }
+        return bestBridge;
+    }
+
+    private static String[] classifyPerfumes(float[][] perfumes) {
+        String[] classifications = new String[perfumes.length];
+        for (int i = 0; i < perfumes.length; i++) {
+            float sum = 0;
+            for (float concentration : perfumes[i]) {
+                sum += concentration;
+            }
+            if (sum < 0.5) classifications[i] = "Light";
+            else if (sum < 1.0) classifications[i] = "Medium";
+            else classifications[i] = "Strong";
+        }
+        return classifications;
+    }
+
+    private static float[] recommendNewComposition(float[][] perfumes) {
+        float[] avgComposition = new float[perfumes[0].length];
+        for (float[] perfume : perfumes) {
+            for (int j = 0; j < perfume.length; j++) {
+                avgComposition[j] += perfume[j];
+            }
+        }
+        for (int i = 0; i < avgComposition.length; i++) {
+            avgComposition[i] /= perfumes.length;
+            avgComposition[i] = 1 - avgComposition[i]; // Invert to fill the gap
+        }
+        return avgComposition;
+    }
+
+    private static double euclideanDistance(float[] a, float[] b) {
+        double sum = 0;
+        for (int i = 0; i < a.length; i++) {
+            sum += Math.pow(a[i] - b[i], 2);
+        }
+        return Math.sqrt(sum);
+    }
+
+    private static double calculateAngle(float[] a, float[] b, float[] c) {
+        double ab = euclideanDistance(a, b);
+        double bc = euclideanDistance(b, c);
+        double ac = euclideanDistance(a, c);
+        return Math.acos((ab * ab + bc * bc - ac * ac) / (2 * ab * bc));
+    }
+}
