@@ -4,6 +4,89 @@
 
 ## July
 
+### 13 - Advanced Fragrance Analysis System
+
+Create a function named analyzeFragranceComposition that receives perfumeCompositions, perfumeNames, and idealComposition as its parameters.
+
+This function simulates a perfume mixing and analysis system in a high-end perfume shop, combining expert logical operators with advanced geometry concepts to create a unique fragrance classification and comparison tool.
+
+The function should perform the following tasks:
+
+Use logical operators (XOR, NAND, NOR) to compare the perfumes' compositions with the ideal composition, creating a binary representation of their similarities and differences.
+Map each perfume to a point in a high-dimensional geometric space based on its composition.
+Calculate the geometric relationships between the perfumes, including:
+Distances between perfumes (using Euclidean distance in the high-dimensional space)
+Angles between perfume vectors (treating compositions as vectors)
+Identify the perfume that forms the largest triangle with any other two perfumes
+Use geometric transformations to normalize the perfume data and create a standardized "fragrance space".
+Implement a custom fragrance classification algorithm using both logical operations and geometric principles.
+Parameters:
+
+perfumeCompositions (float[][]): A 2D array representing the chemical composition of multiple perfumes (each row is a perfume, each column is a specific chemical compound concentration).
+perfumeNames (String[]): An array containing the names of the perfumes.
+idealComposition (float[]): An array representing the ideal composition of a target fragrance.
+The function returns a String containing a detailed analysis report, including:
+
+The perfume most similar to the ideal composition (using logical comparisons)
+The two most dissimilar perfumes (using geometric distance)
+The perfume that acts as the best "bridge" between two other dissimilar perfumes (using angle calculations)
+A classification of all perfumes into fragrance families based on the custom algorithm
+A recommendation for a new perfume composition that would fill a gap in the current collection (using geometric analysis of the fragrance space)
+
+### 12 - Electronics Workshop Organizer
+
+Write a function organizeWorkshop that takes components, benchWidth, benchDepth and returns a workshop organization report.
+
+The function categorizes electronic components by type, calculates optimal workbench angle, and generates an inventory summary.
+
+Logic:
+Iterate through components, categorizing into "Resistors", "Capacitors", and "Other" based on name content
+Use continue to skip empty/null components, break when finding prohibited materials ("lead", "mercury")
+Calculate optimal angle: (benchWidth / benchDepth) * 15 degrees, rounded to 1 decimal
+Generate report with category counts and angle
+
+Conditions:
+Skip components containing "lead" or "mercury" (case-insensitive) - stop processing when found
+Resistors: contain "resistor" or "ohm" (case-insensitive)
+Capacitors: contain "capacitor", "ceramic", or "electrolytic" (case-insensitive)
+Everything else goes to "Other"
+
+Parameters:
+components (String[]): Array of component names
+benchWidth (float): Workbench width in inches
+benchDepth (float): Workbench depth in inches
+Returns: Workshop organization report. Format: Resistors: X, Capacitors: Y, Other: Z, Optimal Angle: A.B degrees
+
+### 11 - Advanced Shadow Length Calculator
+
+Create a function named calculateShadowLengths that receives objects, latitudes, longitudes, date, and times as its parameters.
+
+Your task is to implement a complex "Shadow Length Calculator" that simulates the behavior of shadows cast by multiple objects on a snow-covered landscape at different times of the day. This calculator will incorporate advanced mathematical concepts, including spherical trigonometry, calculus, and astronomical calculations, while also performing number base conversions.
+
+The function should perform the following steps:
+
+Calculate the sun's position for each given time using advanced astronomical formulas.
+Account for the Earth's curvature and atmospheric refraction in your calculations.
+Compute shadow lengths and directions for each object at each specified time.
+Convert shadow lengths to different number bases (binary, octal, hexadecimal) based on certain conditions.
+Return an array of strings representing shadow lengths and directions in various number bases.
+To solve this challenge, you'll need to apply the following mathematical concepts:
+
+Spherical trigonometry for calculating the sun's position and shadow directions on a curved surface.
+Calculus for handling the Earth's curvature and its effect on shadow lengths.
+Complex number theory for precise astronomical calculations.
+Number base conversions (decimal to binary, octal, and hexadecimal).
+Parameters:
+
+objects (float[]): An array of heights of objects in meters.
+latitudes (float[]): An array of latitudes of objects in degrees.
+longitudes (float[]): An array of longitudes of objects in degrees.
+date (String): The date in format "YYYY-MM-DD".
+times (String[]): An array of times of day in 24-hour format "HH:MM".
+The function returns a String array where each element represents the shadow length and direction for an object at a specific time, expressed in various number bases. The exact format of each string in the output array should be: "Object [index], Time [time]: Length [length] ([binary], [octal], [hexadecimal]), Direction [direction] degrees".
+
+Note: You may need to implement helper functions to handle complex calculations such as solar position algorithms, atmospheric refraction corrections, and number base conversions. Ensure all calculations are as precise as possible, considering the complexity of the problem.
+
 ### 10 - Garden Survey Route Optimizer
 
 Write a function optimizeSurveyRoute that takes houseResponses and returns the survey responses ordered by reverse hash values for route optimization.
