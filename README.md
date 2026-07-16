@@ -4,6 +4,36 @@
 
 ## July
 
+### 16 - Decode Ancient Artifact Symbols
+
+Create a function named decodeArtifactSymbols that receives decimal and operation as its parameters.
+
+Your task is to convert the decimal number into an ancient base-7 system and then apply a specific operation to the result. This challenge simulates decoding mysterious symbols found on ancient artifacts in a museum exhibit.
+
+Follow these steps to complete the challenge:
+
+Convert the decimal number to base-7.
+Map each digit in the base-7 number to a unique symbol:
+0 → '@' (pottery shard)
+1 → '#' (stone tablet)
+2 → '$' (metal coin)
+3 → '%' (clay seal)
+4 → '&' (wooden figurine)
+5 → '*' (bone carving)
+6 → '+' (crystal gem)
+Reverse the order of the symbols.
+Apply the specified operation based on the operation parameter:
+If operation is 0: Shift each symbol to the next one in the sequence ('+' wraps to '@').
+If operation is 1: Shift each symbol to the previous one in the sequence ('@' wraps to '+').
+If operation is 2: Keep the symbols as they are (no shift).
+Parameters:
+
+decimal (int): A positive integer to be converted (0 ≤ decimal ≤ 1,000,000).
+operation (int): An integer (0, 1, or 2) specifying the operation to perform.
+The function returns a String representing the encoded artifact symbols after applying the specified operation.
+
+Note: You may find it helpful to use arrays or string manipulation methods to handle the symbol mapping and shifting operations efficiently.
+
 ### 15 - Foggy Riverhead Temperature Analysis
 
 Create a function named analyzeRiverTemperatures that receives rawTemperatures, numSensors, and fogDensity as its parameters.
