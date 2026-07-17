@@ -4,6 +4,38 @@
 
 ## July
 
+### 17 - Suburban Shoe Analysis
+
+Create a function named suburbanShoeAnalyzer that receives agletTaps, shoeTypes, and fibonacciMultiplier as its parameters.
+
+In a quiet suburban neighborhood, where the gentle tapping of aglets on the sidewalk is the only sound, you've been tasked with analyzing the walking habits and shoe preferences of the residents. Your function should process this data and return insights about the neighborhood's footwear trends.
+
+Your function should perform the following tasks:
+
+Categorize walkers based on their aglet taps and shoe types using advanced logical operators.
+Apply the Fibonacci multiplier to the tap counts.
+Concatenate arrays to combine the processed data.
+Calculate a "neighborhood shoe score" based on the processed data.
+To calculate the "neighborhood shoe score", follow these steps:
+
+Multiply each aglet tap count by the Fibonacci multiplier.
+Sum up all the multiplied tap counts.
+Add a bonus of 10 points for each unique shoe type.
+If the most common shoe type is "sneakers", add an additional 50 points to the score.
+Parameters:
+
+agletTaps (int[]): An array of integers representing the number of taps heard from each walker's aglets. Each element will be a positive integer.
+shoeTypes (String[]): An array of strings representing the shoe types of each walker. Possible values include "sneakers", "loafers", "sandals", and "boots".
+fibonacciMultiplier (int): An integer representing the Fibonacci number to use as a special multiplier. This will always be a valid Fibonacci number (1, 2, 3, 5, 8, 13, 21, etc.).
+The function returns a string containing three pieces of information, separated by semicolons:
+
+The most common shoe type (if there's a tie, return any of the most common types)
+The total number of aglet taps after applying the Fibonacci multiplier
+The calculated "neighborhood shoe score"
+For example: "sneakers;55;215"
+
+Note: Ensure that your implementation handles edge cases, such as empty arrays or arrays of different lengths, appropriately. You may assume that the input arrays will always have at least one element and will always have the same length as each other.
+
 ### 16 - Decode Ancient Artifact Symbols
 
 Create a function named decodeArtifactSymbols that receives decimal and operation as its parameters.
