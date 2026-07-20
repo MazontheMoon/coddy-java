@@ -4,6 +4,26 @@
 
 ## July
 
+### 20 - Beauty Salon Whispers
+
+Create a function named beautySalonWhisper that receives sentence and whisperCount as its parameters.
+
+The function simulates a whispered conversation in a beauty salon, where a sentence is passed along and gradually changes.
+
+Follow these steps to modify the sentence:
+
+Convert all characters to lowercase (to represent whispering)
+Replace spaces with underscores (to represent hushed tones)
+Gradually reduce the length of the sentence with each whisper (to simulate information loss)
+Return a string that shows how the whispered message changes as it's passed around the salon, with each whisper on a new line.
+
+Parameters:
+
+sentence (String): The original sentence spoken by a stylist.
+whisperCount (int): The number of times the sentence is whispered around the salon.
+The function returns a String representing the whispered conversation, with each whisper on a new line.
+
+
 ### 19 - Enzyme Mutation Staining Optimizer
 
 Create a function named optimizeStaining that receives enzymes, mutationLevels, stain, and duration as its parameters.
