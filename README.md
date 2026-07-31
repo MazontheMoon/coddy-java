@@ -2,7 +2,255 @@
 
 # 2026
 
+## August
+
 ## July
+
+### 31 - Culinary Chaos: Ingredient Mayhem
+
+Create a function named kitchenChaos that receives String[] ingredients, int[] quantities, and String cookingTechniques as its parameters.
+
+Your task is to simulate a culinary experiment gone awry in a cluttered kitchen, where flavors clash and ingredients become mismanageable. You need to process the ingredients, their quantities, and available cooking techniques to determine the outcome of this chaotic cooking adventure.
+
+Parameters:
+ingredients (String[]): An array of ingredient names. Some ingredients may be similar (e.g., "tomato" and "cherry tomato").
+quantities (int[]): An array of integers representing the quantity of each ingredient in grams. The index of each quantity corresponds to the index of the ingredient in the ingredients array.
+cookingTechniques (String): A binary string where each bit represents whether a specific cooking technique is available (1) or not (0). The techniques in order are: baking, frying, boiling, grilling, and steaming.
+
+The function should perform the following operations:
+Convert the binary cookingTechniques string to decimal to determine which cooking techniques are available.
+Sort the ingredients based on their quantities in descending order.
+Group similar ingredients together. Two ingredients are considered similar if one is a substring of the other (ignoring case).
+Calculate the total quantity of ingredients in each group.
+Determine the dominant flavor profile based on the ingredient group with the highest total quantity.
+Generate a description of the resulting dish based on the available cooking techniques and the dominant ingredients.
+The function returns a string describing the result of the chaotic cooking experiment, including the dominant flavor, the top 3 ingredient groups by quantity, and the cooking techniques used.
+
+Note: Ensure your implementation handles edge cases, such as empty arrays or invalid input formats. The solution should be efficient and utilize advanced array manipulation, string comparison, and number base conversion techniques.
+
+###  30 - Winnowing Grains in a Field of Unusual Plants
+
+Create a function named winnowGrain that receives field, windStrength, and harvestThreshold as its parameters.
+
+The function simulates a farmer winnowing grain in a field of unusual plants. It performs a series of operations to separate the grains from the plants based on their properties.
+
+Follow these steps to implement the function:
+Remove all negative numbers from the field array (these represent weeds or unusable plants).
+Apply the "wind effect" by shifting all remaining numbers to the right by windStrength positions (wrapping around to the beginning if necessary).
+Calculate the "Farmer's Lucky Number" as the sum of the digits of windStrength multiplied by the length of the remaining array.
+Replace all prime numbers in the array with the "Farmer's Lucky Number".
+Keep only the numbers that are greater than or equal to the harvestThreshold.
+Sort the remaining numbers in descending order.
+Return the final array of "winnowed grains".
+
+Parameters:
+field (int[]): An integer array representing the mixture of grains and plants in the field. Each number in the array represents a different type of grain or plant.
+windStrength (int): An integer representing the strength of the wind used for winnowing.
+harvestThreshold (int): An integer representing the minimum value for a grain to be considered harvestable.
+The function returns an integer array representing the final "winnowed grains" after all operations have been performed.
+
+Note: To determine if a number is prime, consider implementing a helper method. A prime number is a natural number greater than 1 that is only divisible by 1 and itself.
+
+Hint: To calculate the sum of digits of a number, you can use a loop to extract each digit and add it to a running total. For example, for the number 123, the sum of digits would be 1 + 2 + 3 = 6.
+
+### 29 - Merge Theater Cast Lists
+
+Write a function mergeCastLists that takes morningCast, eveningCast and returns the combined cast list with empty entries replaced.
+
+The function concatenates the two cast arrays and replaces any empty strings with "TBA".
+
+Parameters:
+morningCast (String[]): Array of morning cast member names
+eveningCast (String[]): Array of evening cast member names
+Returns: Combined array with empty strings replaced by "TBA". Format: ["Actor1", "Actor2", "TBA", "Actor3"]
+
+### 28 - Wildlife Enumeration at the Melliferous Farm
+
+Create a function named countWildlife that receives observations and daysToAnalyze as its parameters.
+
+As a nature enthusiast visiting a melliferous farm, you've been recording wildlife sightings over several days. Your task is to analyze the most recent observations and provide a count of different types of wildlife.
+
+Implement the function to process the wildlife data using advanced array manipulation techniques. The function should return the counts of different types of wildlife observed in the specified number of most recent days.
+
+Parameters:
+observations (String[]): An array of strings where each string represents a day's observations. Each character in the string represents a wildlife sighting: 'B' for bee, 'H' for hummingbird, 'M' for moth, and 'W' for wasp.
+daysToAnalyze (int): The number of most recent days to include in the analysis.
+The function should return an integer array containing the counts of each type of wildlife observed in the specified number of most recent days, in the order: [bees, hummingbirds, moths, wasps].
+
+To solve this challenge:
+Use advanced array slicing to select the most recent days from the observations array.
+Implement efficient counting techniques using increment operators to tally the occurrences of each wildlife type.
+Process the data to provide accurate counts for the specified period.
+Note: Ensure your implementation handles cases where daysToAnalyze is greater than the number of available observation days. In such cases, analyze all available days.
+
+### 27 - Hair Loss Conference Data Processor
+
+Create a function named processHairLossConferenceData that receives transcript as its parameter.
+
+Your task is to analyze a transcript from a medical conference about hair loss, extracting and converting specific data points. The function should process the input transcript and perform the following operations:
+
+Extract all mentions of hair loss percentages (e.g., "35% hair loss", "42.5% thinning") using regex.
+Convert these percentages to their hexadecimal representations.
+Find all mentions of treatment durations (e.g., "6 months", "2 years") and convert them to days, represented in binary.
+Identify all unique medical terms related to hair loss (e.g., "alopecia", "androgenetic") and encode them using a custom base-36 system.
+Extract all mentioned dates (in various formats) and convert them to octal representation of Unix timestamp.
+Combine all these extracted and converted pieces of information into a single string, separated by a specific delimiter.
+
+For the custom base-36 encoding system, use the following rules:
+Use digits 0-9 for the first 10 values
+Use uppercase letters A-Z for the next 26 values
+For each character in the medical term, convert its ASCII value to base-36
+
+Parameters:
+transcript (String): A string containing the transcript of the hair loss conference discussion.
+The function returns a String containing all the extracted and converted information, separated by the pipe character '|'.
+
+Here's an example of how the output string should be formatted:
+
+hexPercentages|binaryDays|base36Terms|octalDates
+
+Where:
+hexPercentages is a comma-separated list of hexadecimal percentages
+binaryDays is a comma-separated list of treatment durations in days, represented in binary
+base36Terms is a comma-separated list of encoded medical terms
+octalDates is a comma-separated list of dates in octal Unix timestamp format
+Note: Ensure your regex patterns are robust enough to handle various formats and potential inconsistencies in the input data. Also, be prepared to handle any potential errors or edge cases in the input transcript.
+
+### 26 - Chemical Reaction Sequence Decoder
+
+Create a function named decodeChemicalLabel that receives chemicalLabels and chemicalsOrder as its parameters.
+
+This function decodes chemical labels and concatenates them in the correct order to represent a chemical reaction sequence.
+
+Each label in chemicalLabels consists of reversed chemical names. Your task is to decode these labels by reversing each name and then concatenating them in the order specified by chemicalsOrder.
+
+Steps to solve:
+Reverse each string in chemicalLabels to get the actual chemical names.
+Store the reversed names in a new array.
+Create an empty string for the result.
+Iterate through chemicalsOrder and concatenate the corresponding reversed names to the result string.
+Return the final concatenated result string.
+
+Parameters:
+chemicalLabels (String[]): An array of strings with reversed chemical names.
+chemicalsOrder (String[]): An array indicating the correct order of chemicals.
+The function returns a String representing the fully decoded and concatenated chemical reaction label.
+
+### 25 - Laboratory Data Analysis
+
+Create a function named analyzeLaboratoryData that receives experimentIds, instruments, and results as its parameters.
+
+The function should analyze laboratory data from various experiments and return a summary of the analysis.
+
+Implement the following steps in your function:
+Count the total number of experiments.
+Determine the most frequently used instrument.
+Calculate the average result value across all experiments.
+Find the ID of the experiment with the highest result value.
+Use advanced variable assignments, hashing techniques for instrument frequency counting, and appropriate data structures to efficiently process the data.
+
+Parameters:
+experimentIds (int[]): An array of integer IDs for each experiment.
+instruments (String[]): An array of instrument names used in each experiment.
+results (float[]): An array of float values representing the results of each experiment.
+
+The function returns a String containing a summary of the laboratory data analysis in the following format:
+"Total experiments: [count], Most used instrument: [instrument], Average result: [average], Highest result experiment ID: [id]"
+Round the average result to two decimal places.
+
+### 24 - The Curious Scientist's Unusual Plant Growth Tracker
+
+Create a function named trackPlantGrowth that receives initialHeight (int), days (int), and plantName (String) as its parameters.
+
+You are a curious scientist observing an unusual plant in your dimly lit laboratory. The plant exhibits a peculiar growth pattern over a period of days, and you want to track its height changes.
+
+The plant follows these growth rules:
+On odd-numbered days, it grows by 1 cm.
+On even-numbered days, it shrinks by 1 cm.
+Every third day, regardless of whether it's odd or even, the plant doubles in height.
+Your task is to implement the trackPlantGrowth function that simulates this growth pattern and returns a string describing the plant's behavior over the observation period.
+
+Parameters:
+initialHeight (int): The initial height of the plant in centimeters.
+days (int): The number of days to observe the plant.
+plantName (String): The name of the plant being observed.
+
+The function should return a string in the following format:
+"Plant: [plantName], Initial height: [initialHeight] cm, Final height: [finalHeight] cm, [Growth description]"
+
+Where [Growth description] should be one of the following:
+"The plant grew taller." if the final height is greater than the initial height.
+"The plant shrunk." if the final height is less than the initial height.
+"The plant remained the same height." if the final height is equal to the initial height.
+Use basic increment and decrement operators to adjust the plant's height and string concatenation to build the output message.
+
+### 23 - Digital Forest Walk
+
+Create a function named forestWalk that receives int[] treeHeights, int sliceFactor, and int saplingHeight as its parameters.
+
+Your task is to simulate a walk through a digital forest, where trees are represented by binary numbers. You'll perform various operations on these trees, mimicking interactions within the forest.
+
+Follow these steps to complete the forest walk:
+Convert each tree height in treeHeights from decimal to binary.
+Slice the binary array using the sliceFactor. For example, if sliceFactor is 3, divide the array into subarrays of length 3.
+For each subarray:
+Find the tallest tree (highest binary number).
+Count trees with an odd number of branches (1's in binary).
+Prune trees by removing the rightmost 1 in each binary number.
+Plant a new sapling by adding the binary representation of saplingHeight to the right of each binary number.
+Convert the modified binary numbers back to decimal.
+Return an array containing: [tallest tree height, count of odd-branched trees, sum of all tree heights after modifications].
+
+Parameters:
+treeHeights (int[]): An array of integers representing tree heights in decimal.
+sliceFactor (int): An integer determining how to slice the binary array.
+saplingHeight (int): The height of new saplings to be planted (in decimal).
+The function returns an integer array containing the results of the forest walk operations.
+
+### 22 - Multi-Supplier Fish Species Finder
+
+Write a function findMultiSupplierSpecies that takes supplierInventories, pattern and returns a string array of unique fish species names.
+
+The function finds all fish species that contain the specified pattern and appear in at least two different supplier inventories, then returns them sorted alphabetically.
+
+Logic:
+Use nested loops to compare species across all supplier inventories
+Extract species names using substring operations to check for the pattern
+Track which species appear in multiple suppliers using arrays
+Sort the results alphabetically before returning
+
+Parameters:
+supplierInventories (String[][]): 2D array where each row represents a supplier's fish species list
+pattern (String): Substring pattern to search for in species names (e.g., "sword" for swordtail fish)
+Returns: String array of species names that contain the pattern and appear in multiple suppliers, sorted alphabetically. Format: ["species1", "species2", "species3"]
+
+### 21 - Advanced Botanical Garden Analysis
+
+Create a function named analyzePhilydraceaeGarden that receives plants, plotCount, and maxPlantsPerPlot as its parameters.
+
+The function simulates a complex botanical research scenario in a garden, focusing on various plant species, including the unique Philydraceae family. It performs several set theory and combinatorial operations to analyze the garden's composition and potential arrangements.
+
+Implement the following operations:
+Generate the power set of the given plant species.
+Calculate the number of ways to distribute the plants among the given number of plots, considering the maximum capacity of each plot.
+Identify all subsets of plants that include at least one member of the Philydraceae family. (Assume that any plant species name containing "Philydraceae" belongs to this family.)
+Calculate the derangement of the original plant array, representing a complete rearrangement of plants in the garden where no plant remains in its original position.
+Compute the Bell number for the given number of plant species.
+Calculate the Catalan number for half the number of plant species (rounded down).
+
+Parameters:
+plants (String[]): An array of strings representing different plant species in the garden.
+plotCount (int): An integer representing the number of plots in the garden.
+maxPlantsPerPlot (int): An integer representing the maximum number of plants that can be placed in each plot.
+
+The function returns a String[] containing the following information:
+The size of the power set of plant species.
+The number of ways to distribute plants among plots.
+The number of subsets containing Philydraceae family members.
+The derangement of the original plant array (as a string representation).
+The Bell number for the given number of plant species.
+The Catalan number calculated.
+Note: Implement efficient algorithms for each operation. You may need to create helper functions for complex calculations like Bell numbers and Catalan numbers. Ensure your implementation can handle large inputs within reasonable time constraints.
 
 ### 20 - Beauty Salon Whispers
 
