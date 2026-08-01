@@ -4,6 +4,25 @@
 
 ## August
 
+## 1 - Coffee Shop Sales Analysis
+
+Write a function analyzeConsistentSales that takes salesData, minThreshold, criticalMinimum and returns an array of coffee type indices with consistent sales.
+
+The function analyzes daily coffee sales to find which coffee types consistently sell above the minimum threshold, but stops early if any day's total sales fall below the critical minimum.
+
+Logic:
+For each day, calculate total sales across all coffee types
+If total sales < criticalMinimum, stop analysis immediately (break)
+Skip days with zero total sales when checking consistency (continue)
+A coffee type is consistent if it meets minThreshold on all valid days
+Return indices of consistent coffee types in ascending order
+
+Parameters:
+salesData (int[][]): 2D array where rows are days, columns are coffee types
+minThreshold (int): Minimum sales required per coffee type per day
+criticalMinimum (int): Minimum total daily sales to continue analysis
+Returns: Array of coffee type indices (column numbers) that have consistent sales. Format: [0, 2, 4]
+
 ## July
 
 ### 31 - Culinary Chaos: Ingredient Mayhem
