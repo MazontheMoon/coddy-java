@@ -4,7 +4,30 @@
 
 ## August
 
-## 1 - Coffee Shop Sales Analysis
+### 2 - Monastery Feast Planner
+Create a function named monasteryFeastPlanner that receives ingredients, monkCount, and dayOfWeek as its parameters.
+
+As a frugal medieval clerk, your task is to plan a modest feast in the monastery garden. You need to manage the available ingredients, consider the number of monks attending, and adjust the menu based on the day of the week.
+
+Parameters:
+ingredients (String): A string representing available ingredients in the garden. Each ingredient is followed by its quantity, separated by commas. For example: "carrots5,onions3,potatoes8".
+monkCount (int): The number of monks attending the feast.
+dayOfWeek (int): An integer representing the day of the week (1 for Monday, 7 for Sunday).
+The function should perform the following tasks:
+Parse the ingredient string into an array of ingredients and their quantities.
+Calculate the total number of ingredients available.
+Determine which ingredients to use based on the day of the week. On fasting days (Monday, Wednesday, and Friday), use more vegetables. On other days, include a balanced mix.
+Adjust quantities based on the number of monks attending, ensuring each monk gets at least one portion of food.
+Create a feast plan that maximizes the use of available ingredients while being frugal.
+The function returns a string representing the feast plan. The plan should include which ingredients are used and in what quantities. The format should be: "ingredient1:quantity1,ingredient2:quantity2,...".
+
+Additional rules:
+
+If an ingredient's quantity becomes zero after planning, do not include it in the output.
+Round down any fractional quantities to the nearest integer.
+Ensure that the total quantity of food in the feast plan is at least equal to the number of monks.
+
+### 1 - Coffee Shop Sales Analysis
 
 Write a function analyzeConsistentSales that takes salesData, minThreshold, criticalMinimum and returns an array of coffee type indices with consistent sales.
 
