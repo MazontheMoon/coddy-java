@@ -4,6 +4,39 @@
 
 ## August
 
+### 3 - Colorful Urban Art Simulation
+
+Create a function named createColorfulArt that receives friends, initialPaint, paintingOrder, paintUsagePercentage, and turns as its parameters.
+
+A group of friends is gathering in an urban park to create colorful art with spray paint bottles. Your task is to simulate their artistic process and calculate the final amount of paint in each color bottle for each friend after creating the art.
+
+The function should simulate the painting process for the given number of turns, applying paint usage, mixing effects, and group sharing. Follow these steps:
+
+Initialize the paint bottles for each friend based on the input.
+Simulate the painting process for the given number of turns:
+Calculate the amount of paint used by the current friend for each color.
+Update the paint amounts in the bottles.
+Apply a "paint mixing" effect where 5% of each color is added to the other colors.
+After all turns, apply a "group sharing" effect where friends share their remaining paint equally.
+Return the final paint amounts for each friend and color.
+Parameters:
+
+friends (int): The number of friends in the group.
+initialPaint (float[][]): A 2D array representing the initial amount of paint in each color bottle for each friend. Rows represent friends, columns represent colors.
+paintingOrder (int[]): An array representing the order of friends painting.
+paintUsagePercentage (float[]): An array representing the percentage of paint used in each turn.
+turns (int): The number of painting turns.
+The function returns a float[][] representing the final amount of paint in each color bottle for each friend after creating the art.
+
+Constraints:
+
+1 ≤ friends ≤ 10
+1 ≤ colors ≤ 10
+0 ≤ initialPaint[i][j] ≤ 100.0
+1 ≤ turns ≤ 100
+0 ≤ paintUsagePercentage[i] ≤ 1.0
+All calculations should be rounded to 2 decimal places.
+
 ### 2 - Monastery Feast Planner
 Create a function named monasteryFeastPlanner that receives ingredients, monkCount, and dayOfWeek as its parameters.
 
