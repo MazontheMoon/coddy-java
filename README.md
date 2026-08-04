@@ -4,6 +4,10 @@
 
 ## August
 
+### 4 - Yard Sale Sign Maker
+
+Create a program that helps prepare eye-catching yard sale signs. Read a sign text and print it with all letters toggled (uppercase becomes lowercase and vice versa), then print how many spaces it contains. Finally, read the day's forecasted high and low temperatures and print the temperature range to help plan for shade.
+
 ### 3 - Colorful Urban Art Simulation
 
 Create a function named createColorfulArt that receives friends, initialPaint, paintingOrder, paintUsagePercentage, and turns as its parameters.
