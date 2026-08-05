@@ -4,6 +4,39 @@
 
 ## August
 
+### 5 - Dental Appointment Scheduler
+
+Create a function named scheduleDentalAppointment that receives patientName, patientAge, lastVisit, requestedDate, requestedTime, and treatmentType as its parameters.
+
+The function simulates a dental appointment scheduling system. It processes patient information and appointment details to generate an appointment confirmation message.
+
+Your task is to implement the following functionality:
+
+Parse the input dates and calculate the time since the last visit.
+Determine if the patient is due for a cleaning (if it's been more than 6 months since the last visit).
+Check if the requested appointment slot is available (assume slots are available if the requested time is between 9:00 AM and 5:00 PM, and not on weekends).
+Validate if the patient qualifies for the requested treatment based on age and last visit.
+Generate an appointment confirmation message.
+Use advanced increment/decrement operators, logical operators, and string manipulation techniques to process the data and generate the appointment confirmation.
+
+Parameters:
+
+patientName (String): The name of the patient
+patientAge (int): The age of the patient
+lastVisit (String): Date of the patient's last visit in "YYYY-MM-DD" format
+requestedDate (String): Requested appointment date in "YYYY-MM-DD" format
+requestedTime (String): Requested appointment time in "HH:MM" format
+treatmentType (String): Type of treatment requested (e.g., "cleaning", "filling", "root canal")
+The function returns a String containing the appointment confirmation message.
+
+Additional Information:
+
+Use the java.time package for date and time operations.
+Assume that patients under 18 cannot receive a root canal treatment.
+If the patient is due for a cleaning, add it to their requested treatment.
+If the requested slot is unavailable, suggest the next available slot (increment the time by 30 minutes).
+Format the confirmation message to include the patient's name, appointment date and time, treatment type, and any special instructions or reminders.
+
 ### 4 - Yard Sale Sign Maker
 
 Create a program that helps prepare eye-catching yard sale signs. Read a sign text and print it with all letters toggled (uppercase becomes lowercase and vice versa), then print how many spaces it contains. Finally, read the day's forecasted high and low temperatures and print the temperature range to help plan for shade.
