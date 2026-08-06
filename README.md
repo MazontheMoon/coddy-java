@@ -4,6 +4,34 @@
 
 ## August
 
+### 6 - Craft a Complex Hairstyle Simulation
+
+Create a function named craftComplexHairstyle that receives hairStrands, stylePattern, complexity, and desiredPatterns as its parameters.
+
+The function simulates a hairdresser crafting an intricate and complex hairstyle for a client. It should use various looping techniques and conditional statements to create a detailed hairstyle based on the given parameters.
+
+The function should iterate through the hair strands, apply different styling patterns, and ensure that the desired patterns are incorporated into the final hairstyle. The complexity level should determine the intricacy of the styling process and the number of loops used.
+
+Parameters:
+
+hairStrands (int): Represents the total number of hair strands available for styling. This number should be between 1000 and 100000.
+stylePattern (String[]): An array of strings representing different patterns that can be applied to sections of hair. Each pattern should be a single word, like "curl", "braid", "wave", etc.
+complexity (int): A value indicating the level of complexity the hairstyle should have. This should be an integer between 1 (simple) and 5 (highly complex).
+desiredPatterns (String): A string representing a sequence of patterns that the client desires in the final hairstyle. Each character in this string corresponds to an index in the stylePattern array.
+
+The function returns a String detailing the sequence of patterns used to craft the hairstyle. The returned string should be a sequence of characters, where each character represents a pattern applied to a section of hair (corresponding to indices in the stylePattern array).
+
+Here's how the function should work:
+
+Divide the hair strands into sections based on the complexity level. More complex styles should have more sections.
+For each section, choose a pattern to apply. Prioritize patterns from the desiredPatterns string.
+Use nested loops to simulate applying the chosen pattern to each hair strand in the section.
+Use conditional statements to vary the styling based on the section's position (e.g., top layers vs bottom layers).
+Implement a recursive function to create more intricate subsections for higher complexity levels.
+Ensure that all characters in the desiredPatterns string are used in the final hairstyle.
+The length of the returned string should be equal to the number of sections created.
+Remember to handle edge cases, such as when the complexity level is 1 (simplest) or 5 (most complex), or when the desiredPatterns string is empty or contains patterns not present in the stylePattern array.
+
 ### 5 - Dental Appointment Scheduler
 
 Create a function named scheduleDentalAppointment that receives patientName, patientAge, lastVisit, requestedDate, requestedTime, and treatmentType as its parameters.
