@@ -4,6 +4,33 @@
 
 ## August
 
+### 7 - Poetic Garden Pattern Generator
+
+Create a function named poeticGarden that receives word (String) and size (int) as its parameters.
+
+The function should generate a pattern resembling a garden of words using nested loops and increment/decrement operators. The output will be a string containing a pattern where the given word blooms like flowers in a triangular shape.
+
+The function should do the following:
+
+Create a triangular pattern using nested loops, where each row represents a flower bed.
+In each row, print the characters of the word in a repeating pattern, with the number of repetitions decreasing as we move down the triangle.
+Use increment and decrement operators to control the loop iterations and character selections.
+Return the entire garden pattern as a single string, with each row separated by a newline character.
+Parameters:
+
+word (String): A poetic word to be used in the pattern. The word will be non-empty and will not exceed 10 characters.
+size (int): An integer representing the garden's size. It will be a positive integer not exceeding 20.
+The function returns a string representing the poetic garden pattern.
+
+For example, if the input word is "BLOOM" and the size is 5, the output should look like this:
+
+BLOOMBLOOMBLOOMBLOOMBLOOMB
+LOOMBLOOMBLOOMBLOOMB
+OMBLOOMBLOOMB
+BLOOMB
+B
+Note: Ensure that your implementation handles different word lengths and sizes correctly, maintaining the triangular shape of the garden.
+
 ### 6 - Craft a Complex Hairstyle Simulation
 
 Create a function named craftComplexHairstyle that receives hairStrands, stylePattern, complexity, and desiredPatterns as its parameters.
