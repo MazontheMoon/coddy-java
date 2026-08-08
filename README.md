@@ -4,6 +4,17 @@
 
 ## August
 
+### 8 - Arrange Herb Garden Beds
+Write a function arrangeHerbBeds that takes herbs, bedsPerRow and returns a 2D array representing the herb garden layout.
+
+The function organizes herbs into rows, with each row containing up to bedsPerRow herbs, filling the garden layout row by row.
+
+Parameters:
+
+herbs (String[]): Array of herb names to plant
+bedsPerRow (int): Maximum number of herb beds per row
+Returns: 2D array where each row contains herbs arranged in the garden layout. Format: [["basil", "mint"], ["rosemary", "thyme"]]
+
 ### 7 - Poetic Garden Pattern Generator
 
 Create a function named poeticGarden that receives word (String) and size (int) as its parameters.
