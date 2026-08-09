@@ -4,6 +4,41 @@
 
 ## August
 
+### 9 - Advanced Water Sprinkling Simulation
+
+Create a function named simulateWaterSprinkling that receives initialVelocity, sprayAngle, windSpeed, windDirection, numPassersby, passerbyPositions, sprayDuration, and waterFlowRate as its parameters.
+
+The function simulates a confident street performer's water sprinkling performance in the city of Albi, using advanced mathematical and probabilistic concepts. It models the trajectory of water droplets, their dispersion, and the likelihood of hitting passersby based on various factors.
+
+To solve this challenge, you need to implement the following:
+
+A numerical solution for the differential equations governing the motion of water droplets under gravity and wind influence.
+A model for the dispersion of the water spray using concepts from fluid dynamics.
+Probability calculations to determine the likelihood of droplets hitting passersby based on their positions and the spray pattern.
+Statistical methods to estimate the expected volume of water hitting each passerby.
+Monte Carlo simulation techniques to account for the stochastic nature of the water dispersion.
+Optimization of the spray angle for maximum coverage using concepts from multivariable calculus.
+Coordinate transformations and vector operations using linear algebra.
+Parameters:
+
+initialVelocity (float[]): Initial velocity components [vx, vy, vz] of the water spray in m/s.
+sprayAngle (float): Angle of spray in radians.
+windSpeed (float): Wind speed in m/s.
+windDirection (float): Wind direction in radians.
+numPassersby (int): Number of passersby.
+passerbyPositions (float[]): Positions of passersby [x1, y1, x2, y2, ..., xn, yn] in meters.
+sprayDuration (float): Spray duration in seconds.
+waterFlowRate (float): Water flow rate in liters per second.
+The function returns a float array containing:
+
+The probability of each passerby getting wet (n values)
+The expected volume of water hitting each passerby in liters (n values)
+The total volume of water used in liters (1 value)
+The efficiency of the performance as a percentage (1 value)
+Where n is the number of passersby.
+
+Note: Use appropriate numerical methods and approximations where necessary. Ensure your calculations handle edge cases and potential numerical instabilities.
+
 ### 8 - Arrange Herb Garden Beds
 Write a function arrangeHerbBeds that takes herbs, bedsPerRow and returns a 2D array representing the herb garden layout.
 
