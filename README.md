@@ -4,6 +4,12 @@
 
 ## August
 
+### 10 - Sweet Skate Shop Manager
+
+Create a program that helps manage your roller-skating confectionary shop! Your program should recommend the best candy for a customer based on their skating preference and candy popularity scores, calculate their total order price including sales tax, and count how many distinct substrings of length N appear in a promotional message or reservation string.
+
+Read the candy catalog with popularity scores, the customer's preference, their order details with prices and tax rate, plus a text string and the substring length N to analyze.
+
 ### 9 - Advanced Water Sprinkling Simulation
 
 Create a function named simulateWaterSprinkling that receives initialVelocity, sprayAngle, windSpeed, windDirection, numPassersby, passerbyPositions, sprayDuration, and waterFlowRate as its parameters.
