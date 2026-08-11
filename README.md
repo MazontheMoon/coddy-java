@@ -4,6 +4,24 @@
 
 ## August
 
+### 11 - The Roisterous Loop Challenge
+
+Write a program that gets an integer input from the user, called limit. The program should print all even numbers from 0 up to (but not including) limit, each on a new line.
+
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int limit = scanner.nextInt();
+        for (int i = 0; i < limit; i++) {
+            if (i % 2 == 0) {
+                System.out.println(i);
+            }
+        }
+    }
+}
+
 ### 10 - Sweet Skate Shop Manager
 
 Create a program that helps manage your roller-skating confectionary shop! Your program should recommend the best candy for a customer based on their skating preference and candy popularity scores, calculate their total order price including sales tax, and count how many distinct substrings of length N appear in a promotional message or reservation string.
