@@ -4,6 +4,24 @@
 
 ## August
 
+### 12 - Flashlight Item Discovery
+Create a function named findItemsInDescription that receives items and description as its parameters.
+
+This function searches through the description string for any matches with the items list, treating each word in description as separated by spaces.
+
+To solve this challenge:
+
+Split the description string into an array of words.
+Iterate through the items array.
+For each item, check if it exists in the array of description words.
+If the item is found, add it to a result array.
+Return the result array containing the found items in the same order as they appear in the items array.
+Parameters:
+
+items (String[]): An array of strings representing the items you need to find. It will contain between 1 and 10 items.
+description (String): A string which contains various words, including some that may match the items in your items array. It can be empty and might contain 0 to 100 words separated by spaces.
+The function returns a String[] containing all the items found in the description string, in the same order they appear in the items array. If an item is not found, it is not included in the output array.
+
 ### 11 - The Roisterous Loop Challenge
 
 Write a program that gets an integer input from the user, called limit. The program should print all even numbers from 0 up to (but not including) limit, each on a new line.
