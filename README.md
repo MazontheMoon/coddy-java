@@ -4,6 +4,40 @@
 
 ## August
 
+### 13 - Sunny Day Salamander Scene
+Create a function named createSalamanderScene that receives name, age, and favoritePlant as its parameters.
+
+The function should generate a cheerful ASCII art scene depicting a salamander enjoying a sunny day by a pond. The scene should incorporate the provided inputs to create a personalized and fun representation.
+
+Your task is to create this scene using basic string manipulation and formatting techniques. The scene should include the following elements:
+
+A sun
+A salamander
+A pond with the favorite plant
+The salamander's name
+A message about the salamander's age
+Parameters:
+
+name (String): The name of the salamander.
+age (int): The age of the salamander.
+favoritePlant (char): A character representing the salamander's favorite pond plant.
+The function returns a String containing the multi-line ASCII art scene.
+
+Here's an example of how the scene might look (actual implementation may vary):
+
+
+    \   /
+     \ /
+   \  O  /   Name: Sammy
+    \ | /    Age: 3 years old
+  ~~~~~~~~~
+ ~    ~    ~
+~  ~  ~  ~  ~
+ @@@ @@@ @@@
+In this example, '@' represents the favorite plant, but your implementation should use the favoritePlant character provided as input.
+
+Remember to use proper string concatenation and formatting to create a visually appealing and well-aligned scene. Be creative with your ASCII art, but make sure to include all the required elements.
+
 ### 12 - Flashlight Item Discovery
 Create a function named findItemsInDescription that receives items and description as its parameters.
 
