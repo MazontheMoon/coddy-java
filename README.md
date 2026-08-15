@@ -4,6 +4,35 @@
 
 ## August
 
+### 15 - Plant Cell Structure Analysis
+
+Create a function named analyzePlantCells that receives String input as its parameter.
+
+You are a scientist in a botanical research lab examining plant samples under a microscope. Your task is to analyze textual data representing various plant cell characteristics and determine the type of plant tissue, its likely function, relative age, and any unique properties or anomalies.
+
+The function should parse the input string, which contains a series of observations separated by semicolons. Each observation is a key-value pair separated by a colon. For example: "cell_shape:elongated;wall_thickness:thick;lignin_content:high".
+
+Using complex conditional logic and string manipulation techniques, your function should determine:
+The type of plant tissue (e.g., sclerenchyma, parenchyma, collenchyma)
+The likely function of the tissue in the plant
+The relative age of the tissue
+Any unique properties or anomalies
+Your analysis should be returned as a formatted string containing key-value pairs. Each key-value pair should be separated by a semicolon, and the key and value should be separated by a colon. The returned string should include at least the following keys: "tissue_type", "function", "age", and "properties".
+
+Parameters:
+input (String): A string containing semicolon-separated key-value pairs representing observed cell characteristics.
+The function returns a String containing the analysis results formatted as described above.
+
+Constraints:
+The input string will always be valid and contain at least three observations.
+Possible keys in the input string include, but are not limited to: "cell_shape", "wall_thickness", "lignin_content", "cell_arrangement", "nucleus_position", "vacuole_size".
+Values in the input string will be lowercase and may contain spaces.
+The analysis should be based on scientific knowledge of plant cell structures. You may use the following simplified rules:
+Sclerenchyma: thick walls, high lignin content, usually elongated cells
+Parenchyma: thin walls, large vacuoles, usually rounded cells
+Collenchyma: unevenly thickened walls, elongated cells
+Note: This challenge requires you to implement complex conditional logic to handle various combinations of cell characteristics and their implications. You'll need to use advanced string manipulation techniques to parse the input and format the output correctly.
+
 ### 14 - Quirky Thermocouple Descriptor
 
 Create a function named describeThermocouple that receives material, year, temperature, and quirk as its parameters.
