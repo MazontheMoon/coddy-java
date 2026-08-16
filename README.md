@@ -4,6 +4,12 @@
 
 ## August
 
+### 16 - Patient Record Search System
+
+Create a program that manages hospital patient records with three search capabilities: wildcard pattern matching (where * matches any sequence and ? matches single characters), anagram detection to find patients with rearranged name letters, and ID verification by extracting the middle character.
+
+Your program reads patient records (name and ID pairs), then processes queries. For WILDCARD queries, match names against the pattern. For ANAGRAM queries, find all names that use the same letters. For MIDDLE queries, return the character at the middle index of the specified patient's ID (use position length/2 for even-length IDs). All name matching should be case-insensitive.
+
 ### 15 - Plant Cell Structure Analysis
 
 Create a function named analyzePlantCells that receives String input as its parameter.
