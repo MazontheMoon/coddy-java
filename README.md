@@ -4,6 +4,22 @@
 
 ## August
 
+### 17 - Stingfish DNA Analysis
+Create a function named analyzeStingfishDNA that receives sequence1 and sequence2 as its parameters.
+
+As a marine biologist examining a stingfish under a microelectroscope, you need to analyze two partial DNA sequences. Your task is to combine these sequences, reverse the order, and prepare the final result for further analysis.
+
+Parameters:
+
+sequence1 (String[]): The first partial DNA sequence of the stingfish.
+sequence2 (String[]): The second partial DNA sequence of the stingfish.
+The function should perform the following operations:
+
+Concatenate sequence1 and sequence2 into a single array.
+Reverse the order of elements in the concatenated array.
+Join all elements of the reversed array into a single string, separated by spaces.
+The function returns a string representing the reversed and combined DNA sequence
+
 ### 16 - Patient Record Search System
 
 Create a program that manages hospital patient records with three search capabilities: wildcard pattern matching (where * matches any sequence and ? matches single characters), anagram detection to find patients with rearranged name letters, and ID verification by extracting the middle character.
