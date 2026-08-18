@@ -4,6 +4,41 @@
 
 ## August
 
+### 18 - River Color Blending Simulation
+
+Create a function named simulateRiverColorBlending that receives riverSurface, rainfallCycles, and sedimentColors as its parameters.
+
+This function simulates the blending of colors in a river during a rainy day, where sediment settles and colors blend in the flowing water. The challenge incorporates advanced 2D array manipulation and string operations to model this natural phenomenon.
+
+The function should simulate the blending of colors in the river over time, considering the following rules:
+
+In each rainfall cycle, new sediment colors are introduced at random positions along the top row of the river.
+Colors blend with adjacent colors in the 2D array (up, down, left, right) during each cycle.
+The blending process should create new color strings by combining the existing colors.
+The river flow is simulated by shifting colors downward in the 2D array.
+Color Blending Rules:
+When two primary colors (red, blue, yellow) blend, they create a secondary color:
+red + blue = purple
+blue + yellow = green
+red + yellow = orange
+When a primary color blends with a secondary color, it results in a tertiary color:
+red + purple = magenta
+blue + green = teal
+yellow + orange = amber
+When two secondary or tertiary colors blend, or when any color blends with brown, the result is brown.
+Parameters:
+
+riverSurface (String[][]): A 2D array representing the initial state of the river, where each element is a color represented by a string (e.g., "red", "blue", "yellow", "green", "purple", "orange", "magenta", "teal", "amber", "brown").
+rainfallCycles (int): An integer representing the number of rainfall cycles to simulate.
+sedimentColors (String[]): An array containing the colors of the sediment being washed into the river by the rain. These colors will be introduced at random positions along the top row of the river during each rainfall cycle.
+The function returns a 2D string array representing the final state of the river surface after all rainfall cycles have been processed.
+
+Note: To simulate randomness without using actual random functions, use the following method to determine the position for introducing new sediment colors:
+
+
+int position = (currentCycle * 17 + colorIndex * 31) % riverSurface[0].length;
+Where currentCycle is the current rainfall cycle (0-indexed) and colorIndex is the index of the color in the sedimentColors array.
+
 ### 17 - Stingfish DNA Analysis
 Create a function named analyzeStingfishDNA that receives sequence1 and sequence2 as its parameters.
 
