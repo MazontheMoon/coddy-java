@@ -4,6 +4,22 @@
 
 ## August
 
+### 19 - Ancient Mesopotamian Land Value Calculator
+
+Create a function named calculateLandValue that receives plotDimensions and soilQuality as its parameters.
+
+In ancient Mesopotamia, land value was determined by the size of the plot and the quality of the soil. Your task is to create a function that calculates the total value of multiple land plots based on these factors.
+
+The function should iterate through the array of plot dimensions, calculate the area of each plot, and then multiply it by the soil quality rating to determine its value. Finally, it should return the sum of all plot values.
+
+Parameters:
+
+plotDimensions (int[]): An array where each pair of consecutive elements represents the length and width of a land plot in cubits. For example, [10, 20, 15, 30] represents two plots: one with dimensions 10x20 and another with 15x30.
+soilQuality (int): An integer between 1 and 10 representing the quality of the soil for all plots.
+The function returns an integer representing the total value of all land plots combined.
+
+Note: Ensure that you handle the array correctly, processing each pair of dimensions. The total number of elements in the plotDimensions array will always be even.
+
 ### 18 - River Color Blending Simulation
 
 Create a function named simulateRiverColorBlending that receives riverSurface, rainfallCycles, and sedimentColors as its parameters.
