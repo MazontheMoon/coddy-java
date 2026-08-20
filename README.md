@@ -4,6 +4,8 @@
 
 ## August
 
+### 20 - 
+
 ### 19 - Ancient Mesopotamian Land Value Calculator
 
 Create a function named calculateLandValue that receives plotDimensions and soilQuality as its parameters.
