@@ -4,7 +4,31 @@
 
 ## August
 
-### 20 - 
+### 20 - Island Survival Simulation
+Create a function named islandSurvivalSimulation that receives initialFood, initialWater, tools, resources, weather, and rescueDays as its parameters.
+
+Your task is to simulate survival on a tropical island after a shipwreck, determining how many days the survivor can last given the initial conditions and resources.
+
+Implement the simulation using complex loops and logical operators to model the passage of time and decision-making processes. Each day, the survivor must manage food and water consumption, energy levels, and perform survival activities such as foraging, building shelter, and crafting tools.
+
+Parameters:
+
+initialFood (int): The amount of food available from the shipwreck (in days).
+initialWater (int): The amount of clean water available from the shipwreck (in days).
+tools (boolean[]): An array representing the availability of various tools (e.g., knife, rope, tarp).
+resources (int[]): An array representing the abundance of different natural resources on the island (e.g., fruits, fish, wood).
+weather (int[]): An array representing the weather conditions for each day (0: sunny, 1: rainy, 2: stormy).
+rescueDays (int): The number of days expected before a rescue attempt.
+The function returns an integer representing the number of days the survivor managed to stay alive on the island. If the survivor is rescued, it should return the number of days until rescue.
+
+Implement the following in your solution:
+
+Use nested loops to simulate days, weeks, and months on the island.
+Implement a recursive function to represent repeating activities like searching for food or building shelter.
+Use logical operators (XOR, NAND, NOR) to determine the success of survival activities based on multiple conditions.
+Employ loop control statements to handle unexpected events or changes in the survival strategy.
+Manage resources carefully and implement decision-making algorithms to optimize survival chances.
+Ensure your implementation is within 50-99 lines of code.
 
 ### 19 - Ancient Mesopotamian Land Value Calculator
 
