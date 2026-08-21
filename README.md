@@ -4,6 +4,11 @@
 
 ## August
 
+### 21 - Flower Sale Manager
+
+Create a program that helps manage a community flower sale with three tasks: find the kth most expensive flower without sorting the entire price list, reorganize flower display codes so no two adjacent flowers are identical (or report "impossible"), and calculate the sum of even-denomination bills up to a limit.
+
+You'll receive flower prices and a position k, a string of flower codes to reorganize, and bill denominations with a maximum value to consider. Use a selection algorithm (like quickselect) for finding the kth largest price efficiently.
 ### 20 - Island Survival Simulation
 Create a function named islandSurvivalSimulation that receives initialFood, initialWater, tools, resources, weather, and rescueDays as its parameters.
 
