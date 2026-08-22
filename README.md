@@ -4,6 +4,33 @@
 
 ## August
 
+### 22 - Decoding Ancient Wine Vessel Inscriptions
+Create a function named decodeAncientVessels that receives inscriptions and key as its parameters.
+
+As a curious archaeologist examining ancient wine vessels in a dusty museum basement, you've discovered a series of inscriptions that need decoding. Your task is to implement a decoding algorithm that processes these inscriptions using advanced techniques.
+
+Follow these steps to decode the inscriptions:
+
+Reverse each inscription string.
+Apply a custom hashing algorithm using the decoding key.
+Use control flow to filter out certain characters based on the hash value.
+Parameters:
+
+inscriptions (String[]): An array of strings representing the inscriptions on different vessels. Each string contains only lowercase English letters.
+key (int): An integer representing the decoding key. It will be a positive number.
+The function returns a String[] containing the decoded messages.
+
+Decoding Algorithm:
+
+Reverse each inscription string.
+For each character in the reversed string:
+Calculate its hash value: (char - 'a' + 1) * key % 26
+If the hash value is even, keep the character.
+If the hash value is odd, replace the character with a dot ('.').
+If the character is 'z', break the processing for this inscription.
+After processing all characters, reverse the resulting string again.
+Implement this algorithm efficiently, using the concepts of advanced array reversal and control flow.
+
 ### 21 - Flower Sale Manager
 
 Create a program that helps manage a community flower sale with three tasks: find the kth most expensive flower without sorting the entire price list, reorganize flower display codes so no two adjacent flowers are identical (or report "impossible"), and calculate the sum of even-denomination bills up to a limit.
